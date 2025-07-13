@@ -36,6 +36,8 @@ class DatabaseHelper {
 
   Future<int> insertUserName(String name) async {
     final db = await instance.database;
+    // Xóa các bản ghi cũ để đảm bảo chỉ có một tên
+    await db.delete('users');
     return await db.insert(
       'users',
       {'name': name},
