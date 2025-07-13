@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "question": "1234 + 5678 = ?",
+    "options": ["6900", "6910", "6912", "6922"],
+    "answer": 2
+  },
+  {
+    "id": 2,
+    "question": "9876 - 5432 = ?",
+    "options": ["4440", "4442", "4444", "4446"],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "question": "25 x 4 = ?",
+    "options": ["80", "90", "100", "110"],
+    "answer": 2
+  },
+  {
+    "id": 4,
+    "question": "120 : 6 = ?",
+    "options": ["18", "20", "22", "24"],
+    "answer": 1
+  },
+  {
+    "id": 5,
+    "question": "Số 'Ba mươi lăm nghìn sáu trăm linh bảy' viết là?",
+    "options": ["35607", "35670", "35067", "35706"],
+    "answer": 0
+  },
+  {
+    "id": 6,
+    "question": "Trong số 87 654, chữ số 7 thuộc hàng nào?",
+    "options": ["Hàng đơn vị", "Hàng chục", "Hàng trăm", "Hàng nghìn"],
+    "answer": 3
+  },
+  {
+    "id": 7,
+    "question": "Rút gọn phân số $10/15$ ta được phân số tối giản nào?",
+    "options": ["$2/3$", "$5/3$", "$1/2$", "$10/15$"],
+    "answer": 0
+  },
+  {
+    "id": 8,
+    "question": "Một năm có bao nhiêu giờ?",
+    "options": ["8640", "8760", "8880", "9000"],
+    "answer": 1
+  },
+  {
+    "id": 9,
+    "question": "Một mảnh đất hình chữ nhật có chiều dài 20m và chiều rộng 10m. Diện tích mảnh đất là bao nhiêu?",
+    "options": ["30 m$^2$", "60 m$^2$", "100 m$^2$", "200 m$^2$"],
+    "answer": 3
+  },
+  {
+    "id": 10,
+    "question": "Góc vuông có số đo là bao nhiêu độ?",
+    "options": ["45 độ", "60 độ", "90 độ", "180 độ"],
+    "answer": 2
+  },
+  {
+    "id": 11,
+    "question": "5432 + 1987 = ?",
+    "options": ["7400", "7419", "7420", "7500"],
+    "answer": 1
+  },
+  {
+    "id": 12,
+    "question": "8765 - 3456 = ?",
+    "options": ["5300", "5309", "5310", "5311"],
+    "answer": 1
+  },
+  {
+    "id": 13,
+    "question": "45 x 3 = ?",
+    "options": ["125", "130", "135", "140"],
+    "answer": 2
+  },
+  {
+    "id": 14,
+    "question": "240 : 8 = ?",
+    "options": ["20", "30", "40", "50"],
+    "answer": 1
+  },
+  {
+    "id": 15,
+    "question": "Số lớn nhất có 5 chữ số khác nhau là?",
+    "options": ["98765", "99999", "98760", "98754"],
+    "answer": 0
+  },
+  {
+    "id": 16,
+    "question": "Điền dấu thích hợp: $2/5$ ... $3/5$",
+    "options": [">", "<", "="],
+    "answer": 1
+  },
+  {
+    "id": 17,
+    "question": "Chu vi hình vuông có cạnh 12 cm là bao nhiêu?",
+    "options": ["24 cm", "36 cm", "48 cm", "144 cm"],
+    "answer": 2
+  },
+  {
+    "id": 18,
+    "question": "Bạn An đọc 1 quyển sách có 250 trang. An đã đọc được $2/5$ số trang. An đã đọc được bao nhiêu trang?",
+    "options": ["50 trang", "100 trang", "150 trang", "200 trang"],
+    "answer": 1
+  },
+  {
+    "id": 19,
+    "question": "Góc bẹt có số đo là bao nhiêu độ?",
+    "options": ["90 độ", "180 độ", "270 độ", "360 độ"],
+    "answer": 1
+  },
+  {
+    "id": 20,
+    "question": "Hình nào có 4 cạnh bằng nhau và 4 góc vuông?",
+    "options": ["Hình chữ nhật", "Hình bình hành", "Hình vuông", "Hình thoi"],
+    "answer": 2
+  },
+  {
+    "id": 21,
+    "question": "7890 + 1234 = ?",
+    "options": ["9000", "9124", "9120", "9200"],
+    "answer": 1
+  },
+  {
+    "id": 22,
+    "question": "54321 - 12345 = ?",
+    "options": ["41970", "41972", "41976", "41978"],
+    "answer": 2
+  },
+  {
+    "id": 23,
+    "question": "60 x 5 = ?",
+    "options": ["200", "250", "300", "350"],
+    "answer": 2
+  },
+  {
+    "id": 24,
+    "question": "360 : 9 = ?",
+    "options": ["30", "40", "50", "60"],
+    "answer": 1
+  },
+  {
+    "id": 25,
+    "question": "Số bé nhất có 5 chữ số là?",
+    "options": ["9999", "10000", "10001", "11111"],
+    "answer": 1
+  },
+  {
+    "id": 26,
+    "question": "Cộng hai phân số: $1/4 + 2/4 = ?$",
+    "options": ["$1/2$", "$3/4$", "$3/8$", "$4/4$"],
+    "answer": 1
+  },
+  {
+    "id": 27,
+    "question": "Diện tích hình vuông có cạnh 15 cm là bao nhiêu?",
+    "options": ["30 cm$^2$", "60 cm$^2$", "225 cm$^2$", "150 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 28,
+    "question": "Một người đi xe máy trong 2 giờ. Giờ đầu đi được 45 km, giờ sau đi được 55 km. Tổng quãng đường người đó đã đi là bao nhiêu?",
+    "options": ["90 km", "100 km", "110 km", "120 km"],
+    "answer": 1
+  },
+  {
+    "id": 29,
+    "question": "Góc nhọn có số đo như thế nào?",
+    "options": ["Lớn hơn 90 độ", "Nhỏ hơn 90 độ", "Bằng 90 độ", "Bằng 180 độ"],
+    "answer": 1
+  },
+  {
+    "id": 30,
+    "question": "Hình nào có các cạnh đối diện song song và bằng nhau nhưng không có góc vuông?",
+    "options": ["Hình vuông", "Hình chữ nhật", "Hình bình hành", "Hình thang"],
+    "answer": 2
+  },
+  {
+    "id": 31,
+    "question": "10000 + 2500 = ?",
+    "options": ["12000", "12500", "13000", "13500"],
+    "answer": 1
+  },
+  {
+    "id": 32,
+    "question": "25000 - 12000 = ?",
+    "options": ["10000", "12000", "13000", "15000"],
+    "answer": 2
+  },
+  {
+    "id": 33,
+    "question": "123 x 2 = ?",
+    "options": ["240", "246", "250", "256"],
+    "answer": 1
+  },
+  {
+    "id": 34,
+    "question": "480 : 4 = ?",
+    "options": ["100", "110", "120", "130"],
+    "answer": 2
+  },
+  {
+    "id": 35,
+    "question": "Trong số 123 456, chữ số 2 thuộc hàng nào?",
+    "options": ["Hàng chục nghìn", "Hàng nghìn", "Hàng trăm", "Hàng đơn vị"],
+    "answer": 0
+  },
+  {
+    "id": 36,
+    "question": "So sánh hai phân số: $1/2$ ... $2/4$",
+    "options": [">", "<", "="],
+    "answer": 2
+  },
+  {
+    "id": 37,
+    "question": "Chu vi hình chữ nhật có chiều dài 20 cm và chiều rộng 8 cm là bao nhiêu?",
+    "options": ["28 cm", "40 cm", "56 cm", "160 cm"],
+    "answer": 2
+  },
+  {
+    "id": 38,
+    "question": "Một cuốn sách có 360 trang. An đã đọc được $1/3$ số trang. An đã đọc được bao nhiêu trang?",
+    "options": ["100 trang", "120 trang", "150 trang", "180 trang"],
+    "answer": 1
+  },
+  {
+    "id": 39,
+    "question": "Góc tù có số đo như thế nào?",
+    "options": ["Nhỏ hơn 90 độ", "Bằng 90 độ", "Lớn hơn 90 độ và nhỏ hơn 180 độ", "Bằng 180 độ"],
+    "answer": 2
+  },
+  {
+    "id": 40,
+    "question": "Hình thang là hình có mấy cặp cạnh song song?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 1
+  },
+  {
+    "id": 41,
+    "question": "34567 + 12345 = ?",
+    "options": ["46900", "46912", "46910", "47000"],
+    "answer": 1
+  },
+  {
+    "id": 42,
+    "question": "87654 - 34567 = ?",
+    "options": ["53000", "53087", "53080", "53090"],
+    "answer": 1
+  },
+  {
+    "id": 43,
+    "question": "205 x 3 = ?",
+    "options": ["600", "610", "615", "620"],
+    "answer": 2
+  },
+  {
+    "id": 44,
+    "question": "630 : 7 = ?",
+    "options": ["80", "90", "100", "110"],
+    "answer": 1
+  },
+  {
+    "id": 45,
+    "question": "Số 'Hai mươi nghìn không trăm linh hai' viết là?",
+    "options": ["20002", "20020", "2002", "20200"],
+    "answer": 0
+  },
+  {
+    "id": 46,
+    "question": "Trừ hai phân số: $5/7 - 2/7 = ?$",
+    "options": ["$1/7$", "$2/7$", "$3/7$", "$4/7$"],
+    "answer": 2
+  },
+  {
+    "id": 47,
+    "question": "Diện tích hình chữ nhật có chiều dài 25 cm và chiều rộng 10 cm là bao nhiêu?",
+    "options": ["35 cm$^2$", "70 cm$^2$", "200 cm$^2$", "250 cm$^2$"],
+    "answer": 3
+  },
+  {
+    "id": 48,
+    "question": "Một người bán hàng có 150 kg gạo. Buổi sáng bán được $1/3$ số gạo. Buổi sáng bán được bao nhiêu kg gạo?",
+    "options": ["30 kg", "40 kg", "50 kg", "60 kg"],
+    "answer": 2
+  },
+  {
+    "id": 49,
+    "question": "Hình thoi có mấy cạnh bằng nhau?",
+    "options": ["2", "3", "4", "Không có"],
+    "answer": 2
+  },
+  {
+    "id": 50,
+    "question": "Đường kính hình tròn dài gấp mấy lần bán kính?",
+    "options": ["1 lần", "2 lần", "3 lần", "4 lần"],
+    "answer": 1
+  },
+  {
+    "id": 51,
+    "question": "67890 + 12345 = ?",
+    "options": ["80000", "80235", "80200", "81000"],
+    "answer": 1
+  },
+  {
+    "id": 52,
+    "question": "98765 - 12345 = ?",
+    "options": ["86400", "86420", "86420", "86422"],
+    "answer": 0
+  },
+  {
+    "id": 53,
+    "question": "321 x 4 = ?",
+    "options": ["1200", "1280", "1284", "1300"],
+    "answer": 2
+  },
+  {
+    "id": 54,
+    "question": "720 : 8 = ?",
+    "options": ["80", "90", "100", "110"],
+    "answer": 1
+  },
+  {
+    "id": 55,
+    "question": "Trong số 345 678, chữ số 5 thuộc hàng nào?",
+    "options": ["Hàng đơn vị", "Hàng chục", "Hàng trăm", "Hàng nghìn"],
+    "answer": 3
+  },
+  {
+    "id": 56,
+    "question": "Quy đồng mẫu số hai phân số $1/3$ và $1/4$ ta được hai phân số nào?",
+    "options": ["$4/12$ và $3/12$", "$1/12$ và $1/12$", "$1/3$ và $1/4$", "$2/6$ và $2/8$"],
+    "answer": 0
+  },
+  {
+    "id": 57,
+    "question": "Chu vi hình chữ nhật có chiều dài 30 cm và chiều rộng 12 cm là bao nhiêu?",
+    "options": ["42 cm", "80 cm", "84 cm", "360 cm"],
+    "answer": 2
+  },
+  {
+    "id": 58,
+    "question": "Một người bán được 250 kg táo. Buổi sáng bán được 120 kg. Buổi chiều bán được bao nhiêu kg táo?",
+    "options": ["100 kg", "110 kg", "130 kg", "150 kg"],
+    "answer": 2
+  },
+  {
+    "id": 59,
+    "question": "Hình bình hành có mấy cặp cạnh song song?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 2
+  },
+  {
+    "id": 60,
+    "question": "Chu vi hình tròn được tính bằng công thức nào?",
+    "options": ["$r times r$", "$d times pi$", "$2 times r$", "$d + r$"],
+    "answer": 1
+  },
+  {
+    "id": 61,
+    "question": "12345 + 54321 = ?",
+    "options": ["66660", "66666", "66668", "67000"],
+    "answer": 1
+  },
+  {
+    "id": 62,
+    "question": "76543 - 21098 = ?",
+    "options": ["55440", "55445", "55450", "55455"],
+    "answer": 1
+  },
+  {
+    "id": 63,
+    "question": "450 x 2 = ?",
+    "options": ["800", "850", "900", "950"],
+    "answer": 2
+  },
+  {
+    "id": 64,
+    "question": "810 : 9 = ?",
+    "options": ["80", "90", "100", "110"],
+    "answer": 1
+  },
+  {
+    "id": 65,
+    "question": "Số 'Một trăm nghìn' viết là?",
+    "options": ["10000", "100000", "1000000", "1000"],
+    "answer": 1
+  },
+  {
+    "id": 66,
+    "question": "Cộng hai phân số: $3/5 + 1/5 = ?$",
+    "options": ["$2/5$", "$4/5$", "$4/10$", "$5/5$"],
+    "answer": 1
+  },
+  {
+    "id": 67,
+    "question": "Diện tích hình vuông có cạnh 20 cm là bao nhiêu?",
+    "options": ["40 cm$^2$", "80 cm$^2$", "100 cm$^2$", "400 cm$^2$"],
+    "answer": 3
+  },
+  {
+    "id": 68,
+    "question": "Một đội công nhân làm đường trong 3 ngày. Ngày đầu làm được 2 km, ngày sau làm được 3 km, ngày cuối làm được 1.5 km. Tổng quãng đường làm được là bao nhiêu mét?",
+    "options": ["65 m", "650 m", "6500 m", "65000 m"],
+    "answer": 2
+  },
+  {
+    "id": 69,
+    "question": "Góc nhọn nhỏ hơn góc vuông đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 70,
+    "question": "Hình thoi có các đường chéo như thế nào?",
+    "options": ["Bằng nhau", "Vuông góc với nhau", "Song song với nhau", "Cắt nhau tại trung điểm của mỗi đường"],
+    "answer": 1
+  },
+  {
+    "id": 71,
+    "question": "23456 + 12345 = ?",
+    "options": ["35800", "35801", "35802", "35803"],
+    "answer": 0
+  },
+  {
+    "id": 72,
+    "question": "98765 - 23456 = ?",
+    "options": ["75300", "75309", "75310", "75320"],
+    "answer": 1
+  },
+  {
+    "id": 73,
+    "question": "75 x 4 = ?",
+    "options": ["200", "250", "300", "350"],
+    "answer": 2
+  },
+  {
+    "id": 74,
+    "question": "490 : 7 = ?",
+    "options": ["60", "70", "80", "90"],
+    "answer": 1
+  },
+  {
+    "id": 75,
+    "question": "Số tròn chục lớn nhất có 4 chữ số là?",
+    "options": ["9980", "9990", "10000", "9999"],
+    "answer": 1
+  },
+  {
+    "id": 76,
+    "question": "Trừ hai phân số: $7/8 - 3/8 = ?$",
+    "options": ["$1/2$", "$1/4$", "$4/8$", "$3/8$"],
+    "answer": 0
+  },
+  {
+    "id": 77,
+    "question": "Chu vi hình vuông có cạnh 25 cm là bao nhiêu?",
+    "options": ["50 cm", "75 cm", "100 cm", "625 cm"],
+    "answer": 2
+  },
+  {
+    "id": 78,
+    "question": "Một người bán trứng, buổi sáng bán được 120 quả, buổi chiều bán ít hơn buổi sáng 30 quả. Buổi chiều bán được bao nhiêu quả?",
+    "options": ["80 quả", "90 quả", "100 quả", "110 quả"],
+    "answer": 1
+  },
+  {
+    "id": 79,
+    "question": "Hai đường thẳng song song là hai đường thẳng như thế nào?",
+    "options": ["Cắt nhau", "Cắt nhau tạo thành góc vuông", "Không bao giờ cắt nhau", "Trùng nhau"],
+    "answer": 2
+  },
+  {
+    "id": 80,
+    "question": "Diện tích hình tròn được tính bằng công thức nào?",
+    "options": ["$r times r times pi$", "$d times pi$", "$2 times r$", "$d + r$"],
+    "answer": 0
+  },
+  {
+    "id": 81,
+    "question": "45678 + 21098 = ?",
+    "options": ["66700", "66770", "66776", "66800"],
+    "answer": 2
+  },
+  {
+    "id": 82,
+    "question": "87654 - 45678 = ?",
+    "options": ["41900", "41976", "41980", "42000"],
+    "answer": 1
+  },
+  {
+    "id": 83,
+    "question": "150 x 5 = ?",
+    "options": ["700", "750", "800", "850"],
+    "answer": 1
+  },
+  {
+    "id": 84,
+    "question": "540 : 6 = ?",
+    "options": ["80", "90", "100", "110"],
+    "answer": 1
+  },
+  {
+    "id": 85,
+    "question": "Chữ số 0 trong số 50789 có giá trị là bao nhiêu?",
+    "options": ["0 đơn vị", "0 chục", "0 trăm", "0 nghìn"],
+    "answer": 2
+  },
+  {
+    "id": 86,
+    "question": "Quy đồng mẫu số hai phân số $2/5$ và $1/2$ ta được hai phân số nào?",
+    "options": ["$4/10$ và $5/10$", "$2/10$ và $1/10$", "$2/5$ và $1/2$", "$4/5$ và $5/5$"],
+    "answer": 0
+  },
+  {
+    "id": 87,
+    "question": "Diện tích hình chữ nhật có chiều dài 30 cm và chiều rộng 15 cm là bao nhiêu?",
+    "options": ["45 cm$^2$", "90 cm$^2$", "300 cm$^2$", "450 cm$^2$"],
+    "answer": 3
+  },
+  {
+    "id": 88,
+    "question": "Một đội công nhân có 80 người. Buổi sáng có $1/4$ số công nhân nghỉ. Buổi sáng có bao nhiêu công nhân nghỉ?",
+    "options": ["10 người", "15 người", "20 người", "25 người"],
+    "answer": 2
+  },
+  {
+    "id": 89,
+    "question": "Hai đường thẳng vuông góc là hai đường thẳng như thế nào?",
+    "options": ["Cắt nhau", "Không cắt nhau", "Cắt nhau tạo thành góc vuông", "Trùng nhau"],
+    "answer": 2
+  },
+  {
+    "id": 90,
+    "question": "Hình bình hành có mấy góc?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 2
+  },
+  {
+    "id": 91,
+    "question": "67890 + 21098 = ?",
+    "options": ["88900", "88988", "88990", "89000"],
+    "answer": 1
+  },
+  {
+    "id": 92,
+    "question": "98765 - 45678 = ?",
+    "options": ["53000", "53087", "53080", "53090"],
+    "answer": 1
+  },
+  {
+    "id": 93,
+    "question": "234 x 3 = ?",
+    "options": ["700", "702", "704", "710"],
+    "answer": 1
+  },
+  {
+    "id": 94,
+    "question": "720 : 9 = ?",
+    "options": ["70", "80", "90", "100"],
+    "answer": 1
+  },
+  {
+    "id": 95,
+    "question": "Số lớn nhất có 4 chữ số khác nhau là?",
+    "options": ["9876", "9999", "9870", "9867"],
+    "answer": 0
+  },
+  {
+    "id": 96,
+    "question": "Cộng hai phân số: $1/2 + 1/3 = ?$",
+    "options": ["$2/5$", "$5/6$", "$1/6$", "$3/5$"],
+    "answer": 1
+  },
+  {
+    "id": 97,
+    "question": "Chu vi hình vuông có cạnh 30 cm là bao nhiêu?",
+    "options": ["60 cm", "90 cm", "120 cm", "900 cm"],
+    "answer": 2
+  },
+  {
+    "id": 98,
+    "question": "Một người bán hàng có 500 quả trứng. Buổi sáng bán $3/5$ số trứng. Buổi sáng bán được bao nhiêu quả?",
+    "options": ["100 quả", "200 quả", "300 quả", "400 quả"],
+    "answer": 2
+  },
+  {
+    "id": 99,
+    "question": "Góc nhọn lớn hơn góc tù đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 1
+  },
+  {
+    "id": 100,
+    "question": "Hình thoi có các góc đối như thế nào?",
+    "options": ["Bằng nhau", "Không bằng nhau", "Bù nhau", "Phụ nhau"],
+    "answer": 0
+  },
+  {
+    "id": 101,
+    "question": "34567 + 56789 = ?",
+    "options": ["91350", "91356", "91357", "91360"],
+    "answer": 1
+  },
+  {
+    "id": 102,
+    "question": "87654 - 23456 = ?",
+    "options": ["64198", "64200", "64208", "64210"],
+    "answer": 0
+  },
+  {
+    "id": 103,
+    "question": "305 x 5 = ?",
+    "options": ["1500", "1520", "1525", "1530"],
+    "answer": 2
+  },
+  {
+    "id": 104,
+    "question": "810 : 3 = ?",
+    "options": ["200", "250", "270", "300"],
+    "answer": 2
+  },
+  {
+    "id": 105,
+    "question": "Số tròn nghìn bé nhất có 5 chữ số là?",
+    "options": ["9000", "10000", "11000", "1000"],
+    "answer": 1
+  },
+  {
+    "id": 106,
+    "question": "Trừ hai phân số: $5/6 - 1/3 = ?$",
+    "options": ["$1/6$", "$2/6$", "$3/6$", "$4/6$"],
+    "answer": 2
+  },
+  {
+    "id": 107,
+    "question": "Diện tích hình chữ nhật có chiều dài 40 cm và chiều rộng 20 cm là bao nhiêu?",
+    "options": ["60 cm$^2$", "120 cm$^2$", "400 cm$^2$", "800 cm$^2$"],
+    "answer": 3
+  },
+  {
+    "id": 108,
+    "question": "Một người đi xe đạp đi được 2 giờ. Giờ đầu đi 15 km, giờ sau đi 12 km. Hỏi quãng đường trung bình mỗi giờ người đó đi được là bao nhiêu?",
+    "options": ["10 km", "12 km", "13.5 km", "14 km"],
+    "answer": 2
+  },
+  {
+    "id": 109,
+    "question": "Hình thang có diện tích được tính bằng công thức nào?",
+    "options": ["$(a+b) \times h div 2$", "$a \times h$", "$(a+b) \times h$", "$a \times b$"],
+    "answer": 0
+  },
+  {
+    "id": 110,
+    "question": "Đường kính là đoạn thẳng nối hai điểm trên đường tròn và đi qua điểm nào?",
+    "options": ["Tâm", "Bán kính", "Bất kỳ điểm nào", "Không có"],
+    "answer": 0
+  },
+  {
+    "id": 111,
+    "question": "67890 + 34567 = ?",
+    "options": ["102400", "102457", "102460", "102500"],
+    "answer": 1
+  },
+  {
+    "id": 112,
+    "question": "98765 - 54321 = ?",
+    "options": ["44400", "44444", "44440", "44442"],
+    "answer": 1
+  },
+  {
+    "id": 113,
+    "question": "456 x 2 = ?",
+    "options": ["900", "910", "912", "920"],
+    "answer": 2
+  },
+  {
+    "id": 114,
+    "question": "960 : 3 = ?",
+    "options": ["300", "310", "320", "330"],
+    "answer": 2
+  },
+  {
+    "id": 115,
+    "question": "Số liền sau của số 99999 là?",
+    "options": ["99998", "100000", "100001", "99990"],
+    "answer": 1
+  },
+  {
+    "id": 116,
+    "question": "Cộng ba phân số: $1/5 + 2/5 + 1/5 = ?$",
+    "options": ["$3/5$", "$4/5$", "$5/5$", "$4/15$"],
+    "answer": 1
+  },
+  {
+    "id": 117,
+    "question": "Chu vi hình chữ nhật có chiều dài 50 cm và chiều rộng 25 cm là bao nhiêu?",
+    "options": ["75 cm", "100 cm", "150 cm", "1250 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 118,
+    "question": "Một người bán 240 kg cam. Đã bán được $1/4$ số cam. Người đó còn lại bao nhiêu kg cam?",
+    "options": ["60 kg", "120 kg", "180 kg", "200 kg"],
+    "answer": 2
+  },
+  {
+    "id": 119,
+    "question": "Hình thoi có mấy góc tù và mấy góc nhọn?",
+    "options": ["2 góc tù, 2 góc nhọn", "1 góc tù, 3 góc nhọn", "Tất cả là góc vuông", "Không có góc tù"],
+    "answer": 0
+  },
+  {
+    "id": 120,
+    "question": "Tứ giác là hình có mấy cạnh?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 2
+  },
+  {
+    "id": 121,
+    "question": "89012 + 12345 = ?",
+    "options": ["101350", "101357", "101358", "101360"],
+    "answer": 1
+  },
+  {
+    "id": 122,
+    "question": "98765 - 67890 = ?",
+    "options": ["30800", "30875", "30870", "30880"],
+    "answer": 1
+  },
+  {
+    "id": 123,
+    "question": "507 x 3 = ?",
+    "options": ["1500", "1520", "1521", "1530"],
+    "answer": 2
+  },
+  {
+    "id": 124,
+    "question": "1000 : 5 = ?",
+    "options": ["150", "200", "250", "300"],
+    "answer": 1
+  },
+  {
+    "id": 125,
+    "question": "Giá trị của chữ số 9 trong số 98765 là?",
+    "options": ["9 đơn vị", "9 chục", "9 nghìn", "9 chục nghìn"],
+    "answer": 3
+  },
+  {
+    "id": 126,
+    "question": "So sánh hai phân số: $3/4$ ... $6/8$",
+    "options": [">", "<", "="],
+    "answer": 2
+  },
+  {
+    "id": 127,
+    "question": "Diện tích hình vuông có chu vi 36 cm là bao nhiêu?",
+    "options": ["9 cm$^2$", "18 cm$^2$", "36 cm$^2$", "81 cm$^2$"],
+    "answer": 3
+  },
+  {
+    "id": 128,
+    "question": "Một người bán 180 bông hoa. Đã bán $2/3$ số bông hoa. Còn lại bao nhiêu bông hoa?",
+    "options": ["30 bông", "60 bông", "90 bông", "120 bông"],
+    "answer": 1
+  },
+  {
+    "id": 129,
+    "question": "Đường chéo của hình chữ nhật có đặc điểm gì?",
+    "options": ["Vuông góc với nhau", "Bằng nhau và cắt nhau tại trung điểm của mỗi đường", "Song song với nhau", "Không có"],
+    "answer": 1
+  },
+  {
+    "id": 130,
+    "question": "Bán kính hình tròn là đoạn thẳng nối tâm với điểm nào trên đường tròn?",
+    "options": ["Điểm bất kỳ", "Điểm cuối đường kính", "Điểm ngoài đường tròn", "Điểm nằm trên đường tròn"],
+    "answer": 3
+  },
+  {
+    "id": 131,
+    "question": "12345 + 87654 = ?",
+    "options": ["100000", "100000", "100000", "99999"],
+    "answer": 2
+  },
+  {
+    "id": 132,
+    "question": "87654 - 12345 = ?",
+    "options": ["75300", "75309", "75310", "75311"],
+    "answer": 0
+  },
+  {
+    "id": 133,
+    "question": "678 x 2 = ?",
+    "options": ["1350", "1356", "1360", "1370"],
+    "answer": 1
+  },
+  {
+    "id": 134,
+    "question": "1500 : 3 = ?",
+    "options": ["400", "500", "600", "700"],
+    "answer": 1
+  },
+  {
+    "id": 135,
+    "question": "Số liền trước của 100000 là?",
+    "options": ["99998", "99999", "100001", "99990"],
+    "answer": 1
+  },
+  {
+    "id": 136,
+    "question": "Cộng hai phân số: $1/2 + 1/4 = ?$",
+    "options": ["$2/6$", "$3/4$", "$1/4$", "$3/8$"],
+    "answer": 1
+  },
+  {
+    "id": 137,
+    "question": "Diện tích hình chữ nhật có chu vi 40 cm và chiều rộng 8 cm là bao nhiêu?",
+    "options": ["32 cm$^2$", "64 cm$^2$", "96 cm$^2$", "128 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 138,
+    "question": "Một người bán được 300 kg gạo. Trong đó có $1/5$ là gạo nếp. Có bao nhiêu kg gạo nếp?",
+    "options": ["50 kg", "60 kg", "70 kg", "80 kg"],
+    "answer": 1
+  },
+  {
+    "id": 139,
+    "question": "Hình tròn là hình không có gì?",
+    "options": ["Cạnh", "Góc", "Đỉnh", "Cả A, B, C"],
+    "answer": 3
+  },
+  {
+    "id": 140,
+    "question": "Đoạn thẳng là gì?",
+    "options": ["Một đường cong", "Một đường thẳng kéo dài vô tận", "Một phần của đường thẳng bị giới hạn bởi hai điểm", "Một điểm"],
+    "answer": 2
+  },
+  {
+    "id": 141,
+    "question": "23456 + 78901 = ?",
+    "options": ["102350", "102357", "102350", "102360"],
+    "answer": 1
+  },
+  {
+    "id": 142,
+    "question": "98765 - 10000 = ?",
+    "options": ["88765", "88700", "88750", "88800"],
+    "answer": 0
+  },
+  {
+    "id": 143,
+    "question": "1234 x 2 = ?",
+    "options": ["2460", "2468", "2470", "2480"],
+    "answer": 1
+  },
+  {
+    "id": 144,
+    "question": "2000 : 4 = ?",
+    "options": ["400", "500", "600", "700"],
+    "answer": 1
+  },
+  {
+    "id": 145,
+    "question": "Số lớn nhất có 6 chữ số khác nhau là?",
+    "options": ["987654", "999999", "987650", "987645"],
+    "answer": 0
+  },
+  {
+    "id": 146,
+    "question": "Trừ hai phân số: $3/4 - 1/2 = ?$",
+    "options": ["$1/2$", "$1/4$", "$1/8$", "$2/4$"],
+    "answer": 1
+  },
+  {
+    "id": 147,
+    "question": "Diện tích hình vuông có chu vi 60 cm là bao nhiêu?",
+    "options": ["15 cm$^2$", "30 cm$^2$", "225 cm$^2$", "450 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 148,
+    "question": "Một người thợ may 180 chiếc áo. Đã bán $1/3$ số áo và $1/6$ số áo. Hỏi đã bán được bao nhiêu chiếc áo?",
+    "options": ["60 chiếc", "90 chiếc", "120 chiếc", "150 chiếc"],
+    "answer": 2
+  },
+  {
+    "id": 149,
+    "question": "Hình bình hành có các cạnh đối diện như thế nào?",
+    "options": ["Không bằng nhau", "Bằng nhau và song song", "Vuông góc", "Cắt nhau"],
+    "answer": 1
+  },
+  {
+    "id": 150,
+    "question": "Nửa chu vi hình chữ nhật là tổng của chiều dài và chiều rộng đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 151,
+    "question": "45678 + 54321 = ?",
+    "options": ["99990", "99999", "100000", "100000"],
+    "answer": 1
+  },
+  {
+    "id": 152,
+    "question": "87654 - 23456 = ?",
+    "options": ["64198", "64200", "64208", "64210"],
+    "answer": 0
+  },
+  {
+    "id": 153,
+    "question": "345 x 3 = ?",
+    "options": ["1000", "1030", "1035", "1040"],
+    "answer": 2
+  },
+  {
+    "id": 154,
+    "question": "2500 : 5 = ?",
+    "options": ["400", "500", "600", "700"],
+    "answer": 1
+  },
+  {
+    "id": 155,
+    "question": "Số bé nhất có 6 chữ số khác nhau là?",
+    "options": ["102345", "100000", "123456", "100234"],
+    "answer": 0
+  },
+  {
+    "id": 156,
+    "question": "Cộng hai phân số: $2/3 + 1/6 = ?$",
+    "options": ["$3/9$", "$3/6$", "$5/6$", "$4/6$"],
+    "answer": 2
+  },
+  {
+    "id": 157,
+    "question": "Diện tích hình chữ nhật có chu vi 60 cm và chiều dài 20 cm là bao nhiêu?",
+    "options": ["100 cm$^2$", "200 cm$^2$", "300 cm$^2$", "400 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 158,
+    "question": "Một người bán 400 kg gạo. Buổi sáng bán được $1/4$ số gạo. Buổi chiều bán thêm 100 kg. Người đó còn lại bao nhiêu kg gạo?",
+    "options": ["150 kg", "200 kg", "250 kg", "300 kg"],
+    "answer": 1
+  },
+  {
+    "id": 159,
+    "question": "Góc nhọn có mấy cạnh và mấy đỉnh?",
+    "options": ["1 cạnh, 1 đỉnh", "2 cạnh, 1 đỉnh", "2 cạnh, 2 đỉnh", "3 cạnh, 3 đỉnh"],
+    "answer": 1
+  },
+  {
+    "id": 160,
+    "question": "Hình tam giác đều có mấy cạnh bằng nhau?",
+    "options": ["1", "2", "3", "Không có"],
+    "answer": 2
+  },
+  {
+    "id": 161,
+    "question": "67890 + 34567 = ?",
+    "options": ["102450", "102457", "102460", "102500"],
+    "answer": 1
+  },
+  {
+    "id": 162,
+    "question": "98765 - 12345 = ?",
+    "options": ["86400", "86420", "86420", "86422"],
+    "answer": 0
+  },
+  {
+    "id": 163,
+    "question": "500 x 4 = ?",
+    "options": ["1000", "1500", "2000", "2500"],
+    "answer": 2
+  },
+  {
+    "id": 164,
+    "question": "3600 : 6 = ?",
+    "options": ["500", "600", "700", "800"],
+    "answer": 1
+  },
+  {
+    "id": 165,
+    "question": "Trong số 54321, chữ số 3 thuộc hàng nào?",
+    "options": ["Hàng đơn vị", "Hàng chục", "Hàng trăm", "Hàng nghìn"],
+    "answer": 2
+  },
+  {
+    "id": 166,
+    "question": "Trừ hai phân số: $7/10 - 2/5 = ?$",
+    "options": ["$3/10$", "$4/10$", "$5/10$", "$1/2$"],
+    "answer": 0
+  },
+  {
+    "id": 167,
+    "question": "Diện tích hình chữ nhật có chu vi 80 cm và chiều dài 25 cm là bao nhiêu?",
+    "options": ["150 cm$^2$", "200 cm$^2$", "300 cm$^2$", "375 cm$^2$"],
+    "answer": 3
+  },
+  {
+    "id": 168,
+    "question": "Một thửa ruộng thu hoạch được 1000 kg thóc. Buổi sáng bán được 350 kg, buổi chiều bán được 400 kg. Hỏi còn lại bao nhiêu kg thóc?",
+    "options": ["200 kg", "250 kg", "300 kg", "350 kg"],
+    "answer": 1
+  },
+  {
+    "id": 169,
+    "question": "Hình tam giác có mấy cạnh?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 1
+  },
+  {
+    "id": 170,
+    "question": "Điểm là gì?",
+    "options": ["Một đường thẳng", "Một đường cong", "Một vị trí xác định, không có kích thước", "Một hình"],
+    "answer": 2
+  },
+  {
+    "id": 171,
+    "question": "78901 + 12345 = ?",
+    "options": ["91240", "91246", "91247", "91250"],
+    "answer": 1
+  },
+  {
+    "id": 172,
+    "question": "98765 - 34567 = ?",
+    "options": ["64198", "64200", "64208", "64210"],
+    "answer": 0
+  },
+  {
+    "id": 173,
+    "question": "1200 x 3 = ?",
+    "options": ["3000", "3500", "3600", "4000"],
+    "answer": 2
+  },
+  {
+    "id": 174,
+    "question": "4500 : 5 = ?",
+    "options": ["800", "900", "1000", "1100"],
+    "answer": 1
+  },
+  {
+    "id": 175,
+    "question": "Số tròn nghìn lớn nhất có 5 chữ số là?",
+    "options": ["99000", "99900", "99990", "99999"],
+    "answer": 0
+  },
+  {
+    "id": 176,
+    "question": "Cộng ba phân số: $1/4 + 1/4 + 1/4 = ?$",
+    "options": ["$2/4$", "$3/4$", "$4/4$", "$1/2$"],
+    "answer": 1
+  },
+  {
+    "id": 177,
+    "question": "Chu vi hình vuông có diện tích 49 cm$^2$ là bao nhiêu?",
+    "options": ["7 cm", "14 cm", "28 cm", "49 cm"],
+    "answer": 2
+  },
+  {
+    "id": 178,
+    "question": "Một người bán hoa quả. Ngày đầu bán 150 kg, ngày sau bán gấp đôi ngày đầu. Cả hai ngày bán được bao nhiêu kg hoa quả?",
+    "options": ["300 kg", "400 kg", "450 kg", "500 kg"],
+    "answer": 2
+  },
+  {
+    "id": 179,
+    "question": "Góc vuông lớn hơn góc tù đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 1
+  },
+  {
+    "id": 180,
+    "question": "Hình thoi là hình có mấy cặp cạnh song song?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 2
+  },
+  {
+    "id": 181,
+    "question": "56789 + 12345 = ?",
+    "options": ["69130", "69134", "69135", "69140"],
+    "answer": 1
+  },
+  {
+    "id": 182,
+    "question": "98765 - 45678 = ?",
+    "options": ["53080", "53087", "53090", "53100"],
+    "answer": 1
+  },
+  {
+    "id": 183,
+    "question": "2500 x 2 = ?",
+    "options": ["4000", "4500", "5000", "5500"],
+    "answer": 2
+  },
+  {
+    "id": 184,
+    "question": "3000 : 6 = ?",
+    "options": ["400", "500", "600", "700"],
+    "answer": 1
+  },
+  {
+    "id": 185,
+    "question": "1 tấn = ? kg",
+    "options": ["10", "100", "1000", "10000"],
+    "answer": 2
+  },
+  {
+    "id": 186,
+    "question": "Trừ hai phân số: $9/10 - 2/5 = ?$",
+    "options": ["$3/10$", "$4/10$", "$5/10$", "$1/2$"],
+    "answer": 2
+  },
+  {
+    "id": 187,
+    "question": "Diện tích hình chữ nhật có chu vi 50 cm và chiều dài 15 cm là bao nhiêu?",
+    "options": ["100 cm$^2$", "120 cm$^2$", "150 cm$^2$", "180 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 188,
+    "question": "Một người công nhân may 120 chiếc áo. Đã may xong $1/4$ số áo. Còn lại bao nhiêu chiếc áo phải may?",
+    "options": ["30 chiếc", "60 chiếc", "90 chiếc", "100 chiếc"],
+    "answer": 2
+  },
+  {
+    "id": 189,
+    "question": "Hình vuông có mấy đường chéo?",
+    "options": ["1", "2", "3", "4"],
+    "answer": 1
+  },
+  {
+    "id": 190,
+    "question": "Tia là gì?",
+    "options": ["Một đoạn thẳng", "Một đường thẳng kéo dài vô tận về hai phía", "Một phần của đường thẳng bị giới hạn bởi một điểm và kéo dài vô tận về một phía", "Một đường cong"],
+    "answer": 2
+  },
+  {
+    "id": 191,
+    "question": "67890 + 45678 = ?",
+    "options": ["113560", "113568", "113570", "114000"],
+    "answer": 1
+  },
+  {
+    "id": 192,
+    "question": "98765 - 54321 = ?",
+    "options": ["44440", "44444", "44446", "44450"],
+    "answer": 1
+  },
+  {
+    "id": 193,
+    "question": "3456 x 2 = ?",
+    "options": ["6900", "6910", "6912", "6920"],
+    "answer": 2
+  },
+  {
+    "id": 194,
+    "question": "4000 : 8 = ?",
+    "options": ["400", "500", "600", "700"],
+    "answer": 1
+  },
+  {
+    "id": 195,
+    "question": "1 tạ = ? kg",
+    "options": ["10", "50", "100", "1000"],
+    "answer": 2
+  },
+  {
+    "id": 196,
+    "question": "Cộng hai phân số: $1/3 + 2/9 = ?$",
+    "options": ["$3/9$", "$4/9$", "$5/9$", "$6/9$"],
+    "answer": 2
+  },
+  {
+    "id": 197,
+    "question": "Chu vi hình chữ nhật có diện tích 100 cm$^2$ và chiều dài 20 cm là bao nhiêu?",
+    "options": ["25 cm", "30 cm", "40 cm", "50 cm"],
+    "answer": 2
+  },
+  {
+    "id": 198,
+    "question": "Một người bán trứng, buổi sáng bán được 250 quả, buổi chiều bán được $1/5$ số trứng buổi sáng. Buổi chiều bán được bao nhiêu quả?",
+    "options": ["40 quả", "50 quả", "60 quả", "70 quả"],
+    "answer": 1
+  },
+  {
+    "id": 199,
+    "question": "Đường thẳng là gì?",
+    "options": ["Một đoạn thẳng", "Một đường kéo dài vô tận về một phía", "Một đường kéo dài vô tận về hai phía", "Một đường cong"],
+    "answer": 2
+  },
+  {
+    "id": 200,
+    "question": "Hình tam giác vuông có mấy góc vuông?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 1
+  },
+  {
+    "id": 201,
+    "question": "100000 + 12345 = ?",
+    "options": ["112340", "112345", "112350", "112400"],
+    "answer": 1
+  },
+  {
+    "id": 202,
+    "question": "20000 - 12345 = ?",
+    "options": ["7650", "7655", "7660", "7700"],
+    "answer": 1
+  },
+  {
+    "id": 203,
+    "question": "5678 x 10 = ?",
+    "options": ["56780", "567800", "5678", "5678000"],
+    "answer": 0
+  },
+  {
+    "id": 204,
+    "question": "12300 : 3 = ?",
+    "options": ["4000", "4100", "4200", "4300"],
+    "answer": 1
+  },
+  {
+    "id": 205,
+    "question": "1 kg = ? lạng",
+    "options": ["5", "8", "10", "12"],
+    "answer": 2
+  },
+  {
+    "id": 206,
+    "question": "Trừ hai phân số: $5/7 - 1/2 = ?$",
+    "options": ["$1/14$", "$2/14$", "$3/14$", "$4/14$"],
+    "answer": 2
+  },
+  {
+    "id": 207,
+    "question": "Diện tích hình vuông có chu vi 80 cm là bao nhiêu?",
+    "options": ["20 cm$^2$", "40 cm$^2$", "160 cm$^2$", "400 cm$^2$"],
+    "answer": 3
+  },
+  {
+    "id": 208,
+    "question": "Một thửa ruộng hình chữ nhật có chu vi 120 m. Chiều dài hơn chiều rộng 20 m. Chiều rộng của thửa ruộng là bao nhiêu?",
+    "options": ["10 m", "20 m", "30 m", "40 m"],
+    "answer": 1
+  },
+  {
+    "id": 209,
+    "question": "Hình bình hành có mấy góc tù và mấy góc nhọn?",
+    "options": ["2 góc tù, 2 góc nhọn", "1 góc tù, 3 góc nhọn", "Tất cả là góc vuông", "Không có góc tù"],
+    "answer": 0
+  },
+  {
+    "id": 210,
+    "question": "Góc nhọn có số đo lớn nhất là bao nhiêu độ (số nguyên)?",
+    "options": ["88 độ", "89 độ", "90 độ", "91 độ"],
+    "answer": 1
+  },
+  {
+    "id": 211,
+    "question": "12345 + 98765 = ?",
+    "options": ["111100", "111110", "111110", "111110"],
+    "answer": 2
+  },
+  {
+    "id": 212,
+    "question": "87654 - 34567 = ?",
+    "options": ["53080", "53087", "53090", "53100"],
+    "answer": 1
+  },
+  {
+    "id": 213,
+    "question": "3456 x 3 = ?",
+    "options": ["10300", "10360", "10368", "10370"],
+    "answer": 2
+  },
+  {
+    "id": 214,
+    "question": "5000 : 5 = ?",
+    "options": ["800", "900", "1000", "1100"],
+    "answer": 2
+  },
+  {
+    "id": 215,
+    "question": "1 km = ? mm",
+    "options": ["1000", "10000", "100000", "1000000"],
+    "answer": 3
+  },
+  {
+    "id": 216,
+    "question": "Cộng hai phân số: $1/2 + 1/5 = ?$",
+    "options": ["$3/10$", "$5/10$", "$6/10$", "$7/10$"],
+    "answer": 3
+  },
+  {
+    "id": 217,
+    "question": "Diện tích hình chữ nhật có chu vi 100 cm và chiều rộng 20 cm là bao nhiêu?",
+    "options": ["300 cm$^2$", "600 cm$^2$", "1000 cm$^2$", "1200 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 218,
+    "question": "Một cửa hàng có 500 kg gạo. Đã bán $2/5$ số gạo. Còn lại bao nhiêu kg gạo?",
+    "options": ["100 kg", "200 kg", "300 kg", "400 kg"],
+    "answer": 2
+  },
+  {
+    "id": 219,
+    "question": "Hình thoi có các đường chéo vuông góc với nhau đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 220,
+    "question": "Góc tù có số đo nhỏ nhất là bao nhiêu độ (số nguyên)?",
+    "options": ["89 độ", "90 độ", "91 độ", "92 độ"],
+    "answer": 2
+  },
+  {
+    "id": 221,
+    "question": "23456 + 78901 = ?",
+    "options": ["102350", "102357", "102350", "102360"],
+    "answer": 1
+  },
+  {
+    "id": 222,
+    "question": "98765 - 10000 = ?",
+    "options": ["88765", "88700", "88750", "88800"],
+    "answer": 0
+  },
+  {
+    "id": 223,
+    "question": "12345 x 2 = ?",
+    "options": ["24680", "24690", "24690", "24690"],
+    "answer": 2
+  },
+  {
+    "id": 224,
+    "question": "6000 : 6 = ?",
+    "options": ["900", "1000", "1100", "1200"],
+    "answer": 1
+  },
+  {
+    "id": 225,
+    "question": "1 km = ? dm",
+    "options": ["100", "1000", "10000", "100000"],
+    "answer": 2
+  },
+  {
+    "id": 226,
+    "question": "Trừ hai phân số: $3/4 - 1/8 = ?$",
+    "options": ["$2/8$", "$3/8$", "$4/8$", "$5/8$"],
+    "answer": 3
+  },
+  {
+    "id": 227,
+    "question": "Diện tích hình vuông có chu vi 100 cm là bao nhiêu?",
+    "options": ["25 cm$^2$", "50 cm$^2$", "625 cm$^2$", "1000 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 228,
+    "question": "Một cửa hàng có 600 lít dầu. Ngày đầu bán 150 lít, ngày sau bán gấp đôi ngày đầu. Còn lại bao nhiêu lít dầu?",
+    "options": ["150 lít", "200 lít", "250 lít", "300 lít"],
+    "answer": 1
+  },
+  {
+    "id": 229,
+    "question": "Hình tam giác có mấy góc?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 1
+  },
+  {
+    "id": 230,
+    "question": "Tứ giác là hình có 4 đỉnh đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 231,
+    "question": "34567 + 67890 = ?",
+    "options": ["102450", "102457", "102460", "102500"],
+    "answer": 1
+  },
+  {
+    "id": 232,
+    "question": "98765 - 12345 = ?",
+    "options": ["86400", "86420", "86420", "86422"],
+    "answer": 0
+  },
+  {
+    "id": 233,
+    "question": "5678 x 2 = ?",
+    "options": ["11350", "11356", "11350", "11360"],
+    "answer": 1
+  },
+  {
+    "id": 234,
+    "question": "7200 : 9 = ?",
+    "options": ["700", "800", "900", "1000"],
+    "answer": 1
+  },
+  {
+    "id": 235,
+    "question": "1 dm = ? cm",
+    "options": ["10", "100", "1000", "10000"],
+    "answer": 0
+  },
+  {
+    "id": 236,
+    "question": "Cộng hai phân số: $1/4 + 3/8 = ?$",
+    "options": ["$4/12$", "$5/8$", "$6/8$", "$7/8$"],
+    "answer": 1
+  },
+  {
+    "id": 237,
+    "question": "Diện tích hình chữ nhật có chu vi 120 cm và chiều dài 40 cm là bao nhiêu?",
+    "options": ["400 cm$^2$", "800 cm$^2$", "1200 cm$^2$", "1600 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 238,
+    "question": "Một người bán rau có 150 kg rau. Buổi sáng bán $1/3$ số rau, buổi chiều bán $1/5$ số rau còn lại. Buổi chiều bán được bao nhiêu kg rau?",
+    "options": ["20 kg", "25 kg", "30 kg", "40 kg"],
+    "answer": 1
+  },
+  {
+    "id": 239,
+    "question": "Hình bình hành có các góc đối diện bằng nhau đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 240,
+    "question": "Góc nhọn có số đo nhỏ nhất là bao nhiêu độ (số nguyên)?",
+    "options": ["0 độ", "1 độ", "10 độ", "45 độ"],
+    "answer": 1
+  },
+  {
+    "id": 241,
+    "question": "56789 + 34567 = ?",
+    "options": ["91350", "91356", "91357", "91360"],
+    "answer": 1
+  },
+  {
+    "id": 242,
+    "question": "87654 - 21098 = ?",
+    "options": ["66550", "66556", "66560", "66600"],
+    "answer": 1
+  },
+  {
+    "id": 243,
+    "question": "4567 x 2 = ?",
+    "options": ["9100", "9130", "9134", "9140"],
+    "answer": 2
+  },
+  {
+    "id": 244,
+    "question": "8100 : 9 = ?",
+    "options": ["800", "900", "1000", "1100"],
+    "answer": 1
+  },
+  {
+    "id": 245,
+    "question": "1 m = ? mm",
+    "options": ["10", "100", "1000", "10000"],
+    "answer": 2
+  },
+  {
+    "id": 246,
+    "question": "Trừ hai phân số: $7/9 - 1/3 = ?$",
+    "options": ["$4/9$", "$5/9$", "$6/9$", "$7/9$"],
+    "answer": 1
+  },
+  {
+    "id": 247,
+    "question": "Diện tích hình chữ nhật có chu vi 140 cm và chiều dài 50 cm là bao nhiêu?",
+    "options": ["1000 cm$^2$", "1200 cm$^2$", "1500 cm$^2$", "1800 cm$^2$"],
+    "answer": 0
+  },
+  {
+    "id": 248,
+    "question": "Một kho gạo có 1000 kg gạo. Người ta đã bán $1/4$ số gạo. Còn lại bao nhiêu kg gạo?",
+    "options": ["250 kg", "500 kg", "750 kg", "800 kg"],
+    "answer": 2
+  },
+  {
+    "id": 249,
+    "question": "Đường chéo của hình thoi vuông góc với nhau đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 250,
+    "question": "Góc tù có số đo lớn nhất là bao nhiêu độ (số nguyên)?",
+    "options": ["178 độ", "179 độ", "180 độ", "181 độ"],
+    "answer": 1
+  },
+  {
+    "id": 251,
+    "question": "12345 + 56789 = ?",
+    "options": ["69130", "69134", "69135", "69140"],
+    "answer": 1
+  },
+  {
+    "id": 252,
+    "question": "98765 - 23456 = ?",
+    "options": ["75300", "75309", "75310", "75320"],
+    "answer": 1
+  },
+  {
+    "id": 253,
+    "question": "6789 x 10 = ?",
+    "options": ["67890", "678900", "6789", "6789000"],
+    "answer": 0
+  },
+  {
+    "id": 254,
+    "question": "15000 : 3 = ?",
+    "options": ["4000", "5000", "6000", "7000"],
+    "answer": 1
+  },
+  {
+    "id": 255,
+    "question": "1 cm = ? mm",
+    "options": ["10", "100", "1000", "10000"],
+    "answer": 0
+  },
+  {
+    "id": 256,
+    "question": "Cộng hai phân số: $3/5 + 1/10 = ?$",
+    "options": ["$4/15$", "$7/10$", "$8/10$", "$9/10$"],
+    "answer": 1
+  },
+  {
+    "id": 257,
+    "question": "Chu vi hình vuông có diện tích 100 cm$^2$ là bao nhiêu?",
+    "options": ["10 cm", "20 cm", "30 cm", "40 cm"],
+    "answer": 3
+  },
+  {
+    "id": 258,
+    "question": "Một đội công nhân làm 500 sản phẩm. Đã làm được $3/5$ số sản phẩm. Còn phải làm bao nhiêu sản phẩm nữa?",
+    "options": ["100 sản phẩm", "150 sản phẩm", "200 sản phẩm", "250 sản phẩm"],
+    "answer": 1
+  },
+  {
+    "id": 259,
+    "question": "Hình tam giác cân có mấy cạnh bằng nhau?",
+    "options": ["1", "2", "3", "Không có"],
+    "answer": 1
+  },
+  {
+    "id": 260,
+    "question": "Góc vuông lớn hơn góc tù đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 1
+  },
+  {
+    "id": 261,
+    "question": "67890 + 21098 = ?",
+    "options": ["88980", "88988", "88990", "89000"],
+    "answer": 1
+  },
+  {
+    "id": 262,
+    "question": "98765 - 45678 = ?",
+    "options": ["53080", "53087", "53090", "53100"],
+    "answer": 1
+  },
+  {
+    "id": 263,
+    "question": "2345 x 3 = ?",
+    "options": ["7000", "7030", "7035", "7040"],
+    "answer": 2
+  },
+  {
+    "id": 264,
+    "question": "24000 : 8 = ?",
+    "options": ["2000", "3000", "4000", "5000"],
+    "answer": 1
+  },
+  {
+    "id": 265,
+    "question": "1 phút = ? giây",
+    "options": ["30", "45", "60", "90"],
+    "answer": 2
+  },
+  {
+    "id": 266,
+    "question": "Trừ hai phân số: $1/2 - 1/4 = ?$",
+    "options": ["$1/2$", "$1/4$", "$1/8$", "$0$"],
+    "answer": 1
+  },
+  {
+    "id": 267,
+    "question": "Diện tích hình chữ nhật có chu vi 160 cm và chiều dài 50 cm là bao nhiêu?",
+    "options": ["1000 cm$^2$", "1500 cm$^2$", "2000 cm$^2$", "2500 cm$^2$"],
+    "answer": 0
+  },
+  {
+    "id": 268,
+    "question": "Một cửa hàng có 800 kg đường. Buổi sáng bán được $1/4$ số đường, buổi chiều bán được $1/2$ số đường còn lại. Buổi chiều bán được bao nhiêu kg đường?",
+    "options": ["100 kg", "150 kg", "200 kg", "250 kg"],
+    "answer": 1
+  },
+  {
+    "id": 269,
+    "question": "Hình tam giác có mấy đỉnh?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 1
+  },
+  {
+    "id": 270,
+    "question": "Đường chéo của hình vuông có đặc điểm gì?",
+    "options": ["Không bằng nhau", "Bằng nhau và cắt nhau tại trung điểm của mỗi đường", "Song song với nhau", "Chỉ cắt nhau tại một điểm"],
+    "answer": 1
+  },
+  {
+    "id": 271,
+    "question": "78901 + 34567 = ?",
+    "options": ["113460", "113468", "113468", "113460"],
+    "answer": 1
+  },
+  {
+    "id": 272,
+    "question": "98765 - 54321 = ?",
+    "options": ["44440", "44444", "44446", "44450"],
+    "answer": 1
+  },
+  {
+    "id": 273,
+    "question": "4567 x 10 = ?",
+    "options": ["45670", "456700", "4567", "4567000"],
+    "answer": 0
+  },
+  {
+    "id": 274,
+    "question": "36000 : 9 = ?",
+    "options": ["3000", "4000", "5000", "6000"],
+    "answer": 1
+  },
+  {
+    "id": 275,
+    "question": "1 giờ = ? giây",
+    "options": ["60", "360", "600", "3600"],
+    "answer": 3
+  },
+  {
+    "id": 276,
+    "question": "Cộng hai phân số: $1/2 + 3/4 = ?$",
+    "options": ["$4/6$", "$5/4$", "$6/8$", "$7/8$"],
+    "answer": 1
+  },
+  {
+    "id": 277,
+    "question": "Chu vi hình vuông có diện tích 225 cm$^2$ là bao nhiêu?",
+    "options": ["15 cm", "30 cm", "45 cm", "60 cm"],
+    "answer": 3
+  },
+  {
+    "id": 278,
+    "question": "Một đội công nhân xây 250 m đường. Ngày đầu xây được $1/5$ quãng đường. Ngày thứ hai xây được $1/2$ quãng đường còn lại. Ngày thứ hai xây được bao nhiêu mét?",
+    "options": ["50 m", "75 m", "100 m", "125 m"],
+    "answer": 1
+  },
+  {
+    "id": 279,
+    "question": "Hình thoi có các cạnh bằng nhau đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 280,
+    "question": "Góc bẹt là góc có số đo lớn gấp đôi góc vuông đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 281,
+    "question": "89012 + 10987 = ?",
+    "options": ["99990", "99999", "100000", "100000"],
+    "answer": 1
+  },
+  {
+    "id": 282,
+    "question": "98765 - 12345 = ?",
+    "options": ["86400", "86420", "86420", "86422"],
+    "answer": 0
+  },
+  {
+    "id": 283,
+    "question": "56789 x 10 = ?",
+    "options": ["567890", "5678900", "56789", "56789000"],
+    "answer": 0
+  },
+  {
+    "id": 284,
+    "question": "40000 : 8 = ?",
+    "options": ["4000", "5000", "6000", "7000"],
+    "answer": 1
+  },
+  {
+    "id": 285,
+    "question": "1 phút = ? giây",
+    "options": ["30", "45", "60", "90"],
+    "answer": 2
+  },
+  {
+    "id": 286,
+    "question": "Trừ hai phân số: $7/10 - 1/5 = ?$",
+    "options": ["$3/10$", "$4/10$", "$5/10$", "$1/2$"],
+    "answer": 2
+  },
+  {
+    "id": 287,
+    "question": "Diện tích hình chữ nhật có chiều dài 25 cm và chiều rộng 10 cm là bao nhiêu?",
+    "options": ["35 cm$^2$", "70 cm$^2$", "250 cm$^2$", "300 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 288,
+    "question": "Một người bán 360 kg trái cây. Sau khi bán $1/3$ số trái cây, người đó còn lại bao nhiêu kg?",
+    "options": ["120 kg", "180 kg", "240 kg", "300 kg"],
+    "answer": 2
+  },
+  {
+    "id": 289,
+    "question": "Hình tam giác có tổng số đo các góc là bao nhiêu?",
+    "options": ["90 độ", "180 độ", "270 độ", "360 độ"],
+    "answer": 1
+  },
+  {
+    "id": 290,
+    "question": "Hình tròn có tâm đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 291,
+    "question": "12345 + 67890 = ?",
+    "options": ["80230", "80235", "80230", "80240"],
+    "answer": 1
+  },
+  {
+    "id": 292,
+    "question": "98765 - 23456 = ?",
+    "options": ["75300", "75309", "75310", "75320"],
+    "answer": 1
+  },
+  {
+    "id": 293,
+    "question": "34567 x 10 = ?",
+    "options": ["345670", "3456700", "34567", "34567000"],
+    "answer": 0
+  },
+  {
+    "id": 294,
+    "question": "45000 : 9 = ?",
+    "options": ["4000", "5000", "6000", "7000"],
+    "answer": 1
+  },
+  {
+    "id": 295,
+    "question": "1 giờ = ? phút",
+    "options": ["30", "45", "60", "90"],
+    "answer": 2
+  },
+  {
+    "id": 296,
+    "question": "Cộng hai phân số: $1/4 + 1/2 = ?$",
+    "options": ["$2/6$", "$3/4$", "$1/4$", "$3/8$"],
+    "answer": 1
+  },
+  {
+    "id": 297,
+    "question": "Chu vi hình chữ nhật có chiều dài 20 cm và chiều rộng 10 cm là bao nhiêu?",
+    "options": ["30 cm", "50 cm", "60 cm", "200 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 298,
+    "question": "Một kho hàng có 1200 tấn xi măng. Người ta đã xuất $1/3$ số xi măng. Kho còn lại bao nhiêu tấn?",
+    "options": ["400 tấn", "600 tấn", "800 tấn", "900 tấn"],
+    "answer": 2
+  },
+  {
+    "id": 299,
+    "question": "Hình chữ nhật có các góc đối diện bằng nhau đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 0
+  },
+  {
+    "id": 300,
+    "question": "Một góc tù có thể là 90 độ đúng hay sai?",
+    "options": ["Đúng", "Sai"],
+    "answer": 1
+  }
+]

@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "question": "15 + 7 = ?",
+    "options": ["20", "21", "22", "23"],
+    "answer": 2
+  },
+  {
+    "id": 2,
+    "question": "30 - 8 = ?",
+    "options": ["20", "22", "24", "26"],
+    "answer": 1
+  },
+  {
+    "id": 3,
+    "question": "Số nào có giá trị hàng chục là 5?",
+    "options": ["25", "51", "15", "5"],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "question": "Hình vuông có mấy góc vuông?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 2
+  },
+  {
+    "id": 5,
+    "question": "3 x 2 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 2
+  },
+  {
+    "id": 6,
+    "question": "20 : 4 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 1
+  },
+  {
+    "id": 7,
+    "question": "Số lớn nhất có hai chữ số là số nào?",
+    "options": ["90", "99", "100", "98"],
+    "answer": 1
+  },
+  {
+    "id": 8,
+    "question": "Một giờ có bao nhiêu phút?",
+    "options": ["30", "45", "60", "90"],
+    "answer": 2
+  },
+  {
+    "id": 9,
+    "question": "Điền số thích hợp vào chỗ trống: 20, 22, ___, 26",
+    "options": ["21", "23", "24", "25"],
+    "answer": 2
+  },
+  {
+    "id": 10,
+    "question": "Hình tam giác có mấy cạnh?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 1
+  },
+  {
+    "id": 11,
+    "question": "45 + 18 = ?",
+    "options": ["60", "61", "62", "63"],
+    "answer": 3
+  },
+  {
+    "id": 12,
+    "question": "52 - 14 = ?",
+    "options": ["36", "38", "40", "42"],
+    "answer": 1
+  },
+  {
+    "id": 13,
+    "question": "Số nào bé nhất có hai chữ số?",
+    "options": ["9", "10", "11", "20"],
+    "answer": 1
+  },
+  {
+    "id": 14,
+    "question": "Hình nào có các cạnh đối diện bằng nhau và song song?",
+    "options": ["Hình tam giác", "Hình tròn", "Hình vuông", "Hình chữ nhật"],
+    "answer": 3
+  },
+  {
+    "id": 15,
+    "question": "4 x 5 = ?",
+    "options": ["15", "18", "20", "25"],
+    "answer": 2
+  },
+  {
+    "id": 16,
+    "question": "25 : 5 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 1
+  },
+  {
+    "id": 17,
+    "question": "Số liền sau của 89 là số nào?",
+    "options": ["88", "90", "91", "100"],
+    "answer": 1
+  },
+  {
+    "id": 18,
+    "question": "Một ngày có bao nhiêu giờ?",
+    "options": ["12", "18", "24", "36"],
+    "answer": 2
+  },
+  {
+    "id": 19,
+    "question": "Có 3 chục và 4 đơn vị là số mấy?",
+    "options": ["30", "34", "43", "40"],
+    "answer": 1
+  },
+  {
+    "id": 20,
+    "question": "Hình nào không có đỉnh?",
+    "options": ["Hình vuông", "Hình tròn", "Hình tam giác", "Hình chữ nhật"],
+    "answer": 1
+  },
+  {
+    "id": 21,
+    "question": "68 + 25 = ?",
+    "options": ["90", "91", "92", "93"],
+    "answer": 2
+  },
+  {
+    "id": 22,
+    "question": "70 - 23 = ?",
+    "options": ["45", "47", "50", "53"],
+    "answer": 1
+  },
+  {
+    "id": 23,
+    "question": "Số nào lớn hơn 50 nhưng bé hơn 60?",
+    "options": ["49", "55", "61", "50"],
+    "answer": 1
+  },
+  {
+    "id": 24,
+    "question": "Một chục là bao nhiêu đơn vị?",
+    "options": ["5", "10", "20", "100"],
+    "answer": 1
+  },
+  {
+    "id": 25,
+    "question": "5 x 3 = ?",
+    "options": ["10", "12", "15", "18"],
+    "answer": 2
+  },
+  {
+    "id": 26,
+    "question": "30 : 6 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 1
+  },
+  {
+    "id": 27,
+    "question": "Số liền trước của 40 là số nào?",
+    "options": ["38", "39", "41", "42"],
+    "answer": 1
+  },
+  {
+    "id": 28,
+    "question": "Nếu hôm nay là thứ Ba, thì ngày mai là thứ mấy?",
+    "options": ["Thứ Hai", "Thứ Tư", "Thứ Năm", "Thứ Sáu"],
+    "answer": 1
+  },
+  {
+    "id": 29,
+    "question": "Số 75 gồm mấy chục và mấy đơn vị?",
+    "options": ["7 chục 0 đơn vị", "7 chục 5 đơn vị", "5 chục 7 đơn vị", "70 chục 5 đơn vị"],
+    "answer": 1
+  },
+  {
+    "id": 30,
+    "question": "Hình nào có 4 cạnh bằng nhau?",
+    "options": ["Hình chữ nhật", "Hình tam giác", "Hình vuông", "Hình tròn"],
+    "answer": 2
+  },
+  {
+    "id": 31,
+    "question": "37 + 46 = ?",
+    "options": ["80", "81", "82", "83"],
+    "answer": 2
+  },
+  {
+    "id": 32,
+    "question": "90 - 35 = ?",
+    "options": ["50", "55", "60", "65"],
+    "answer": 1
+  },
+  {
+    "id": 33,
+    "question": "Điền số thích hợp vào chỗ trống: 50, 45, ___, 35",
+    "options": ["40", "42", "48", "30"],
+    "answer": 0
+  },
+  {
+    "id": 34,
+    "question": "Một tá là bao nhiêu đơn vị?",
+    "options": ["10", "11", "12", "13"],
+    "answer": 2
+  },
+  {
+    "id": 35,
+    "question": "2 x 6 = ?",
+    "options": ["8", "10", "12", "14"],
+    "answer": 2
+  },
+  {
+    "id": 36,
+    "question": "40 : 8 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 1
+  },
+  {
+    "id": 37,
+    "question": "Trong số 100, chữ số 1 có giá trị là bao nhiêu?",
+    "options": ["1 đơn vị", "1 chục", "1 trăm", "10"],
+    "answer": 2
+  },
+  {
+    "id": 38,
+    "question": "Mấy giờ kim ngắn chỉ số 3, kim dài chỉ số 12?",
+    "options": ["12 giờ", "3 giờ", "6 giờ", "9 giờ"],
+    "answer": 1
+  },
+  {
+    "id": 39,
+    "question": "Có 25 quả táo, ăn đi 12 quả. Còn lại mấy quả?",
+    "options": ["10", "11", "12", "13"],
+    "answer": 3
+  },
+  {
+    "id": 40,
+    "question": "Khối lập phương có mấy mặt?",
+    "options": ["4", "6", "8", "12"],
+    "answer": 1
+  },
+  {
+    "id": 41,
+    "question": "59 + 21 = ?",
+    "options": ["70", "75", "80", "85"],
+    "answer": 2
+  },
+  {
+    "id": 42,
+    "question": "83 - 47 = ?",
+    "options": ["34", "36", "38", "40"],
+    "answer": 1
+  },
+  {
+    "id": 43,
+    "question": "Số nào lớn nhất có hai chữ số khác nhau?",
+    "options": ["99", "98", "89", "90"],
+    "answer": 1
+  },
+  {
+    "id": 44,
+    "question": "100 đồng + 200 đồng = ?",
+    "options": ["200 đồng", "300 đồng", "400 đồng", "500 đồng"],
+    "answer": 1
+  },
+  {
+    "id": 45,
+    "question": "5 x 4 = ?",
+    "options": ["15", "18", "20", "25"],
+    "answer": 2
+  },
+  {
+    "id": 46,
+    "question": "18 : 3 = ?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 1
+  },
+  {
+    "id": 47,
+    "question": "Số nào đứng giữa 69 và 71?",
+    "options": ["68", "70", "72", "67"],
+    "answer": 1
+  },
+  {
+    "id": 48,
+    "question": "Một mét có bao nhiêu xăng-ti-mét?",
+    "options": ["10", "50", "100", "1000"],
+    "answer": 2
+  },
+  {
+    "id": 49,
+    "question": "Lớp 2A có 20 học sinh nam và 15 học sinh nữ. Lớp 2A có tất cả bao nhiêu học sinh?",
+    "options": ["30", "32", "35", "40"],
+    "answer": 2
+  },
+  {
+    "id": 50,
+    "question": "Khối cầu có mấy cạnh?",
+    "options": ["0", "1", "2", "4"],
+    "answer": 0
+  },
+  {
+    "id": 51,
+    "question": "28 + 35 = ?",
+    "options": ["60", "61", "62", "63"],
+    "answer": 3
+  },
+  {
+    "id": 52,
+    "question": "65 - 19 = ?",
+    "options": ["44", "46", "48", "50"],
+    "answer": 1
+  },
+  {
+    "id": 53,
+    "question": "Sắp xếp các số sau theo thứ tự tăng dần: 42, 24, 38, 50?",
+    "options": ["24,38,42,50", "50,42,38,24", "38,24,42,50", "24,42,38,50"],
+    "answer": 0
+  },
+  {
+    "id": 54,
+    "question": "2 chục và 8 đơn vị tạo thành số nào?",
+    "options": ["20", "28", "82", "80"],
+    "answer": 1
+  },
+  {
+    "id": 55,
+    "question": "5 x 5 = ?",
+    "options": ["20", "24", "25", "30"],
+    "answer": 2
+  },
+  {
+    "id": 56,
+    "question": "36 : 4 = ?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 2
+  },
+  {
+    "id": 57,
+    "question": "Số liền sau của 99 là số nào?",
+    "options": ["98", "100", "101", "90"],
+    "answer": 1
+  },
+  {
+    "id": 58,
+    "question": "Nếu bây giờ là 8 giờ sáng, thì 2 giờ nữa là mấy giờ?",
+    "options": ["9 giờ sáng", "10 giờ sáng", "11 giờ sáng", "12 giờ trưa"],
+    "answer": 1
+  },
+  {
+    "id": 59,
+    "question": "Bạn An có 45 viên bi, bạn Bình có ít hơn An 12 viên. Bạn Bình có bao nhiêu viên bi?",
+    "options": ["30", "33", "35", "37"],
+    "answer": 1
+  },
+  {
+    "id": 60,
+    "question": "Khối hộp chữ nhật có mấy đỉnh?",
+    "options": ["6", "8", "10", "12"],
+    "answer": 1
+  },
+  {
+    "id": 61,
+    "question": "19 + 72 = ?",
+    "options": ["90", "91", "92", "93"],
+    "answer": 0
+  },
+  {
+    "id": 62,
+    "question": "78 - 29 = ?",
+    "options": ["47", "49", "50", "51"],
+    "answer": 1
+  },
+  {
+    "id": 63,
+    "question": "Số nào bé nhất có ba chữ số?",
+    "options": ["99", "100", "101", "999"],
+    "answer": 1
+  },
+  {
+    "id": 64,
+    "question": "500 đồng + 500 đồng = ?",
+    "options": ["500 đồng", "800 đồng", "1000 đồng", "2000 đồng"],
+    "answer": 2
+  },
+  {
+    "id": 65,
+    "question": "3 x 7 = ?",
+    "options": ["18", "20", "21", "24"],
+    "answer": 2
+  },
+  {
+    "id": 66,
+    "question": "45 : 9 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 1
+  },
+  {
+    "id": 67,
+    "question": "Trong số 56, chữ số 6 có giá trị là bao nhiêu?",
+    "options": ["6 chục", "6 đơn vị", "5 chục", "5 đơn vị"],
+    "answer": 1
+  },
+  {
+    "id": 68,
+    "question": "Một tuần có mấy ngày?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 2
+  },
+  {
+    "id": 69,
+    "question": "Có 18 bút chì, thêm 12 bút chì nữa. Có tất cả bao nhiêu bút chì?",
+    "options": ["25", "28", "30", "32"],
+    "answer": 2
+  },
+  {
+    "id": 70,
+    "question": "Khối nón có mấy mặt đáy?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 1
+  },
+  {
+    "id": 71,
+    "question": "74 + 18 = ?",
+    "options": ["90", "91", "92", "93"],
+    "answer": 2
+  },
+  {
+    "id": 72,
+    "question": "80 - 36 = ?",
+    "options": ["40", "42", "44", "46"],
+    "answer": 2
+  },
+  {
+    "id": 73,
+    "question": "Sắp xếp các số sau theo thứ tự giảm dần: 95, 78, 81, 69?",
+    "options": ["69,78,81,95", "95,81,78,69", "78,95,81,69", "81,78,95,69"],
+    "answer": 1
+  },
+  {
+    "id": 74,
+    "question": "4 chục và 9 đơn vị tạo thành số nào?",
+    "options": ["40", "49", "94", "90"],
+    "answer": 1
+  },
+  {
+    "id": 75,
+    "question": "2 x 9 = ?",
+    "options": ["16", "17", "18", "19"],
+    "answer": 2
+  },
+  {
+    "id": 76,
+    "question": "50 : 10 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 1
+  },
+  {
+    "id": 77,
+    "question": "Số nào lớn hơn 80 nhưng bé hơn 90?",
+    "options": ["79", "85", "91", "80"],
+    "answer": 1
+  },
+  {
+    "id": 78,
+    "question": "Nếu hôm nay là thứ Sáu, thì ngày kia là thứ mấy?",
+    "options": ["Thứ Bảy", "Chủ Nhật", "Thứ Hai", "Thứ Ba"],
+    "answer": 1
+  },
+  {
+    "id": 79,
+    "question": "Một cuộn dây dài 30 mét, cắt đi 12 mét. Cuộn dây còn lại dài bao nhiêu mét?",
+    "options": ["16", "18", "20", "22"],
+    "answer": 1
+  },
+  {
+    "id": 80,
+    "question": "Khối trụ có mấy mặt đáy?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 2
+  },
+  {
+    "id": 81,
+    "question": "33 + 67 = ?",
+    "options": ["90", "95", "100", "105"],
+    "answer": 2
+  },
+  {
+    "id": 82,
+    "question": "100 - 45 = ?",
+    "options": ["50", "55", "60", "65"],
+    "answer": 1
+  },
+  {
+    "id": 83,
+    "question": "Số liền sau của 49 là số nào?",
+    "options": ["48", "50", "51", "52"],
+    "answer": 1
+  },
+  {
+    "id": 84,
+    "question": "2000 đồng + 1000 đồng = ?",
+    "options": ["2000 đồng", "3000 đồng", "4000 đồng", "5000 đồng"],
+    "answer": 1
+  },
+  {
+    "id": 85,
+    "question": "4 x 7 = ?",
+    "options": ["24", "26", "28", "30"],
+    "answer": 2
+  },
+  {
+    "id": 86,
+    "question": "28 : 7 = ?",
+    "options": ["3", "4", "5", "6"],
+    "answer": 1
+  },
+  {
+    "id": 87,
+    "question": "Trong số 70, chữ số 0 có giá trị là bao nhiêu?",
+    "options": ["0 đơn vị", "0 chục", "7 đơn vị", "7 chục"],
+    "answer": 0
+  },
+  {
+    "id": 88,
+    "question": "Một năm có bao nhiêu tháng?",
+    "options": ["10", "11", "12", "13"],
+    "answer": 2
+  },
+  {
+    "id": 89,
+    "question": "Bạn Mai có 50 000 đồng, mua quyển sách hết 25 000 đồng. Mai còn lại bao nhiêu tiền?",
+    "options": ["15 000 đồng", "20 000 đồng", "25 000 đồng", "30 000 đồng"],
+    "answer": 2
+  },
+  {
+    "id": 90,
+    "question": "Khối trụ có mấy đỉnh?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 0
+  },
+  {
+    "id": 91,
+    "question": "48 + 32 = ?",
+    "options": ["70", "75", "80", "85"],
+    "answer": 2
+  },
+  {
+    "id": 92,
+    "question": "91 - 56 = ?",
+    "options": ["34", "35", "36", "37"],
+    "answer": 1
+  },
+  {
+    "id": 93,
+    "question": "Số nào lớn nhất có ba chữ số khác nhau?",
+    "options": ["999", "987", "900", "879"],
+    "answer": 1
+  },
+  {
+    "id": 94,
+    "question": "Một nửa của 10 là bao nhiêu?",
+    "options": ["2", "4", "5", "6"],
+    "answer": 2
+  },
+  {
+    "id": 95,
+    "question": "5 x 6 = ?",
+    "options": ["25", "28", "30", "32"],
+    "answer": 2
+  },
+  {
+    "id": 96,
+    "question": "32 : 4 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 2
+  },
+  {
+    "id": 97,
+    "question": "Trong số 39, chữ số 3 có giá trị là bao nhiêu?",
+    "options": ["3 đơn vị", "3 chục", "9 đơn vị", "9 chục"],
+    "answer": 1
+  },
+  {
+    "id": 98,
+    "question": "Nếu bây giờ là 10 giờ tối, thì 3 giờ trước là mấy giờ?",
+    "options": ["6 giờ tối", "7 giờ tối", "8 giờ tối", "9 giờ tối"],
+    "answer": 1
+  },
+  {
+    "id": 99,
+    "question": "Trong hộp có 60 chiếc kẹo, lấy ra 15 chiếc. Còn lại bao nhiêu chiếc kẹo?",
+    "options": ["40", "45", "50", "55"],
+    "answer": 1
+  },
+  {
+    "id": 100,
+    "question": "Khối lập phương có mấy cạnh?",
+    "options": ["6", "8", "10", "12"],
+    "answer": 3
+  },
+  {
+    "id": 101,
+    "question": "26 + 18 = ?",
+    "options": ["42", "44", "46", "48"],
+    "answer": 1
+  },
+  {
+    "id": 102,
+    "question": "40 - 15 = ?",
+    "options": ["20", "25", "30", "35"],
+    "answer": 1
+  },
+  {
+    "id": 103,
+    "question": "Số liền sau của 60 là số nào?",
+    "options": ["59", "61", "62", "63"],
+    "answer": 1
+  },
+  {
+    "id": 104,
+    "question": "25 đồng + 50 đồng = ?",
+    "options": ["65 đồng", "70 đồng", "75 đồng", "80 đồng"],
+    "answer": 2
+  },
+  {
+    "id": 105,
+    "question": "2 x 8 = ?",
+    "options": ["14", "15", "16", "17"],
+    "answer": 2
+  },
+  {
+    "id": 106,
+    "question": "42 : 6 = ?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 2
+  },
+  {
+    "id": 107,
+    "question": "Số 100 gồm mấy trăm, mấy chục, mấy đơn vị?",
+    "options": ["1 trăm, 0 chục, 0 đơn vị", "1 chục, 0 đơn vị", "1 trăm, 1 chục", "10 chục"],
+    "answer": 0
+  },
+  {
+    "id": 108,
+    "question": "Một gang tay là đơn vị đo gì?",
+    "options": ["Thời gian", "Khối lượng", "Độ dài", "Diện tích"],
+    "answer": 2
+  },
+  {
+    "id": 109,
+    "question": "Bạn Lan có 35 bông hoa, cắm vào lọ 18 bông. Lan còn lại bao nhiêu bông hoa?",
+    "options": ["15", "17", "19", "20"],
+    "answer": 1
+  },
+  {
+    "id": 110,
+    "question": "Hình nào có 3 đỉnh?",
+    "options": ["Hình vuông", "Hình tròn", "Hình tam giác", "Hình chữ nhật"],
+    "answer": 2
+  },
+  {
+    "id": 111,
+    "question": "71 + 19 = ?",
+    "options": ["80", "85", "90", "95"],
+    "answer": 2
+  },
+  {
+    "id": 112,
+    "question": "62 - 34 = ?",
+    "options": ["26", "28", "30", "32"],
+    "answer": 1
+  },
+  {
+    "id": 113,
+    "question": "Số nào bé hơn 70 nhưng lớn hơn 60?",
+    "options": ["59", "65", "71", "60"],
+    "answer": 1
+  },
+  {
+    "id": 114,
+    "question": "5000 đồng + 2000 đồng = ?",
+    "options": ["6000 đồng", "7000 đồng", "8000 đồng", "10000 đồng"],
+    "answer": 1
+  },
+  {
+    "id": 115,
+    "question": "4 x 6 = ?",
+    "options": ["20", "22", "24", "26"],
+    "answer": 2
+  },
+  {
+    "id": 116,
+    "question": "35 : 5 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 1
+  },
+  {
+    "id": 117,
+    "question": "Số nào liền trước của 100 là số nào?",
+    "options": ["98", "99", "101", "90"],
+    "answer": 1
+  },
+  {
+    "id": 118,
+    "question": "Mấy giờ kim ngắn chỉ số 6, kim dài chỉ số 12?",
+    "options": ["12 giờ", "3 giờ", "6 giờ", "9 giờ"],
+    "answer": 2
+  },
+  {
+    "id": 119,
+    "question": "Một người bán được 48 quả trứng gà và 25 quả trứng vịt. Người đó bán được tất cả bao nhiêu quả trứng?",
+    "options": ["70", "71", "73", "75"],
+    "answer": 2
+  },
+  {
+    "id": 120,
+    "question": "Khối trụ có mấy cạnh?",
+    "options": ["0", "1", "2", "4"],
+    "answer": 0
+  },
+  {
+    "id": 121,
+    "question": "55 + 27 = ?",
+    "options": ["80", "81", "82", "83"],
+    "answer": 2
+  },
+  {
+    "id": 122,
+    "question": "73 - 28 = ?",
+    "options": ["40", "45", "48", "50"],
+    "answer": 1
+  },
+  {
+    "id": 123,
+    "question": "Điền số thích hợp vào chỗ trống: 90, 80, ___, 60",
+    "options": ["65", "70", "75", "85"],
+    "answer": 1
+  },
+  {
+    "id": 124,
+    "question": "Một giờ rưỡi là bao nhiêu phút?",
+    "options": ["30", "60", "90", "120"],
+    "answer": 2
+  },
+  {
+    "id": 125,
+    "question": "3 x 9 = ?",
+    "options": ["25", "27", "28", "30"],
+    "answer": 1
+  },
+  {
+    "id": 126,
+    "question": "48 : 6 = ?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 1
+  },
+  {
+    "id": 127,
+    "question": "Trong số 27, chữ số 7 có giá trị là bao nhiêu?",
+    "options": ["7 chục", "7 đơn vị", "2 chục", "2 đơn vị"],
+    "answer": 1
+  },
+  {
+    "id": 128,
+    "question": "Một gang tay của người lớn thường dài khoảng bao nhiêu cm?",
+    "options": ["5 cm", "10 cm", "15 cm", "20 cm"],
+    "answer": 2
+  },
+  {
+    "id": 129,
+    "question": "Có 80 quyển vở, đã bán 35 quyển. Còn lại bao nhiêu quyển vở?",
+    "options": ["40", "45", "50", "55"],
+    "answer": 1
+  },
+  {
+    "id": 130,
+    "question": "Khối cầu có mấy đỉnh?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 0
+  },
+  {
+    "id": 131,
+    "question": "64 + 16 = ?",
+    "options": ["70", "75", "80", "85"],
+    "answer": 2
+  },
+  {
+    "id": 132,
+    "question": "95 - 47 = ?",
+    "options": ["45", "46", "48", "50"],
+    "answer": 2
+  },
+  {
+    "id": 133,
+    "question": "Số nào lớn nhất có 3 chữ số?",
+    "options": ["100", "999", "998", "900"],
+    "answer": 1
+  },
+  {
+    "id": 134,
+    "question": "Điền dấu thích hợp: 35 ... 53",
+    "options": [">", "<", "=", "+"],
+    "answer": 1
+  },
+  {
+    "id": 135,
+    "question": "5 x 8 = ?",
+    "options": ["35", "38", "40", "42"],
+    "answer": 2
+  },
+  {
+    "id": 136,
+    "question": "54 : 9 = ?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 1
+  },
+  {
+    "id": 137,
+    "question": "Trong số 82, chữ số 8 có giá trị là bao nhiêu?",
+    "options": ["8 đơn vị", "8 chục", "2 đơn vị", "2 chục"],
+    "answer": 1
+  },
+  {
+    "id": 138,
+    "question": "Mấy giờ kim ngắn chỉ số 9, kim dài chỉ số 12?",
+    "options": ["12 giờ", "3 giờ", "6 giờ", "9 giờ"],
+    "answer": 3
+  },
+  {
+    "id": 139,
+    "question": "Một lớp học có 32 học sinh, trong đó có 15 học sinh nữ. Hỏi có bao nhiêu học sinh nam?",
+    "options": ["15", "16", "17", "18"],
+    "answer": 2
+  },
+  {
+    "id": 140,
+    "question": "Hình nào có hai cặp cạnh song song và 4 góc vuông?",
+    "options": ["Hình tam giác", "Hình tròn", "Hình vuông", "Hình thang"],
+    "answer": 2
+  },
+  {
+    "id": 141,
+    "question": "25 + 68 = ?",
+    "options": ["90", "91", "92", "93"],
+    "answer": 2
+  },
+  {
+    "id": 142,
+    "question": "60 - 23 = ?",
+    "options": ["35", "37", "40", "42"],
+    "answer": 1
+  },
+  {
+    "id": 143,
+    "question": "Sắp xếp các số sau theo thứ tự tăng dần: 100, 50, 75, 25?",
+    "options": ["25,50,75,100", "100,75,50,25", "50,25,75,100", "75,100,25,50"],
+    "answer": 0
+  },
+  {
+    "id": 144,
+    "question": "5 chục và 1 đơn vị tạo thành số nào?",
+    "options": ["50", "51", "15", "10"],
+    "answer": 1
+  },
+  {
+    "id": 145,
+    "question": "2 x 10 = ?",
+    "options": ["18", "20", "22", "24"],
+    "answer": 1
+  },
+  {
+    "id": 146,
+    "question": "60 : 10 = ?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 1
+  },
+  {
+    "id": 147,
+    "question": "Số liền trước của 75 là số nào?",
+    "options": ["73", "74", "76", "77"],
+    "answer": 1
+  },
+  {
+    "id": 148,
+    "question": "Một năm nhuận có tháng 2 bao nhiêu ngày?",
+    "options": ["28", "29", "30", "31"],
+    "answer": 1
+  },
+  {
+    "id": 149,
+    "question": "Một sợi dây dài 65 cm, cắt đi 28 cm. Sợi dây còn lại dài bao nhiêu cm?",
+    "options": ["35", "37", "40", "42"],
+    "answer": 1
+  },
+  {
+    "id": 150,
+    "question": "Khối hộp chữ nhật có mấy mặt?",
+    "options": ["4", "6", "8", "12"],
+    "answer": 1
+  },
+  {
+    "id": 151,
+    "question": "77 + 13 = ?",
+    "options": ["80", "85", "90", "95"],
+    "answer": 2
+  },
+  {
+    "id": 152,
+    "question": "86 - 49 = ?",
+    "options": ["35", "37", "40", "42"],
+    "answer": 1
+  },
+  {
+    "id": 153,
+    "question": "Số nào bé nhất có ba chữ số khác nhau?",
+    "options": ["100", "102", "120", "101"],
+    "answer": 1
+  },
+  {
+    "id": 154,
+    "question": "Điền dấu thích hợp: 90 ... 89",
+    "options": [">", "<", "=", "+"],
+    "answer": 0
+  },
+  {
+    "id": 155,
+    "question": "3 x 8 = ?",
+    "options": ["20", "22", "24", "26"],
+    "answer": 2
+  },
+  {
+    "id": 156,
+    "question": "40 : 5 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 2
+  },
+  {
+    "id": 157,
+    "question": "Trong số 44, chữ số 4 ở hàng chục có giá trị là bao nhiêu?",
+    "options": ["4 đơn vị", "4 chục", "8 đơn vị", "8 chục"],
+    "answer": 1
+  },
+  {
+    "id": 158,
+    "question": "Nếu bây giờ là 11 giờ đêm, thì 4 giờ sau là mấy giờ?",
+    "options": ["12 giờ đêm", "1 giờ sáng", "2 giờ sáng", "3 giờ sáng"],
+    "answer": 2
+  },
+  {
+    "id": 159,
+    "question": "Có 4 nhóm học sinh, mỗi nhóm có 5 bạn. Có tất cả bao nhiêu bạn?",
+    "options": ["15", "18", "20", "22"],
+    "answer": 2
+  },
+  {
+    "id": 160,
+    "question": "Hình tròn có mấy đường kính?",
+    "options": ["1", "2", "4", "Vô số"],
+    "answer": 3
+  },
+  {
+    "id": 161,
+    "question": "32 + 59 = ?",
+    "options": ["90", "91", "92", "93"],
+    "answer": 1
+  },
+  {
+    "id": 162,
+    "question": "70 - 18 = ?",
+    "options": ["50", "52", "54", "56"],
+    "answer": 1
+  },
+  {
+    "id": 163,
+    "question": "Số nào lớn hơn 30 nhưng bé hơn 40?",
+    "options": ["29", "35", "41", "30"],
+    "answer": 1
+  },
+  {
+    "id": 164,
+    "question": "10 000 đồng + 5 000 đồng = ?",
+    "options": ["12 000 đồng", "15 000 đồng", "18 000 đồng", "20 000 đồng"],
+    "answer": 1
+  },
+  {
+    "id": 165,
+    "question": "4 x 9 = ?",
+    "options": ["32", "34", "36", "38"],
+    "answer": 2
+  },
+  {
+    "id": 166,
+    "question": "63 : 7 = ?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 2
+  },
+  {
+    "id": 167,
+    "question": "Số 96 gồm mấy chục và mấy đơn vị?",
+    "options": ["9 chục 0 đơn vị", "9 chục 6 đơn vị", "6 chục 9 đơn vị", "90 chục 6 đơn vị"],
+    "answer": 1
+  },
+  {
+    "id": 168,
+    "question": "Mỗi ngày có mấy buổi?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 2
+  },
+  {
+    "id": 169,
+    "question": "Có 10 cái bánh, chia đều cho 2 bạn. Mỗi bạn được mấy cái?",
+    "options": ["3", "4", "5", "6"],
+    "answer": 2
+  },
+  {
+    "id": 170,
+    "question": "Khối nón có mấy đỉnh?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 1
+  },
+  {
+    "id": 171,
+    "question": "84 + 16 = ?",
+    "options": ["90", "95", "100", "105"],
+    "answer": 2
+  },
+  {
+    "id": 172,
+    "question": "100 - 65 = ?",
+    "options": ["30", "35", "40", "45"],
+    "answer": 1
+  },
+  {
+    "id": 173,
+    "question": "Sắp xếp các số sau theo thứ tự giảm dần: 12, 8, 15, 10?",
+    "options": ["8,10,12,15", "15,12,10,8", "10,8,15,12", "12,15,8,10"],
+    "answer": 1
+  },
+  {
+    "id": 174,
+    "question": "7 chục và 3 đơn vị tạo thành số nào?",
+    "options": ["70", "73", "37", "30"],
+    "answer": 1
+  },
+  {
+    "id": 175,
+    "question": "5 x 7 = ?",
+    "options": ["30", "32", "35", "38"],
+    "answer": 2
+  },
+  {
+    "id": 176,
+    "question": "70 : 10 = ?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 2
+  },
+  {
+    "id": 177,
+    "question": "Số liền sau của 11 là số nào?",
+    "options": ["10", "12", "13", "14"],
+    "answer": 1
+  },
+  {
+    "id": 178,
+    "question": "Một giờ kém 15 phút là mấy giờ?",
+    "options": ["15 phút", "45 phút", "1 giờ 15 phút", "Không đủ thông tin"],
+    "answer": 1
+  },
+  {
+    "id": 179,
+    "question": "Bạn Hà có 20 cái kẹo, bạn tặng Bình 8 cái. Hà còn lại bao nhiêu cái kẹo?",
+    "options": ["10", "12", "15", "18"],
+    "answer": 1
+  },
+  {
+    "id": 180,
+    "question": "Hình nào có 0 cạnh và 0 đỉnh?",
+    "options": ["Hình vuông", "Hình tròn", "Hình tam giác", "Hình chữ nhật"],
+    "answer": 1
+  },
+  {
+    "id": 181,
+    "question": "17 + 83 = ?",
+    "options": ["90", "95", "100", "105"],
+    "answer": 2
+  },
+  {
+    "id": 182,
+    "question": "92 - 35 = ?",
+    "options": ["55", "57", "60", "62"],
+    "answer": 1
+  },
+  {
+    "id": 183,
+    "question": "Số nào bé hơn 20 nhưng lớn hơn 10?",
+    "options": ["9", "15", "21", "20"],
+    "answer": 1
+  },
+  {
+    "id": 184,
+    "question": "Điền dấu thích hợp: 75 ... 70 + 5",
+    "options": [">", "<", "=", "-"],
+    "answer": 2
+  },
+  {
+    "id": 185,
+    "question": "2 x 7 = ?",
+    "options": ["12", "14", "16", "18"],
+    "answer": 1
+  },
+  {
+    "id": 186,
+    "question": "81 : 9 = ?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 2
+  },
+  {
+    "id": 187,
+    "question": "Trong số 50, chữ số 5 có giá trị là bao nhiêu?",
+    "options": ["5 đơn vị", "5 chục", "0 đơn vị", "0 chục"],
+    "answer": 1
+  },
+  {
+    "id": 188,
+    "question": "Bạn Hoa có 30 bông hoa, bạn tặng mẹ 10 bông. Hoa còn lại bao nhiêu bông hoa?",
+    "options": ["15", "18", "20", "22"],
+    "answer": 2
+  },
+  {
+    "id": 189,
+    "question": "Khối trụ có mấy mặt phẳng?",
+    "options": ["1", "2", "3", "4"],
+    "answer": 1
+  },
+  {
+    "id": 190,
+    "question": "50 + 25 = ?",
+    "options": ["70", "75", "80", "85"],
+    "answer": 1
+  },
+  {
+    "id": 191,
+    "question": "45 - 20 = ?",
+    "options": ["20", "25", "30", "35"],
+    "answer": 1
+  },
+  {
+    "id": 192,
+    "question": "Số liền trước của 20 là số nào?",
+    "options": ["18", "19", "21", "22"],
+    "answer": 1
+  },
+  {
+    "id": 193,
+    "question": "100 đồng + 100 đồng + 100 đồng = ?",
+    "options": ["200 đồng", "300 đồng", "400 đồng", "500 đồng"],
+    "answer": 1
+  },
+  {
+    "id": 194,
+    "question": "3 x 6 = ?",
+    "options": ["15", "18", "20", "22"],
+    "answer": 1
+  },
+  {
+    "id": 195,
+    "question": "50 : 5 = ?",
+    "options": ["8", "9", "10", "11"],
+    "answer": 2
+  },
+  {
+    "id": 196,
+    "question": "Số nào lớn nhất có 4 chữ số?",
+    "options": ["999", "9999", "1000", "9899"],
+    "answer": 1
+  },
+  {
+    "id": 197,
+    "question": "Một kilomet có bao nhiêu mét?",
+    "options": ["10", "100", "1000", "10000"],
+    "answer": 2
+  },
+  {
+    "id": 198,
+    "question": "Bạn Minh có 50 viên bi, bạn thắng thêm 25 viên. Minh có tất cả bao nhiêu viên bi?",
+    "options": ["70", "75", "80", "85"],
+    "answer": 1
+  },
+  {
+    "id": 199,
+    "question": "Khối cầu lăn được vì nó có dạng gì?",
+    "options": ["Hình vuông", "Hình tròn", "Hình tam giác", "Hình chữ nhật"],
+    "answer": 1
+  },
+  {
+    "id": 200,
+    "question": "Một nửa của 20 là bao nhiêu?",
+    "options": ["5", "10", "15", "20"],
+    "answer": 1
+  },
+  {
+    "id": 201,
+    "question": "40 + 35 = ?",
+    "options": ["70", "75", "80", "85"],
+    "answer": 1
+  },
+  {
+    "id": 202,
+    "question": "80 - 45 = ?",
+    "options": ["30", "35", "40", "45"],
+    "answer": 1
+  },
+  {
+    "id": 203,
+    "question": "Sắp xếp các số sau theo thứ tự tăng dần: 65, 80, 55, 70?",
+    "options": ["55,65,70,80", "80,70,65,55", "65,55,70,80", "70,80,55,65"],
+    "answer": 0
+  },
+  {
+    "id": 204,
+    "question": "8 chục và 8 đơn vị tạo thành số nào?",
+    "options": ["80", "88", "8", "808"],
+    "answer": 1
+  },
+  {
+    "id": 205,
+    "question": "4 x 8 = ?",
+    "options": ["30", "32", "34", "36"],
+    "answer": 1
+  },
+  {
+    "id": 206,
+    "question": "24 : 3 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 2
+  },
+  {
+    "id": 207,
+    "question": "Số liền sau của 39 là số nào?",
+    "options": ["38", "40", "41", "42"],
+    "answer": 1
+  },
+  {
+    "id": 208,
+    "question": "Một giờ có mấy nửa giờ?",
+    "options": ["1", "2", "3", "4"],
+    "answer": 1
+  },
+  {
+    "id": 209,
+    "question": "Trong vườn có 35 cây cam và 28 cây bưởi. Trong vườn có tất cả bao nhiêu cây?",
+    "options": ["60", "61", "62", "63"],
+    "answer": 3
+  },
+  {
+    "id": 210,
+    "question": "Khối trụ có mấy mặt cong?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 1
+  },
+  {
+    "id": 211,
+    "question": "66 + 24 = ?",
+    "options": ["80", "85", "90", "95"],
+    "answer": 2
+  },
+  {
+    "id": 212,
+    "question": "90 - 55 = ?",
+    "options": ["30", "35", "40", "45"],
+    "answer": 1
+  },
+  {
+    "id": 213,
+    "question": "Số nào lớn nhất có hai chữ số mà tổng các chữ số là 15?",
+    "options": ["96", "87", "78", "99"],
+    "answer": 0
+  },
+  {
+    "id": 214,
+    "question": "500 đồng + 200 đồng + 100 đồng = ?",
+    "options": ["700 đồng", "800 đồng", "900 đồng", "1000 đồng"],
+    "answer": 1
+  },
+  {
+    "id": 215,
+    "question": "5 x 9 = ?",
+    "options": ["40", "42", "45", "48"],
+    "answer": 2
+  },
+  {
+    "id": 216,
+    "question": "56 : 7 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 2
+  },
+  {
+    "id": 217,
+    "question": "Số liền trước của 91 là số nào?",
+    "options": ["89", "90", "92", "93"],
+    "answer": 1
+  },
+  {
+    "id": 218,
+    "question": "Mấy giờ kim ngắn chỉ số 10, kim dài chỉ số 12?",
+    "options": ["12 giờ", "10 giờ", "8 giờ", "2 giờ"],
+    "answer": 1
+  },
+  {
+    "id": 219,
+    "question": "Một người bán hàng có 75 kg gạo. Buổi sáng bán được 30 kg, buổi chiều bán thêm 20 kg. Người đó còn lại bao nhiêu kg gạo?",
+    "options": ["20", "25", "30", "35"],
+    "answer": 2
+  },
+  {
+    "id": 220,
+    "question": "Hình nào có 4 cạnh không bằng nhau?",
+    "options": ["Hình vuông", "Hình chữ nhật", "Hình thoi", "Hình bình hành"],
+    "answer": 1
+  },
+  {
+    "id": 221,
+    "question": "38 + 45 = ?",
+    "options": ["80", "81", "82", "83"],
+    "answer": 2
+  },
+  {
+    "id": 222,
+    "question": "72 - 29 = ?",
+    "options": ["40", "41", "42", "43"],
+    "answer": 2
+  },
+  {
+    "id": 223,
+    "question": "Số nào bé nhất có hai chữ số mà tổng các chữ số là 5?",
+    "options": ["14", "23", "32", "50"],
+    "answer": 0
+  },
+  {
+    "id": 224,
+    "question": "Điền dấu thích hợp: 60 - 5 ... 55",
+    "options": [">", "<", "=", "+"],
+    "answer": 2
+  },
+  {
+    "id": 225,
+    "question": "2 x 5 = ?",
+    "options": ["8", "10", "12", "14"],
+    "answer": 1
+  },
+  {
+    "id": 226,
+    "question": "49 : 7 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 1
+  },
+  {
+    "id": 227,
+    "question": "Trong số 100, chữ số 0 ở hàng chục có giá trị là bao nhiêu?",
+    "options": ["0 đơn vị", "0 chục", "1 trăm", "10 đơn vị"],
+    "answer": 1
+  },
+  {
+    "id": 228,
+    "question": "Mấy giờ tay kim ngắn chỉ số 7, kim dài chỉ số 6?",
+    "options": ["6 giờ 30 phút", "7 giờ 30 phút", "8 giờ 30 phút", "7 giờ"],
+    "answer": 0
+  },
+  {
+    "id": 229,
+    "question": "Một người thợ may 15 bộ quần áo trong buổi sáng và 12 bộ trong buổi chiều. Hỏi người đó may được tất cả bao nhiêu bộ quần áo?",
+    "options": ["25", "27", "30", "32"],
+    "answer": 1
+  },
+  {
+    "id": 230,
+    "question": "Khối chóp có mấy mặt bên là tam giác?",
+    "options": ["1", "2", "3", "Có thể có nhiều hơn 1"],
+    "answer": 3
+  },
+  {
+    "id": 231,
+    "question": "54 + 26 = ?",
+    "options": ["70", "75", "80", "85"],
+    "answer": 2
+  },
+  {
+    "id": 232,
+    "question": "81 - 38 = ?",
+    "options": ["40", "41", "42", "43"],
+    "answer": 2
+  },
+  {
+    "id": 233,
+    "question": "Số nào lớn nhất có 2 chữ số mà tổng các chữ số là 10?",
+    "options": ["91", "82", "73", "19"],
+    "answer": 0
+  },
+  {
+    "id": 234,
+    "question": "20 000 đồng - 10 000 đồng = ?",
+    "options": ["5 000 đồng", "8 000 đồng", "10 000 đồng", "12 000 đồng"],
+    "answer": 2
+  },
+  {
+    "id": 235,
+    "question": "3 x 5 = ?",
+    "options": ["12", "15", "18", "20"],
+    "answer": 1
+  },
+  {
+    "id": 236,
+    "question": "64 : 8 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 2
+  },
+  {
+    "id": 237,
+    "question": "Số liền sau của 79 là số nào?",
+    "options": ["78", "80", "81", "82"],
+    "answer": 1
+  },
+  {
+    "id": 238,
+    "question": "Có 12 quả cam, chia đều vào 3 đĩa. Mỗi đĩa có mấy quả?",
+    "options": ["3", "4", "5", "6"],
+    "answer": 1
+  },
+  {
+    "id": 239,
+    "question": "Khối cầu có mấy mặt?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 1
+  },
+  {
+    "id": 240,
+    "question": "Một mét có mấy đề-xi-mét?",
+    "options": ["1", "10", "100", "1000"],
+    "answer": 1
+  },
+  {
+    "id": 241,
+    "question": "47 + 28 = ?",
+    "options": ["70", "72", "75", "78"],
+    "answer": 2
+  },
+  {
+    "id": 242,
+    "question": "95 - 58 = ?",
+    "options": ["35", "37", "40", "42"],
+    "answer": 1
+  },
+  {
+    "id": 243,
+    "question": "Sắp xếp các số sau theo thứ tự tăng dần: 9, 19, 90, 99?",
+    "options": ["9,19,90,99", "99,90,19,9", "19,9,90,99", "90,99,9,19"],
+    "answer": 0
+  },
+  {
+    "id": 244,
+    "question": "6 chục và 0 đơn vị tạo thành số nào?",
+    "options": ["6", "60", "600", "601"],
+    "answer": 1
+  },
+  {
+    "id": 245,
+    "question": "5 x 10 = ?",
+    "options": ["40", "45", "50", "55"],
+    "answer": 2
+  },
+  {
+    "id": 246,
+    "question": "90 : 9 = ?",
+    "options": ["8", "9", "10", "11"],
+    "answer": 2
+  },
+  {
+    "id": 247,
+    "question": "Trong số 61, chữ số 1 có giá trị là bao nhiêu?",
+    "options": ["1 chục", "1 đơn vị", "6 chục", "6 đơn vị"],
+    "answer": 1
+  },
+  {
+    "id": 248,
+    "question": "Một giờ kém 5 phút là mấy giờ?",
+    "options": ["55 phút", "5 phút", "1 giờ 5 phút", "Không đủ thông tin"],
+    "answer": 0
+  },
+  {
+    "id": 249,
+    "question": "Một sợi dây dài 80 cm, cắt thành 4 đoạn bằng nhau. Mỗi đoạn dài bao nhiêu cm?",
+    "options": ["15", "18", "20", "22"],
+    "answer": 2
+  },
+  {
+    "id": 250,
+    "question": "Hình chữ nhật có mấy đường chéo?",
+    "options": ["1", "2", "3", "4"],
+    "answer": 1
+  },
+  {
+    "id": 251,
+    "question": "18 + 75 = ?",
+    "options": ["90", "91", "92", "93"],
+    "answer": 2
+  },
+  {
+    "id": 252,
+    "question": "70 - 43 = ?",
+    "options": ["25", "27", "30", "32"],
+    "answer": 1
+  },
+  {
+    "id": 253,
+    "question": "Số nào bé nhất có 2 chữ số mà hàng đơn vị là 0?",
+    "options": ["0", "10", "20", "100"],
+    "answer": 1
+  },
+  {
+    "id": 254,
+    "question": "Điền dấu thích hợp: 42 + 8 ... 50",
+    "options": [">", "<", "=", "+"],
+    "answer": 2
+  },
+  {
+    "id": 255,
+    "question": "4 x 4 = ?",
+    "options": ["12", "14", "16", "18"],
+    "answer": 2
+  },
+  {
+    "id": 256,
+    "question": "72 : 8 = ?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 2
+  },
+  {
+    "id": 257,
+    "question": "Số liền sau của 59 là số nào?",
+    "options": ["58", "60", "61", "62"],
+    "answer": 1
+  },
+  {
+    "id": 258,
+    "question": "Một tuần có mấy buổi?",
+    "options": ["7", "14", "21", "28"],
+    "answer": 3
+  },
+  {
+    "id": 259,
+    "question": "Có 28 bông hoa, cắm vào 4 lọ, mỗi lọ có số bông hoa bằng nhau. Mỗi lọ có mấy bông?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 1
+  },
+  {
+    "id": 260,
+    "question": "Khối hộp chữ nhật có mấy cạnh bằng nhau?",
+    "options": ["4", "6", "8", "12"],
+    "answer": 3
+  },
+  {
+    "id": 261,
+    "question": "69 + 21 = ?",
+    "options": ["80", "85", "90", "95"],
+    "answer": 2
+  },
+  {
+    "id": 262,
+    "question": "85 - 37 = ?",
+    "options": ["45", "46", "48", "50"],
+    "answer": 2
+  },
+  {
+    "id": 263,
+    "question": "Số nào lớn hơn 40 nhưng bé hơn 50?",
+    "options": ["39", "45", "51", "40"],
+    "answer": 1
+  },
+  {
+    "id": 264,
+    "question": "50 000 đồng - 10 000 đồng = ?",
+    "options": ["30 000 đồng", "40 000 đồng", "45 000 đồng", "50 000 đồng"],
+    "answer": 1
+  },
+  {
+    "id": 265,
+    "question": "3 x 4 = ?",
+    "options": ["10", "11", "12", "13"],
+    "answer": 2
+  },
+  {
+    "id": 266,
+    "question": "60 : 6 = ?",
+    "options": ["8", "9", "10", "11"],
+    "answer": 2
+  },
+  {
+    "id": 267,
+    "question": "Trong số 73, chữ số 3 có giá trị là bao nhiêu?",
+    "options": ["3 chục", "3 đơn vị", "7 chục", "7 đơn vị"],
+    "answer": 1
+  },
+  {
+    "id": 268,
+    "question": "Nếu hôm nay là thứ Hai, thì hai ngày nữa là thứ mấy?",
+    "options": ["Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu"],
+    "answer": 1
+  },
+  {
+    "id": 269,
+    "question": "Một cửa hàng có 60 cái áo. Buổi sáng bán được 25 cái, buổi chiều bán được 15 cái. Cửa hàng còn lại bao nhiêu cái áo?",
+    "options": ["10", "15", "20", "25"],
+    "answer": 1
+  },
+  {
+    "id": 270,
+    "question": "Khối trụ có mấy mặt đáy?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 2
+  },
+  {
+    "id": 271,
+    "question": "27 + 56 = ?",
+    "options": ["80", "81", "82", "83"],
+    "answer": 2
+  },
+  {
+    "id": 272,
+    "question": "91 - 44 = ?",
+    "options": ["45", "46", "47", "48"],
+    "answer": 2
+  },
+  {
+    "id": 273,
+    "question": "Số nào bé nhất có 3 chữ số mà tổng các chữ số là 1?",
+    "options": ["100", "101", "110", "10"],
+    "answer": 0
+  },
+  {
+    "id": 274,
+    "question": "Một kilomet có bao nhiêu đề-xi-mét?",
+    "options": ["100", "1000", "10000", "100000"],
+    "answer": 3
+  },
+  {
+    "id": 275,
+    "question": "5 x 2 = ?",
+    "options": ["8", "10", "12", "14"],
+    "answer": 1
+  },
+  {
+    "id": 276,
+    "question": "21 : 3 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 1
+  },
+  {
+    "id": 277,
+    "question": "Số liền trước của 100 là số nào?",
+    "options": ["98", "99", "101", "90"],
+    "answer": 1
+  },
+  {
+    "id": 278,
+    "question": "Mấy giờ kim ngắn chỉ số 5, kim dài chỉ số 12?",
+    "options": ["12 giờ", "3 giờ", "5 giờ", "7 giờ"],
+    "answer": 2
+  },
+  {
+    "id": 279,
+    "question": "Có 45 cái bánh, chia cho 5 bạn, mỗi bạn được số bánh bằng nhau. Mỗi bạn được mấy cái?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 2
+  },
+  {
+    "id": 280,
+    "question": "Khối lập phương có mấy mặt đều là hình vuông?",
+    "options": ["4", "6", "8", "12"],
+    "answer": 1
+  },
+  {
+    "id": 281,
+    "question": "74 + 26 = ?",
+    "options": ["90", "95", "100", "105"],
+    "answer": 2
+  },
+  {
+    "id": 282,
+    "question": "100 - 58 = ?",
+    "options": ["40", "42", "45", "48"],
+    "answer": 1
+  },
+  {
+    "id": 283,
+    "question": "Sắp xếp các số sau theo thứ tự giảm dần: 32, 28, 35, 20?",
+    "options": ["20,28,32,35", "35,32,28,20", "28,20,35,32", "32,35,20,28"],
+    "answer": 1
+  },
+  {
+    "id": 284,
+    "question": "Điền dấu thích hợp: 80 + 10 ... 90",
+    "options": [">", "<", "=", "+"],
+    "answer": 2
+  },
+  {
+    "id": 285,
+    "question": "4 x 7 = ?",
+    "options": ["24", "26", "28", "30"],
+    "answer": 2
+  },
+  {
+    "id": 286,
+    "question": "30 : 5 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 2
+  },
+  {
+    "id": 287,
+    "question": "Trong số 10, chữ số 1 có giá trị là bao nhiêu?",
+    "options": ["1 đơn vị", "1 chục", "0 đơn vị", "10 đơn vị"],
+    "answer": 1
+  },
+  {
+    "id": 288,
+    "question": "Mấy giờ tay kim ngắn chỉ số 12, kim dài chỉ số 6?",
+    "options": ["12 giờ", "12 giờ 30 phút", "6 giờ", "6 giờ 30 phút"],
+    "answer": 1
+  },
+  {
+    "id": 289,
+    "question": "Một sân trường hình chữ nhật có chiều dài 50 mét, chiều rộng 30 mét. Chu vi sân trường là bao nhiêu mét?",
+    "options": ["80", "100", "160", "300"],
+    "answer": 2
+  },
+  {
+    "id": 290,
+    "question": "Khối nón có mấy mặt phẳng?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 1
+  },
+  {
+    "id": 291,
+    "question": "3 chục và 8 đơn vị tạo thành số nào?",
+    "options": ["30", "38", "83", "80"],
+    "answer": 1
+  },
+  {
+    "id": 292,
+    "question": "62 - 17 = ?",
+    "options": ["40", "42", "45", "48"],
+    "answer": 2
+  },
+  {
+    "id": 293,
+    "question": "Số nào lớn nhất có 2 chữ số mà hàng đơn vị là 5?",
+    "options": ["5", "15", "95", "50"],
+    "answer": 2
+  },
+  {
+    "id": 294,
+    "question": "Điền dấu thích hợp: 70 - 20 ... 50",
+    "options": [">", "<", "=", "+"],
+    "answer": 2
+  },
+  {
+    "id": 295,
+    "question": "5 x 6 = ?",
+    "options": ["25", "28", "30", "32"],
+    "answer": 2
+  },
+  {
+    "id": 296,
+    "question": "35 : 7 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 1
+  },
+  {
+    "id": 297,
+    "question": "Số liền sau của 90 là số nào?",
+    "options": ["89", "91", "92", "100"],
+    "answer": 1
+  },
+  {
+    "id": 298,
+    "question": "Một năm có bao nhiêu quý?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 2
+  },
+  {
+    "id": 299,
+    "question": "Trong hộp có 40 viên bi, bạn Nam lấy ra 15 viên. Còn lại bao nhiêu viên bi?",
+    "options": ["20", "25", "30", "35"],
+    "answer": 1
+  },
+  {
+    "id": 300,
+    "question": "Hình nào có 4 cạnh và 4 góc vuông nhưng các cạnh không bằng nhau?",
+    "options": ["Hình vuông", "Hình tròn", "Hình tam giác", "Hình chữ nhật"],
+    "answer": 3
+  }
+]

@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "question": "Giá trị của chữ số 5 trong số 123,456 là bao nhiêu?",
+    "options": ["5 đơn vị", "5 chục", "5 phần mười", "5 phần trăm"],
+    "answer": 3
+  },
+  {
+    "id": 2,
+    "question": "Chuyển phân số $3/4$ thành số thập phân.",
+    "options": ["0,34", "0,43", "0,75", "0,25"],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "question": "25,5 + 12,3 = ?",
+    "options": ["37,5", "37,8", "38,7", "38,8"],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "question": "100 - 25,7 = ?",
+    "options": ["74,3", "75,3", "76,3", "77,3"],
+    "answer": 0
+  },
+  {
+    "id": 5,
+    "question": "1,2 x 5 = ?",
+    "options": ["5,0", "6,0", "7,0", "8,0"],
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "question": "25,5 : 5 = ?",
+    "options": ["4,1", "5,0", "5,1", "5,5"],
+    "answer": 2
+  },
+  {
+    "id": 7,
+    "question": "40% của 200 là bao nhiêu?",
+    "options": ["40", "60", "80", "100"],
+    "answer": 2
+  },
+  {
+    "id": 8,
+    "question": "Diện tích hình tam giác có đáy 10 cm và chiều cao 8 cm là bao nhiêu?",
+    "options": ["40 cm$^2$", "80 cm$^2$", "100 cm$^2$", "120 cm$^2$"],
+    "answer": 0
+  },
+  {
+    "id": 9,
+    "question": "Một người đi xe máy với vận tốc 45 km/giờ. Trong 2 giờ, người đó đi được bao nhiêu km?",
+    "options": ["45 km", "90 km", "100 km", "120 km"],
+    "answer": 1
+  },
+  {
+    "id": 10,
+    "question": "Thể tích hình lập phương có cạnh 3 cm là bao nhiêu?",
+    "options": ["9 cm$^3$", "18 cm$^3$", "27 cm$^3$", "36 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 11,
+    "question": "Số lớn nhất trong các số 1,23; 1,32; 1,03; 1,20 là?",
+    "options": ["1,23", "1,32", "1,03", "1,20"],
+    "answer": 1
+  },
+  {
+    "id": 12,
+    "question": "Chuyển hỗn số $2 \frac{1}{4}$ thành phân số.",
+    "options": ["$9/4$", "$21/4$", "$8/4$", "$10/4$"],
+    "answer": 0
+  },
+  {
+    "id": 13,
+    "question": "30,75 + 15,25 = ?",
+    "options": ["45,0", "46,0", "46,25", "47,0"],
+    "answer": 1
+  },
+  {
+    "id": 14,
+    "question": "50 - 18,9 = ?",
+    "options": ["30,1", "31,1", "31,2", "32,1"],
+    "answer": 1
+  },
+  {
+    "id": 15,
+    "question": "2,5 x 4 = ?",
+    "options": ["8,0", "9,0", "10,0", "12,0"],
+    "answer": 2
+  },
+  {
+    "id": 16,
+    "question": "36,9 : 9 = ?",
+    "options": ["4,0", "4,1", "4,2", "4,5"],
+    "answer": 1
+  },
+  {
+    "id": 17,
+    "question": "25% của 80 là bao nhiêu?",
+    "options": ["10", "15", "20", "25"],
+    "answer": 2
+  },
+  {
+    "id": 18,
+    "question": "Diện tích hình thang có đáy lớn 10 cm, đáy bé 6 cm và chiều cao 5 cm là bao nhiêu?",
+    "options": ["30 cm$^2$", "40 cm$^2$", "50 cm$^2$", "60 cm$^2$"],
+    "answer": 0
+  },
+  {
+    "id": 19,
+    "question": "Một người đi bộ với vận tốc 5 km/giờ. Trong 30 phút, người đó đi được bao nhiêu km?",
+    "options": ["2 km", "2,5 km", "3 km", "3,5 km"],
+    "answer": 1
+  },
+  {
+    "id": 20,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 5 cm, chiều rộng 4 cm, chiều cao 3 cm là bao nhiêu?",
+    "options": ["30 cm$^3$", "45 cm$^3$", "60 cm$^3$", "75 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 21,
+    "question": "Số thập phân 'Bảy mươi sáu phẩy không năm' viết là?",
+    "options": ["76,5", "76,05", "7,605", "765,0"],
+    "answer": 1
+  },
+  {
+    "id": 22,
+    "question": "Rút gọn phân số $15/20$ ta được phân số tối giản nào?",
+    "options": ["$3/4$", "$5/4$", "$1/2$", "$15/20$"],
+    "answer": 0
+  },
+  {
+    "id": 23,
+    "question": "123,45 + 54,32 = ?",
+    "options": ["177,75", "177,77", "177,78", "178,00"],
+    "answer": 1
+  },
+  {
+    "id": 24,
+    "question": "200 - 87,6 = ?",
+    "options": ["112,4", "113,4", "114,4", "115,4"],
+    "answer": 0
+  },
+  {
+    "id": 25,
+    "question": "0,5 x 10 = ?",
+    "options": ["0,5", "5,0", "50,0", "500,0"],
+    "answer": 1
+  },
+  {
+    "id": 26,
+    "question": "12,6 : 6 = ?",
+    "options": ["2,0", "2,1", "2,2", "2,5"],
+    "answer": 1
+  },
+  {
+    "id": 27,
+    "question": "50% của 120 là bao nhiêu?",
+    "options": ["50", "60", "70", "80"],
+    "answer": 1
+  },
+  {
+    "id": 28,
+    "question": "Diện tích hình tam giác có đáy 12 cm và chiều cao 10 cm là bao nhiêu?",
+    "options": ["60 cm$^2$", "120 cm$^2$", "180 cm$^2$", "240 cm$^2$"],
+    "answer": 0
+  },
+  {
+    "id": 29,
+    "question": "Một ô tô đi quãng đường 180 km trong 4 giờ. Vận tốc của ô tô là bao nhiêu?",
+    "options": ["40 km/giờ", "45 km/giờ", "50 km/giờ", "60 km/giờ"],
+    "answer": 1
+  },
+  {
+    "id": 30,
+    "question": "Thể tích hình lập phương có cạnh 5 cm là bao nhiêu?",
+    "options": ["25 cm$^3$", "50 cm$^3$", "100 cm$^3$", "125 cm$^3$"],
+    "answer": 3
+  },
+  {
+    "id": 31,
+    "question": "Số 'Hai trăm linh ba phẩy mười lăm' viết là?",
+    "options": ["203,15", "203,51", "23,15", "2031,5"],
+    "answer": 0
+  },
+  {
+    "id": 32,
+    "question": "Chuyển phân số $1/2$ thành tỉ số phần trăm.",
+    "options": ["10%", "25%", "50%", "75%"],
+    "answer": 2
+  },
+  {
+    "id": 33,
+    "question": "12,34 + 5,67 + 2,1 = ?",
+    "options": ["20,11", "20,12", "20,13", "20,14"],
+    "answer": 1
+  },
+  {
+    "id": 34,
+    "question": "75 - 12,3 - 5,7 = ?",
+    "options": ["57,0", "57,5", "58,0", "58,5"],
+    "answer": 2
+  },
+  {
+    "id": 35,
+    "question": "0,25 x 100 = ?",
+    "options": ["2,5", "25,0", "250,0", "2500,0"],
+    "answer": 1
+  },
+  {
+    "id": 36,
+    "question": "4,8 : 1,2 = ?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 2
+  },
+  {
+    "id": 37,
+    "question": "10% của 300 là bao nhiêu?",
+    "options": ["10", "20", "30", "40"],
+    "answer": 2
+  },
+  {
+    "id": 38,
+    "question": "Diện tích hình thang có đáy lớn 12 cm, đáy bé 8 cm và chiều cao 6 cm là bao nhiêu?",
+    "options": ["50 cm$^2$", "60 cm$^2$", "70 cm$^2$", "80 cm$^2$"],
+    "answer": 0
+  },
+  {
+    "id": 39,
+    "question": "Một người đi xe đạp từ A đến B hết 2 giờ 30 phút với vận tốc 12 km/giờ. Quãng đường AB dài bao nhiêu km?",
+    "options": ["24 km", "25 km", "30 km", "36 km"],
+    "answer": 2
+  },
+  {
+    "id": 40,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 10 cm, chiều rộng 5 cm, chiều cao 2 cm là bao nhiêu?",
+    "options": ["50 cm$^3$", "80 cm$^3$", "100 cm$^3$", "120 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 41,
+    "question": "Số bé nhất trong các số 2,05; 2,50; 2,005; 2,15 là?",
+    "options": ["2,05", "2,50", "2,005", "2,15"],
+    "answer": 2
+  },
+  {
+    "id": 42,
+    "question": "Chuyển phân số $1/4$ thành tỉ số phần trăm.",
+    "options": ["10%", "20%", "25%", "40%"],
+    "answer": 2
+  },
+  {
+    "id": 43,
+    "question": "105,5 + 23,45 = ?",
+    "options": ["128,95", "129,95", "130,00", "131,00"],
+    "answer": 0
+  },
+  {
+    "id": 44,
+    "question": "300 - 105,75 = ?",
+    "options": ["194,25", "195,25", "196,25", "197,25"],
+    "answer": 0
+  },
+  {
+    "id": 45,
+    "question": "1,5 x 2,0 = ?",
+    "options": ["2,5", "3,0", "3,5", "4,0"],
+    "answer": 1
+  },
+  {
+    "id": 46,
+    "question": "15,6 : 2,0 = ?",
+    "options": ["7,0", "7,5", "7,8", "8,0"],
+    "answer": 2
+  },
+  {
+    "id": 47,
+    "question": "20% của 150 là bao nhiêu?",
+    "options": ["20", "25", "30", "35"],
+    "answer": 2
+  },
+  {
+    "id": 48,
+    "question": "Diện tích hình tam giác có đáy 20 cm và chiều cao 15 cm là bao nhiêu?",
+    "options": ["100 cm$^2$", "150 cm$^2$", "200 cm$^2$", "300 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 49,
+    "question": "Một người làm 15 sản phẩm trong 3 giờ. Hỏi trung bình mỗi giờ người đó làm được bao nhiêu sản phẩm?",
+    "options": ["3 sản phẩm", "4 sản phẩm", "5 sản phẩm", "6 sản phẩm"],
+    "answer": 2
+  },
+  {
+    "id": 50,
+    "question": "Thể tích hình lập phương có cạnh 10 cm là bao nhiêu?",
+    "options": ["100 cm$^3$", "500 cm$^3$", "1000 cm$^3$", "1200 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 51,
+    "question": "Giá trị của chữ số 9 trong số 987,65 là bao nhiêu?",
+    "options": ["9 đơn vị", "9 chục", "9 trăm", "9 nghìn"],
+    "answer": 2
+  },
+  {
+    "id": 52,
+    "question": "Chuyển phân số $1/5$ thành số thập phân.",
+    "options": ["0,1", "0,2", "0,3", "0,5"],
+    "answer": 1
+  },
+  {
+    "id": 53,
+    "question": "5,67 + 2,34 = ?",
+    "options": ["7,01", "7,91", "8,01", "8,91"],
+    "answer": 3
+  },
+  {
+    "id": 54,
+    "question": "20 - 12,5 = ?",
+    "options": ["7,0", "7,5", "8,0", "8,5"],
+    "answer": 1
+  },
+  {
+    "id": 55,
+    "question": "3,4 x 10 = ?",
+    "options": ["0,34", "3,4", "34,0", "340,0"],
+    "answer": 2
+  },
+  {
+    "id": 56,
+    "question": "45,0 : 10 = ?",
+    "options": ["0,45", "4,5", "45,0", "450,0"],
+    "answer": 1
+  },
+  {
+    "id": 57,
+    "question": "75% của 80 là bao nhiêu?",
+    "options": ["50", "60", "70", "75"],
+    "answer": 1
+  },
+  {
+    "id": 58,
+    "question": "Diện tích hình thang có đáy lớn 15 cm, đáy bé 5 cm và chiều cao 4 cm là bao nhiêu?",
+    "options": ["30 cm$^2$", "40 cm$^2$", "50 cm$^2$", "60 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 59,
+    "question": "Một vòi nước chảy vào bể mỗi phút được 15 lít. Sau 1 giờ 30 phút, vòi đó chảy được bao nhiêu lít nước?",
+    "options": ["900 lít", "1350 lít", "1500 lít", "1800 lít"],
+    "answer": 1
+  },
+  {
+    "id": 60,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 8 cm, chiều rộng 5 cm, chiều cao 4 cm là bao nhiêu?",
+    "options": ["100 cm$^3$", "120 cm$^3$", "160 cm$^3$", "200 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 61,
+    "question": "Số 'Năm trăm mười hai phẩy không không sáu' viết là?",
+    "options": ["512,06", "512,60", "512,006", "5126,0"],
+    "answer": 2
+  },
+  {
+    "id": 62,
+    "question": "Chuyển phân số $1/8$ thành số thập phân.",
+    "options": ["0,12", "0,125", "0,25", "0,8"],
+    "answer": 1
+  },
+  {
+    "id": 63,
+    "question": "12,05 + 3,45 + 0,5 = ?",
+    "options": ["16,00", "16,05", "16,0", "16,0"],
+    "answer": 1
+  },
+  {
+    "id": 64,
+    "question": "80 - 25,6 - 10,4 = ?",
+    "options": ["40,0", "42,0", "44,0", "45,0"],
+    "answer": 2
+  },
+  {
+    "id": 65,
+    "question": "0,05 x 1000 = ?",
+    "options": ["5,0", "50,0", "500,0", "5000,0"],
+    "answer": 1
+  },
+  {
+    "id": 66,
+    "question": "2,4 : 0,6 = ?",
+    "options": ["3", "4", "5", "6"],
+    "answer": 1
+  },
+  {
+    "id": 67,
+    "question": "40% của 300 là bao nhiêu?",
+    "options": ["100", "120", "150", "180"],
+    "answer": 1
+  },
+  {
+    "id": 68,
+    "question": "Diện tích hình tam giác có đáy 25 cm và chiều cao 10 cm là bao nhiêu?",
+    "options": ["100 cm$^2$", "125 cm$^2$", "150 cm$^2$", "200 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 69,
+    "question": "Một ô tô đi được quãng đường 120 km trong 3 giờ. Nếu giữ nguyên vận tốc, ô tô đó đi 180 km hết bao nhiêu giờ?",
+    "options": ["3 giờ", "4 giờ", "4,5 giờ", "5 giờ"],
+    "answer": 3
+  },
+  {
+    "id": 70,
+    "question": "Thể tích hình lập phương có cạnh 4 cm là bao nhiêu?",
+    "options": ["16 cm$^3$", "32 cm$^3$", "64 cm$^3$", "80 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 71,
+    "question": "Số lớn nhất trong các số 5,001; 5,010; 5,100; 5,050 là?",
+    "options": ["5,001", "5,010", "5,100", "5,050"],
+    "answer": 2
+  },
+  {
+    "id": 72,
+    "question": "Chuyển tỉ số phần trăm 75% thành phân số tối giản.",
+    "options": ["$3/4$", "$1/4$", "$1/2$", "$3/5$"],
+    "answer": 0
+  },
+  {
+    "id": 73,
+    "question": "205,7 + 10,3 + 5,0 = ?",
+    "options": ["220,0", "221,0", "221,1", "222,0"],
+    "answer": 0
+  },
+  {
+    "id": 74,
+    "question": "1000 - 543,2 = ?",
+    "options": ["456,8", "457,8", "460,0", "465,0"],
+    "answer": 0
+  },
+  {
+    "id": 75,
+    "question": "2,0 x 3,0 x 4,0 = ?",
+    "options": ["18,0", "20,0", "24,0", "30,0"],
+    "answer": 2
+  },
+  {
+    "id": 76,
+    "question": "36,0 : 1,2 = ?",
+    "options": ["25", "30", "35", "40"],
+    "answer": 1
+  },
+  {
+    "id": 77,
+    "question": "15% của 200 là bao nhiêu?",
+    "options": ["15", "20", "30", "40"],
+    "answer": 2
+  },
+  {
+    "id": 78,
+    "question": "Diện tích hình thang có đáy lớn 20 cm, đáy bé 10 cm và chiều cao 8 cm là bao nhiêu?",
+    "options": ["100 cm$^2$", "120 cm$^2$", "150 cm$^2$", "180 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 79,
+    "question": "Một người mua 5 kg cam với giá 15 000 đồng/kg. Người đó phải trả bao nhiêu tiền?",
+    "options": ["60 000 đồng", "70 000 đồng", "75 000 đồng", "80 000 đồng"],
+    "answer": 2
+  },
+  {
+    "id": 80,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 12 cm, chiều rộng 5 cm, chiều cao 3 cm là bao nhiêu?",
+    "options": ["150 cm$^3$", "180 cm$^3$", "200 cm$^3$", "220 cm$^3$"],
+    "answer": 1
+  },
+  {
+    "id": 81,
+    "question": "Giá trị của chữ số 2 trong số 1234,5 là bao nhiêu?",
+    "options": ["2 đơn vị", "2 chục", "2 trăm", "2 nghìn"],
+    "answer": 2
+  },
+  {
+    "id": 82,
+    "question": "Chuyển phân số $5/4$ thành số thập phân.",
+    "options": ["1,2", "1,25", "1,5", "1,75"],
+    "answer": 1
+  },
+  {
+    "id": 83,
+    "question": "12,3 + 4,56 = ?",
+    "options": ["16,86", "16,89", "16,90", "17,00"],
+    "answer": 0
+  },
+  {
+    "id": 84,
+    "question": "50 - 2,34 = ?",
+    "options": ["47,66", "47,76", "48,66", "48,76"],
+    "answer": 0
+  },
+  {
+    "id": 85,
+    "question": "1,1 x 1,1 = ?",
+    "options": ["1,1", "1,11", "1,21", "1,22"],
+    "answer": 2
+  },
+  {
+    "id": 86,
+    "question": "2,8 : 0,4 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 1
+  },
+  {
+    "id": 87,
+    "question": "70% của 200 là bao nhiêu?",
+    "options": ["120", "140", "160", "180"],
+    "answer": 1
+  },
+  {
+    "id": 88,
+    "question": "Một người bán hàng có 120 quả trứng. Buổi sáng bán được 50% số trứng. Buổi sáng bán được bao nhiêu quả?",
+    "options": ["40 quả", "50 quả", "60 quả", "70 quả"],
+    "answer": 2
+  },
+  {
+    "id": 89,
+    "question": "Một hình chữ nhật có chiều dài 20 cm, chiều rộng 10 cm. Chu vi của hình chữ nhật đó là bao nhiêu?",
+    "options": ["30 cm", "60 cm", "100 cm", "200 cm"],
+    "answer": 1
+  },
+  {
+    "id": 90,
+    "question": "Thể tích hình lập phương có cạnh 2 cm là bao nhiêu?",
+    "options": ["4 cm$^3$", "6 cm$^3$", "8 cm$^3$", "12 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 91,
+    "question": "Số 'Một trăm hai mươi ba phẩy không bốn' viết là?",
+    "options": ["123,4", "123,04", "123,004", "1230,4"],
+    "answer": 1
+  },
+  {
+    "id": 92,
+    "question": "Chuyển tỉ số phần trăm 25% thành phân số tối giản.",
+    "options": ["$1/2$", "$1/4$", "$1/5$", "$2/5$"],
+    "answer": 1
+  },
+  {
+    "id": 93,
+    "question": "20,5 + 15,7 + 3,8 = ?",
+    "options": ["39,0", "40,0", "40,1", "40,2"],
+    "answer": 0
+  },
+  {
+    "id": 94,
+    "question": "100 - 15,2 - 10,8 = ?",
+    "options": ["70,0", "72,0", "74,0", "75,0"],
+    "answer": 2
+  },
+  {
+    "id": 95,
+    "question": "0,001 x 1000 = ?",
+    "options": ["0,1", "1,0", "10,0", "100,0"],
+    "answer": 1
+  },
+  {
+    "id": 96,
+    "question": "4,5 : 0,9 = ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 1
+  },
+  {
+    "id": 97,
+    "question": "30% của 250 là bao nhiêu?",
+    "options": ["60", "70", "75", "80"],
+    "answer": 2
+  },
+  {
+    "id": 98,
+    "question": "Diện tích hình thang có đáy lớn 10 cm, đáy bé 8 cm và chiều cao 4 cm là bao nhiêu?",
+    "options": ["36 cm$^2$", "40 cm$^2$", "48 cm$^2$", "56 cm$^2$"],
+    "answer": 0
+  },
+  {
+    "id": 99,
+    "question": "Một người mua 2,5 kg táo với giá 20 000 đồng/kg. Người đó phải trả bao nhiêu tiền?",
+    "options": ["40 000 đồng", "45 000 đồng", "50 000 đồng", "55 000 đồng"],
+    "answer": 2
+  },
+  {
+    "id": 100,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 20 cm, chiều rộng 10 cm, chiều cao 5 cm là bao nhiêu?",
+    "options": ["500 cm$^3$", "800 cm$^3$", "1000 cm$^3$", "1200 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 101,
+    "question": "Giá trị của chữ số 0 trong số 102,34 là bao nhiêu?",
+    "options": ["0 đơn vị", "0 chục", "0 trăm", "0 nghìn"],
+    "answer": 1
+  },
+  {
+    "id": 102,
+    "question": "Chuyển phân số $3/5$ thành số thập phân.",
+    "options": ["0,3", "0,5", "0,6", "0,8"],
+    "answer": 2
+  },
+  {
+    "id": 103,
+    "question": "5,06 + 2,14 = ?",
+    "options": ["7,00", "7,10", "7,20", "7,20"],
+    "answer": 1
+  },
+  {
+    "id": 104,
+    "question": "30 - 15,25 = ?",
+    "options": ["14,75", "14,85", "15,25", "15,75"],
+    "answer": 0
+  },
+  {
+    "id": 105,
+    "question": "2,5 x 2,5 = ?",
+    "options": ["5,0", "6,0", "6,25", "6,5"],
+    "answer": 2
+  },
+  {
+    "id": 106,
+    "question": "1,6 : 0,8 = ?",
+    "options": ["1", "2", "3", "4"],
+    "answer": 1
+  },
+  {
+    "id": 107,
+    "question": "80% của 500 là bao nhiêu?",
+    "options": ["300", "350", "400", "450"],
+    "answer": 2
+  },
+  {
+    "id": 108,
+    "question": "Một người làm 120 sản phẩm. Người đó đã làm được 75% số sản phẩm. Người đó đã làm được bao nhiêu sản phẩm?",
+    "options": ["80 sản phẩm", "90 sản phẩm", "100 sản phẩm", "110 sản phẩm"],
+    "answer": 1
+  },
+  {
+    "id": 109,
+    "question": "Một hình chữ nhật có chu vi 80 cm, chiều dài 25 cm. Chiều rộng của hình chữ nhật đó là bao nhiêu?",
+    "options": ["10 cm", "15 cm", "20 cm", "25 cm"],
+    "answer": 1
+  },
+  {
+    "id": 110,
+    "question": "Thể tích hình lập phương có cạnh 6 cm là bao nhiêu?",
+    "options": ["36 cm$^3$", "108 cm$^3$", "216 cm$^3$", "256 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 111,
+    "question": "Số 'Không phẩy không không tám' viết là?",
+    "options": ["0,08", "0,008", "0,8", "0,0008"],
+    "answer": 1
+  },
+  {
+    "id": 112,
+    "question": "Chuyển tỉ số phần trăm 10% thành phân số tối giản.",
+    "options": ["$1/2$", "$1/5$", "$1/10$", "$1/20$"],
+    "answer": 2
+  },
+  {
+    "id": 113,
+    "question": "45,0 + 12,3 + 5,0 = ?",
+    "options": ["62,0", "62,3", "62,5", "63,0"],
+    "answer": 1
+  },
+  {
+    "id": 114,
+    "question": "500 - 23,45 - 10,05 = ?",
+    "options": ["460,0", "465,0", "466,5", "470,0"],
+    "answer": 1
+  },
+  {
+    "id": 115,
+    "question": "12,0 x 0,5 = ?",
+    "options": ["5,0", "6,0", "7,0", "8,0"],
+    "answer": 1
+  },
+  {
+    "id": 116,
+    "question": "3,5 : 0,5 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 1
+  },
+  {
+    "id": 117,
+    "question": "60% của 200 là bao nhiêu?",
+    "options": ["80", "100", "120", "140"],
+    "answer": 2
+  },
+  {
+    "id": 118,
+    "question": "Diện tích hình tam giác có đáy 30 cm và chiều cao 20 cm là bao nhiêu?",
+    "options": ["150 cm$^2$", "200 cm$^2$", "300 cm$^2$", "450 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 119,
+    "question": "Một người chạy bộ trong 15 phút được 3 km. Vận tốc của người đó là bao nhiêu km/giờ?",
+    "options": ["10 km/giờ", "12 km/giờ", "15 km/giờ", "18 km/giờ"],
+    "answer": 1
+  },
+  {
+    "id": 120,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 15 cm, chiều rộng 10 cm, chiều cao 5 cm là bao nhiêu?",
+    "options": ["600 cm$^3$", "700 cm$^3$", "750 cm$^3$", "800 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 121,
+    "question": "Giá trị của chữ số 7 trong số 765,432 là bao nhiêu?",
+    "options": ["7 đơn vị", "7 chục", "7 trăm", "7 nghìn"],
+    "answer": 2
+  },
+  {
+    "id": 122,
+    "question": "Chuyển phân số $1/10$ thành số thập phân.",
+    "options": ["0,01", "0,1", "1,0", "10,0"],
+    "answer": 1
+  },
+  {
+    "id": 123,
+    "question": "2,03 + 5,07 = ?",
+    "options": ["7,00", "7,10", "7,10", "7,10"],
+    "answer": 1
+  },
+  {
+    "id": 124,
+    "question": "500 - 123,4 = ?",
+    "options": ["376,6", "377,6", "378,6", "380,0"],
+    "answer": 0
+  },
+  {
+    "id": 125,
+    "question": "0,01 x 100 = ?",
+    "options": ["0,1", "1,0", "10,0", "100,0"],
+    "answer": 1
+  },
+  {
+    "id": 126,
+    "question": "6,3 : 0,7 = ?",
+    "options": ["8", "9", "10", "11"],
+    "answer": 1
+  },
+  {
+    "id": 127,
+    "question": "90% của 1000 là bao nhiêu?",
+    "options": ["800", "900", "950", "1000"],
+    "answer": 1
+  },
+  {
+    "id": 128,
+    "question": "Diện tích hình thang có đáy lớn 20 cm, đáy bé 12 cm và chiều cao 10 cm là bao nhiêu?",
+    "options": ["150 cm$^2$", "160 cm$^2$", "180 cm$^2$", "200 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 129,
+    "question": "Một người mua 0,5 kg thịt lợn với giá 120 000 đồng/kg. Người đó phải trả bao nhiêu tiền?",
+    "options": ["40 000 đồng", "50 000 đồng", "60 000 đồng", "70 000 đồng"],
+    "answer": 2
+  },
+  {
+    "id": 130,
+    "question": "Thể tích hình lập phương có cạnh 1 cm là bao nhiêu?",
+    "options": ["1 cm$^3$", "2 cm$^3$", "3 cm$^3$", "4 cm$^3$"],
+    "answer": 0
+  },
+  {
+    "id": 131,
+    "question": "Số 'Ba phẩy không không ba' viết là?",
+    "options": ["3,03", "3,003", "3,3", "3,0003"],
+    "answer": 1
+  },
+  {
+    "id": 132,
+    "question": "Chuyển tỉ số phần trăm 50% thành phân số tối giản.",
+    "options": ["$1/2$", "$1/4$", "$2/5$", "$3/4$"],
+    "answer": 0
+  },
+  {
+    "id": 133,
+    "question": "15,75 + 2,25 + 0,5 = ?",
+    "options": ["18,0", "18,5", "18,75", "19,0"],
+    "answer": 1
+  },
+  {
+    "id": 134,
+    "question": "90 - 35,4 - 10,6 = ?",
+    "options": ["40,0", "42,0", "44,0", "45,0"],
+    "answer": 2
+  },
+  {
+    "id": 135,
+    "question": "0,12 x 100 = ?",
+    "options": ["1,2", "12,0", "120,0", "1200,0"],
+    "answer": 1
+  },
+  {
+    "id": 136,
+    "question": "5,6 : 0,7 = ?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 1
+  },
+  {
+    "id": 137,
+    "question": "5% của 400 là bao nhiêu?",
+    "options": ["10", "15", "20", "25"],
+    "answer": 2
+  },
+  {
+    "id": 138,
+    "question": "Diện tích hình tam giác có đáy 16 cm và chiều cao 8 cm là bao nhiêu?",
+    "options": ["60 cm$^2$", "64 cm$^2$", "72 cm$^2$", "80 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 139,
+    "question": "Một người đi từ A lúc 7 giờ sáng và đến B lúc 9 giờ 30 phút. Vận tốc đi là 40 km/giờ. Quãng đường AB dài bao nhiêu km?",
+    "options": ["90 km", "100 km", "120 km", "150 km"],
+    "answer": 1
+  },
+  {
+    "id": 140,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 3 cm, chiều rộng 2 cm, chiều cao 1 cm là bao nhiêu?",
+    "options": ["4 cm$^3$", "5 cm$^3$", "6 cm$^3$", "7 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 141,
+    "question": "Số lớn nhất trong các số 0,1; 0,01; 0,11; 0,101 là?",
+    "options": ["0,1", "0,01", "0,11", "0,101"],
+    "answer": 2
+  },
+  {
+    "id": 142,
+    "question": "Chuyển tỉ số phần trăm 20% thành phân số tối giản.",
+    "options": ["$1/2$", "$1/4$", "$1/5$", "$2/5$"],
+    "answer": 2
+  },
+  {
+    "id": 143,
+    "question": "200,0 + 15,25 + 3,75 = ?",
+    "options": ["219,0", "219,00", "219,05", "220,0"],
+    "answer": 3
+  },
+  {
+    "id": 144,
+    "question": "1000 - 250,5 = ?",
+    "options": ["740,5", "749,5", "750,5", "760,0"],
+    "answer": 1
+  },
+  {
+    "id": 145,
+    "question": "0,2 x 0,3 = ?",
+    "options": ["0,05", "0,06", "0,5", "0,6"],
+    "answer": 1
+  },
+  {
+    "id": 146,
+    "question": "4,2 : 0,6 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 1
+  },
+  {
+    "id": 147,
+    "question": "35% của 200 là bao nhiêu?",
+    "options": ["60", "70", "75", "80"],
+    "answer": 1
+  },
+  {
+    "id": 148,
+    "question": "Một người bán hàng có 200 kg gạo. Buổi sáng bán được 30% số gạo. Buổi chiều bán được 50% số gạo còn lại. Buổi chiều bán được bao nhiêu kg gạo?",
+    "options": ["50 kg", "60 kg", "70 kg", "80 kg"],
+    "answer": 2
+  },
+  {
+    "id": 149,
+    "question": "Một hình chữ nhật có chu vi 100 cm, chiều rộng 20 cm. Chiều dài của hình chữ nhật đó là bao nhiêu?",
+    "options": ["20 cm", "25 cm", "30 cm", "35 cm"],
+    "answer": 2
+  },
+  {
+    "id": 150,
+    "question": "Thể tích hình lập phương có cạnh 7 cm là bao nhiêu?",
+    "options": ["49 cm$^3$", "243 cm$^3$", "343 cm$^3$", "443 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 151,
+    "question": "Số 'Không phẩy một trăm linh năm' viết là?",
+    "options": ["0,15", "0,105", "0,015", "0,1005"],
+    "answer": 1
+  },
+  {
+    "id": 152,
+    "question": "Chuyển phân số $1/2$ thành số thập phân.",
+    "options": ["0,1", "0,2", "0,5", "1,0"],
+    "answer": 2
+  },
+  {
+    "id": 153,
+    "question": "12,3 + 4,56 + 7,89 = ?",
+    "options": ["24,78", "24,79", "24,80", "24,81"],
+    "answer": 1
+  },
+  {
+    "id": 154,
+    "question": "100 - 34,5 - 20,5 = ?",
+    "options": ["40,0", "45,0", "50,0", "55,0"],
+    "answer": 1
+  },
+  {
+    "id": 155,
+    "question": "1,05 x 100 = ?",
+    "options": ["1,05", "10,5", "105,0", "1050,0"],
+    "answer": 2
+  },
+  {
+    "id": 156,
+    "question": "5,4 : 0,9 = ?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 1
+  },
+  {
+    "id": 157,
+    "question": "45% của 400 là bao nhiêu?",
+    "options": ["150", "160", "180", "200"],
+    "answer": 2
+  },
+  {
+    "id": 158,
+    "question": "Diện tích hình thang có đáy lớn 15 cm, đáy bé 10 cm và chiều cao 8 cm là bao nhiêu?",
+    "options": ["80 cm$^2$", "100 cm$^2$", "120 cm$^2$", "140 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 159,
+    "question": "Một ô tô đi 120 km hết 2 giờ 30 phút. Vận tốc của ô tô là bao nhiêu km/giờ?",
+    "options": ["40 km/giờ", "45 km/giờ", "48 km/giờ", "50 km/giờ"],
+    "answer": 2
+  },
+  {
+    "id": 160,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 25 cm, chiều rộng 10 cm, chiều cao 5 cm là bao nhiêu?",
+    "options": ["1000 cm$^3$", "1250 cm$^3$", "1500 cm$^3$", "1800 cm$^3$"],
+    "answer": 1
+  },
+  {
+    "id": 161,
+    "question": "Giá trị của chữ số 3 trong số 4,321 là bao nhiêu?",
+    "options": ["3 đơn vị", "3 chục", "3 phần mười", "3 phần trăm"],
+    "answer": 2
+  },
+  {
+    "id": 162,
+    "question": "Chuyển tỉ số phần trăm 40% thành phân số tối giản.",
+    "options": ["$1/2$", "$2/5$", "$3/5$", "$4/5$"],
+    "answer": 1
+  },
+  {
+    "id": 163,
+    "question": "200,5 + 15,3 + 0,2 = ?",
+    "options": ["215,0", "216,0", "216,00", "216,05"],
+    "answer": 1
+  },
+  {
+    "id": 164,
+    "question": "1000 - 500,25 = ?",
+    "options": ["490,75", "499,75", "500,00", "500,75"],
+    "answer": 1
+  },
+  {
+    "id": 165,
+    "question": "2,0 x 0,05 = ?",
+    "options": ["0,01", "0,1", "0,1", "1,0"],
+    "answer": 1
+  },
+  {
+    "id": 166,
+    "question": "8,1 : 0,9 = ?",
+    "options": ["8", "9", "10", "11"],
+    "answer": 1
+  },
+  {
+    "id": 167,
+    "question": "75% của 400 là bao nhiêu?",
+    "options": ["200", "250", "300", "350"],
+    "answer": 2
+  },
+  {
+    "id": 168,
+    "question": "Diện tích hình tam giác có đáy 40 cm và chiều cao 25 cm là bao nhiêu?",
+    "options": ["400 cm$^2$", "500 cm$^2$", "600 cm$^2$", "800 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 169,
+    "question": "Một người mua 3 kg gạo với giá 18 000 đồng/kg. Người đó trả 100 000 đồng. Người bán phải trả lại bao nhiêu tiền?",
+    "options": ["40 000 đồng", "42 000 đồng", "44 000 đồng", "46 000 đồng"],
+    "answer": 2
+  },
+  {
+    "id": 170,
+    "question": "Thể tích hình lập phương có cạnh 8 cm là bao nhiêu?",
+    "options": ["64 cm$^3$", "128 cm$^3$", "256 cm$^3$", "512 cm$^3$"],
+    "answer": 3
+  },
+  {
+    "id": 171,
+    "question": "Số 'Hai nghìn không trăm linh sáu phẩy bảy' viết là?",
+    "options": ["2006,7", "2060,7", "206,7", "20067,0"],
+    "answer": 0
+  },
+  {
+    "id": 172,
+    "question": "Chuyển phân số $1/4$ thành số thập phân.",
+    "options": ["0,14", "0,25", "0,4", "1,4"],
+    "answer": 1
+  },
+  {
+    "id": 173,
+    "question": "5,67 + 1,23 + 0,1 = ?",
+    "options": ["7,00", "7,01", "7,01", "7,01"],
+    "answer": 0
+  },
+  {
+    "id": 174,
+    "question": "200 - 50,5 - 25,5 = ?",
+    "options": ["120,0", "124,0", "125,0", "128,0"],
+    "answer": 2
+  },
+  {
+    "id": 175,
+    "question": "3,45 x 1000 = ?",
+    "options": ["345,0", "3450,0", "34500,0", "345000,0"],
+    "answer": 1
+  },
+  {
+    "id": 176,
+    "question": "7,2 : 0,8 = ?",
+    "options": ["8", "9", "10", "11"],
+    "answer": 1
+  },
+  {
+    "id": 177,
+    "question": "25% của 400 là bao nhiêu?",
+    "options": ["50", "75", "100", "125"],
+    "answer": 2
+  },
+  {
+    "id": 178,
+    "question": "Một người bán hàng có 300 kg cam. Buổi sáng bán được 40% số cam. Buổi chiều bán được 50% số cam còn lại. Buổi chiều bán được bao nhiêu kg cam?",
+    "options": ["60 kg", "70 kg", "80 kg", "90 kg"],
+    "answer": 2
+  },
+  {
+    "id": 179,
+    "question": "Một hình chữ nhật có chu vi 120 cm, chiều dài 35 cm. Chiều rộng của hình chữ nhật đó là bao nhiêu?",
+    "options": ["15 cm", "20 cm", "25 cm", "30 cm"],
+    "answer": 2
+  },
+  {
+    "id": 180,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 20 cm, chiều rộng 15 cm, chiều cao 10 cm là bao nhiêu?",
+    "options": ["1000 cm$^3$", "2000 cm$^3$", "3000 cm$^3$", "4000 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 181,
+    "question": "Giá trị của chữ số 8 trong số 123,485 là bao nhiêu?",
+    "options": ["8 đơn vị", "8 chục", "8 phần mười", "8 phần trăm"],
+    "answer": 3
+  },
+  {
+    "id": 182,
+    "question": "Chuyển tỉ số phần trăm 12,5% thành phân số tối giản.",
+    "options": ["$1/2$", "$1/4$", "$1/8$", "$1/10$"],
+    "answer": 2
+  },
+  {
+    "id": 183,
+    "question": "10,01 + 2,99 + 5,0 = ?",
+    "options": ["18,0", "18,0", "18,0", "18,0"],
+    "answer": 0
+  },
+  {
+    "id": 184,
+    "question": "50 - 10,1 - 20,2 = ?",
+    "options": ["19,7", "19,8", "19,9", "20,0"],
+    "answer": 2
+  },
+  {
+    "id": 185,
+    "question": "0,4 x 0,2 = ?",
+    "options": ["0,06", "0,08", "0,6", "0,8"],
+    "answer": 1
+  },
+  {
+    "id": 186,
+    "question": "9,0 : 0,5 = ?",
+    "options": ["15", "16", "18", "20"],
+    "answer": 2
+  },
+  {
+    "id": 187,
+    "question": "60% của 300 là bao nhiêu?",
+    "options": ["150", "180", "200", "220"],
+    "answer": 1
+  },
+  {
+    "id": 188,
+    "question": "Diện tích hình thang có đáy lớn 25 cm, đáy bé 15 cm và chiều cao 10 cm là bao nhiêu?",
+    "options": ["100 cm$^2$", "150 cm$^2$", "200 cm$^2$", "250 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 189,
+    "question": "Một người đi từ A lúc 8 giờ sáng và đến B lúc 11 giờ. Quãng đường AB dài 150 km. Vận tốc của người đó là bao nhiêu km/giờ?",
+    "options": ["40 km/giờ", "45 km/giờ", "50 km/giờ", "60 km/giờ"],
+    "answer": 2
+  },
+  {
+    "id": 190,
+    "question": "Thể tích hình lập phương có cạnh 9 cm là bao nhiêu?",
+    "options": ["81 cm$^3$", "243 cm$^3$", "512 cm$^3$", "729 cm$^3$"],
+    "answer": 3
+  },
+  {
+    "id": 191,
+    "question": "Số 'Hai mươi lăm phẩy không không sáu' viết là?",
+    "options": ["25,06", "25,006", "25,6", "250,06"],
+    "answer": 1
+  },
+  {
+    "id": 192,
+    "question": "Chuyển phân số $1/5$ thành tỉ số phần trăm.",
+    "options": ["10%", "20%", "25%", "50%"],
+    "answer": 1
+  },
+  {
+    "id": 193,
+    "question": "123,05 + 4,05 = ?",
+    "options": ["127,00", "127,10", "127,10", "127,10"],
+    "answer": 1
+  },
+  {
+    "id": 194,
+    "question": "300 - 100,5 - 50,5 = ?",
+    "options": ["140,0", "149,0", "150,0", "160,0"],
+    "answer": 1
+  },
+  {
+    "id": 195,
+    "question": "12,5 x 0,1 = ?",
+    "options": ["0,125", "1,25", "12,5", "125,0"],
+    "answer": 1
+  },
+  {
+    "id": 196,
+    "question": "10,8 : 1,2 = ?",
+    "options": ["8", "9", "10", "11"],
+    "answer": 1
+  },
+  {
+    "id": 197,
+    "question": "80% của 400 là bao nhiêu?",
+    "options": ["280", "300", "320", "350"],
+    "answer": 2
+  },
+  {
+    "id": 198,
+    "question": "Một người bán hàng có 500 kg gạo. Buổi sáng bán được 35% số gạo. Buổi sáng bán được bao nhiêu kg gạo?",
+    "options": ["150 kg", "175 kg", "200 kg", "225 kg"],
+    "answer": 1
+  },
+  {
+    "id": 199,
+    "question": "Một hình chữ nhật có chu vi 150 cm, chiều dài 40 cm. Chiều rộng của hình chữ nhật đó là bao nhiêu?",
+    "options": ["30 cm", "35 cm", "40 cm", "45 cm"],
+    "answer": 1
+  },
+  {
+    "id": 200,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 30 cm, chiều rộng 10 cm, chiều cao 5 cm là bao nhiêu?",
+    "options": ["1000 cm$^3$", "1200 cm$^3$", "1500 cm$^3$", "1800 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 201,
+    "question": "Giá trị của chữ số 1 trong số 1234,56 là bao nhiêu?",
+    "options": ["1 trăm", "1 nghìn", "1 chục nghìn", "1 trăm nghìn"],
+    "answer": 1
+  },
+  {
+    "id": 202,
+    "question": "Chuyển tỉ số phần trăm 70% thành phân số tối giản.",
+    "options": ["$7/10$", "$1/2$", "$3/5$", "$7/100$"],
+    "answer": 0
+  },
+  {
+    "id": 203,
+    "question": "20,0 + 15,25 + 3,75 = ?",
+    "options": ["39,0", "39,00", "39,05", "40,0"],
+    "answer": 3
+  },
+  {
+    "id": 204,
+    "question": "1000 - 200,5 - 100,5 = ?",
+    "options": ["690,0", "699,0", "700,0", "710,0"],
+    "answer": 1
+  },
+  {
+    "id": 205,
+    "question": "0,02 x 0,03 = ?",
+    "options": ["0,0006", "0,006", "0,06", "0,6"],
+    "answer": 1
+  },
+  {
+    "id": 206,
+    "question": "14,4 : 1,2 = ?",
+    "options": ["10", "11", "12", "13"],
+    "answer": 2
+  },
+  {
+    "id": 207,
+    "question": "120% của 100 là bao nhiêu?",
+    "options": ["100", "110", "120", "130"],
+    "answer": 2
+  },
+  {
+    "id": 208,
+    "question": "Diện tích hình tam giác có đáy 50 cm và chiều cao 20 cm là bao nhiêu?",
+    "options": ["400 cm$^2$", "500 cm$^2$", "600 cm$^2$", "700 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 209,
+    "question": "Một người mua 1,5 kg cá với giá 30 000 đồng/kg. Người đó trả 50 000 đồng. Người bán phải trả lại bao nhiêu tiền?",
+    "options": ["5 000 đồng", "8 000 đồng", "10 000 đồng", "12 000 đồng"],
+    "answer": 1
+  },
+  {
+    "id": 210,
+    "question": "Thể tích hình lập phương có cạnh 10 cm là bao nhiêu?",
+    "options": ["100 cm$^3$", "500 cm$^3$", "1000 cm$^3$", "1200 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 211,
+    "question": "Số 'Bốn mươi lăm phẩy hai nghìn không trăm ba mươi tư' viết là?",
+    "options": ["45,234", "45,2034", "45,2340", "452,034"],
+    "answer": 1
+  },
+  {
+    "id": 212,
+    "question": "Chuyển phân số $3/10$ thành số thập phân.",
+    "options": ["0,03", "0,3", "3,0", "30,0"],
+    "answer": 1
+  },
+  {
+    "id": 213,
+    "question": "123,4 + 56,7 + 8,9 = ?",
+    "options": ["189,0", "189,0", "189,0", "189,0"],
+    "answer": 0
+  },
+  {
+    "id": 214,
+    "question": "500 - 123,45 - 50,05 = ?",
+    "options": ["320,0", "325,0", "326,5", "327,5"],
+    "answer": 2
+  },
+  {
+    "id": 215,
+    "question": "0,15 x 100 = ?",
+    "options": ["1,5", "15,0", "150,0", "1500,0"],
+    "answer": 1
+  },
+  {
+    "id": 216,
+    "question": "16,9 : 1,3 = ?",
+    "options": ["10", "12", "13", "14"],
+    "answer": 2
+  },
+  {
+    "id": 217,
+    "question": "150% của 200 là bao nhiêu?",
+    "options": ["200", "250", "300", "350"],
+    "answer": 2
+  },
+  {
+    "id": 218,
+    "question": "Diện tích hình thang có đáy lớn 30 cm, đáy bé 20 cm và chiều cao 10 cm là bao nhiêu?",
+    "options": ["200 cm$^2$", "250 cm$^2$", "300 cm$^2$", "350 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 219,
+    "question": "Một ô tô đi 240 km hết 5 giờ. Vận tốc của ô tô là bao nhiêu?",
+    "options": ["40 km/giờ", "45 km/giờ", "48 km/giờ", "50 km/giờ"],
+    "answer": 2
+  },
+  {
+    "id": 220,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 40 cm, chiều rộng 20 cm, chiều cao 10 cm là bao nhiêu?",
+    "options": ["4000 cm$^3$", "6000 cm$^3$", "8000 cm$^3$", "10000 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 221,
+    "question": "Giá trị của chữ số 4 trong số 0,1234 là bao nhiêu?",
+    "options": ["4 đơn vị", "4 chục", "4 phần mười", "4 phần nghìn"],
+    "answer": 3
+  },
+  {
+    "id": 222,
+    "question": "Chuyển tỉ số phần trăm 5% thành phân số tối giản.",
+    "options": ["$1/5$", "$1/10$", "$1/20$", "$1/50$"],
+    "answer": 2
+  },
+  {
+    "id": 223,
+    "question": "300,5 + 150,25 + 2,25 = ?",
+    "options": ["453,0", "453,00", "453,05", "454,0"],
+    "answer": 0
+  },
+  {
+    "id": 224,
+    "question": "1000 - 50,5 - 25,5 = ?",
+    "options": ["920,0", "924,0", "925,0", "930,0"],
+    "answer": 2
+  },
+  {
+    "id": 225,
+    "question": "0,005 x 1000 = ?",
+    "options": ["0,5", "5,0", "50,0", "500,0"],
+    "answer": 1
+  },
+  {
+    "id": 226,
+    "question": "2,25 : 0,5 = ?",
+    "options": ["4,0", "4,5", "5,0", "5,5"],
+    "answer": 1
+  },
+  {
+    "id": 227,
+    "question": "200% của 50 là bao nhiêu?",
+    "options": ["50", "80", "100", "120"],
+    "answer": 2
+  },
+  {
+    "id": 228,
+    "question": "Diện tích hình tam giác có đáy 60 cm và chiều cao 30 cm là bao nhiêu?",
+    "options": ["600 cm$^2$", "800 cm$^2$", "900 cm$^2$", "1000 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 229,
+    "question": "Một người mua 2,5 kg thịt bò với giá 150 000 đồng/kg. Người đó phải trả bao nhiêu tiền?",
+    "options": ["300 000 đồng", "350 000 đồng", "375 000 đồng", "400 000 đồng"],
+    "answer": 2
+  },
+  {
+    "id": 230,
+    "question": "Thể tích hình lập phương có cạnh 11 cm là bao nhiêu?",
+    "options": ["121 cm$^3$", "1210 cm$^3$", "1331 cm$^3$", "1441 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 231,
+    "question": "Số 'Sáu trăm linh một phẩy không không không hai' viết là?",
+    "options": ["601,002", "601,0002", "601,02", "6010,02"],
+    "answer": 1
+  },
+  {
+    "id": 232,
+    "question": "Chuyển phân số $1/20$ thành số thập phân.",
+    "options": ["0,05", "0,1", "0,2", "0,5"],
+    "answer": 0
+  },
+  {
+    "id": 233,
+    "question": "567,8 + 123,4 = ?",
+    "options": ["690,0", "691,2", "691,2", "691,2"],
+    "answer": 1
+  },
+  {
+    "id": 234,
+    "question": "2000 - 876,5 = ?",
+    "options": ["1120,5", "1123,5", "1123,5", "1123,5"],
+    "answer": 1
+  },
+  {
+    "id": 235,
+    "question": "0,001 x 0,01 = ?",
+    "options": ["0,00001", "0,0001", "0,001", "0,01"],
+    "answer": 1
+  },
+  {
+    "id": 236,
+    "question": "3,6 : 0,09 = ?",
+    "options": ["30", "40", "50", "60"],
+    "answer": 1
+  },
+  {
+    "id": 237,
+    "question": "10% của 50 là bao nhiêu?",
+    "options": ["5", "10", "15", "20"],
+    "answer": 0
+  },
+  {
+    "id": 238,
+    "question": "Diện tích hình thang có đáy lớn 40 cm, đáy bé 20 cm và chiều cao 15 cm là bao nhiêu?",
+    "options": ["300 cm$^2$", "400 cm$^2$", "450 cm$^2$", "500 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 239,
+    "question": "Một người đi xe máy từ A lúc 6 giờ sáng và đến B lúc 9 giờ 30 phút. Quãng đường AB dài 140 km. Vận tốc của người đó là bao nhiêu km/giờ?",
+    "options": ["30 km/giờ", "40 km/giờ", "45 km/giờ", "50 km/giờ"],
+    "answer": 0
+  },
+  {
+    "id": 240,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 50 cm, chiều rộng 20 cm, chiều cao 10 cm là bao nhiêu?",
+    "options": ["5000 cm$^3$", "8000 cm$^3$", "10000 cm$^3$", "12000 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 241,
+    "question": "Giá trị của chữ số 5 trong số 543,21 là bao nhiêu?",
+    "options": ["5 đơn vị", "5 chục", "5 trăm", "5 nghìn"],
+    "answer": 2
+  },
+  {
+    "id": 242,
+    "question": "Chuyển tỉ số phần trăm 0,5% thành số thập phân.",
+    "options": ["0,005", "0,05", "0,5", "5,0"],
+    "answer": 0
+  },
+  {
+    "id": 243,
+    "question": "12,34 + 5,67 + 8,91 + 10,08 = ?",
+    "options": ["37,00", "37,00", "37,00", "37,00"],
+    "answer": 0
+  },
+  {
+    "id": 244,
+    "question": "100 - 10,1 - 10,2 - 10,3 = ?",
+    "options": ["69,4", "69,5", "69,6", "69,7"],
+    "answer": 3
+  },
+  {
+    "id": 245,
+    "question": "1,2 x 1,2 x 1,2 = ?",
+    "options": ["1,44", "1,728", "1,728", "1,728"],
+    "answer": 1
+  },
+  {
+    "id": 246,
+    "question": "0,81 : 0,09 = ?",
+    "options": ["8", "9", "10", "11"],
+    "answer": 1
+  },
+  {
+    "id": 247,
+    "question": "250% của 200 là bao nhiêu?",
+    "options": ["250", "300", "400", "500"],
+    "answer": 3
+  },
+  {
+    "id": 248,
+    "question": "Diện tích hình tam giác có đáy 80 cm và chiều cao 40 cm là bao nhiêu?",
+    "options": ["1200 cm$^2$", "1600 cm$^2$", "2000 cm$^2$", "2400 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 249,
+    "question": "Một người bán hàng có 1500 kg gạo. Buổi sáng bán được 30% số gạo. Buổi chiều bán được 40% số gạo còn lại. Buổi chiều bán được bao nhiêu kg gạo?",
+    "options": ["300 kg", "350 kg", "400 kg", "420 kg"],
+    "answer": 3
+  },
+  {
+    "id": 250,
+    "question": "Thể tích hình lập phương có cạnh 12 cm là bao nhiêu?",
+    "options": ["144 cm$^3$", "1728 cm$^3$", "2000 cm$^3$", "2400 cm$^3$"],
+    "answer": 1
+  },
+  {
+    "id": 251,
+    "question": "Số 'Ba trăm lẻ năm phẩy hai mươi mốt' viết là?",
+    "options": ["305,21", "305,12", "350,21", "3052,1"],
+    "answer": 0
+  },
+  {
+    "id": 252,
+    "question": "Chuyển phân số $1/4$ thành tỉ số phần trăm.",
+    "options": ["10%", "20%", "25%", "40%"],
+    "answer": 2
+  },
+  {
+    "id": 253,
+    "question": "20,5 + 15,3 + 0,2 = ?",
+    "options": ["36,0", "36,00", "36,05", "37,0"],
+    "answer": 0
+  },
+  {
+    "id": 254,
+    "question": "100 - 15,2 - 10,8 = ?",
+    "options": ["70,0", "72,0", "74,0", "75,0"],
+    "answer": 2
+  },
+  {
+    "id": 255,
+    "question": "0,012 x 100 = ?",
+    "options": ["0,12", "1,2", "12,0", "120,0"],
+    "answer": 1
+  },
+  {
+    "id": 256,
+    "question": "2,4 : 0,08 = ?",
+    "options": ["20", "25", "30", "35"],
+    "answer": 2
+  },
+  {
+    "id": 257,
+    "question": "75% của 600 là bao nhiêu?",
+    "options": ["400", "420", "450", "480"],
+    "answer": 2
+  },
+  {
+    "id": 258,
+    "question": "Diện tích hình thang có đáy lớn 50 cm, đáy bé 30 cm và chiều cao 20 cm là bao nhiêu?",
+    "options": ["600 cm$^2$", "700 cm$^2$", "800 cm$^2$", "900 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 259,
+    "question": "Một vòi nước chảy vào bể mỗi phút được 20 lít. Sau 1 giờ 45 phút, vòi đó chảy được bao nhiêu lít nước?",
+    "options": ["2100 lít", "2200 lít", "2300 lít", "2400 lít"],
+    "answer": 0
+  },
+  {
+    "id": 260,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 60 cm, chiều rộng 30 cm, chiều cao 20 cm là bao nhiêu?",
+    "options": ["30000 cm$^3$", "36000 cm$^3$", "40000 cm$^3$", "45000 cm$^3$"],
+    "answer": 1
+  },
+  {
+    "id": 261,
+    "question": "Giá trị của chữ số 7 trong số 1234,75 là bao nhiêu?",
+    "options": ["7 đơn vị", "7 chục", "7 phần mười", "7 phần trăm"],
+    "answer": 2
+  },
+  {
+    "id": 262,
+    "question": "Chuyển tỉ số phần trăm 0,01% thành số thập phân.",
+    "options": ["0,0001", "0,001", "0,01", "0,1"],
+    "answer": 0
+  },
+  {
+    "id": 263,
+    "question": "5,67 + 2,34 + 1,09 = ?",
+    "options": ["9,00", "9,05", "9,01", "9,10"],
+    "answer": 0
+  },
+  {
+    "id": 264,
+    "question": "200 - 12,34 - 5,66 = ?",
+    "options": ["180,0", "182,0", "182,0", "182,0"],
+    "answer": 0
+  },
+  {
+    "id": 265,
+    "question": "0,002 x 10000 = ?",
+    "options": ["2,0", "20,0", "200,0", "2000,0"],
+    "answer": 1
+  },
+  {
+    "id": 266,
+    "question": "4,9 : 0,07 = ?",
+    "options": ["60", "70", "80", "90"],
+    "answer": 1
+  },
+  {
+    "id": 267,
+    "question": "125% của 400 là bao nhiêu?",
+    "options": ["400", "450", "500", "550"],
+    "answer": 2
+  },
+  {
+    "id": 268,
+    "question": "Diện tích hình tam giác có đáy 100 cm và chiều cao 50 cm là bao nhiêu?",
+    "options": ["2000 cm$^2$", "2500 cm$^2$", "3000 cm$^2$", "3500 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 269,
+    "question": "Một người đi xe máy 2 giờ 15 phút với vận tốc 40 km/giờ. Quãng đường người đó đã đi được bao nhiêu km?",
+    "options": ["80 km", "90 km", "100 km", "120 km"],
+    "answer": 1
+  },
+  {
+    "id": 270,
+    "question": "Thể tích hình lập phương có cạnh 1 cm là bao nhiêu?",
+    "options": ["1 cm$^3$", "2 cm$^3$", "3 cm$^3$", "4 cm$^3$"],
+    "answer": 0
+  },
+  {
+    "id": 271,
+    "question": "Số 'Một phẩy không không không năm' viết là?",
+    "options": ["1,005", "1,0005", "1,05", "1,5"],
+    "answer": 1
+  },
+  {
+    "id": 272,
+    "question": "Chuyển phân số $1/100$ thành số thập phân.",
+    "options": ["0,001", "0,01", "0,1", "1,0"],
+    "answer": 1
+  },
+  {
+    "id": 273,
+    "question": "10,0 + 20,0 + 30,0 + 40,0 = ?",
+    "options": ["90,0", "100,0", "110,0", "120,0"],
+    "answer": 1
+  },
+  {
+    "id": 274,
+    "question": "1000 - 123,4 - 56,7 = ?",
+    "options": ["810,0", "819,9", "820,0", "820,0"],
+    "answer": 1
+  },
+  {
+    "id": 275,
+    "question": "0,25 x 0,5 = ?",
+    "options": ["0,12", "0,125", "0,13", "0,15"],
+    "answer": 1
+  },
+  {
+    "id": 276,
+    "question": "5,6 : 0,08 = ?",
+    "options": ["50", "60", "70", "80"],
+    "answer": 2
+  },
+  {
+    "id": 277,
+    "question": "50% của 2000 là bao nhiêu?",
+    "options": ["500", "800", "1000", "1200"],
+    "answer": 2
+  },
+  {
+    "id": 278,
+    "question": "Diện tích hình thang có đáy lớn 60 cm, đáy bé 40 cm và chiều cao 30 cm là bao nhiêu?",
+    "options": ["1000 cm$^2$", "1200 cm$^2$", "1500 cm$^2$", "1800 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 279,
+    "question": "Một người bán hàng có 2000 kg gạo. Sau khi bán 25% số gạo, người đó bán tiếp 50% số gạo còn lại. Hỏi còn lại bao nhiêu kg gạo?",
+    "options": ["500 kg", "600 kg", "700 kg", "750 kg"],
+    "answer": 2
+  },
+  {
+    "id": 280,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 100 cm, chiều rộng 50 cm, chiều cao 20 cm là bao nhiêu?",
+    "options": ["50000 cm$^3$", "80000 cm$^3$", "100000 cm$^3$", "120000 cm$^3$"],
+    "answer": 2
+  },
+  {
+    "id": 281,
+    "question": "Giá trị của chữ số 2 trong số 2345,67 là bao nhiêu?",
+    "options": ["2 đơn vị", "2 chục", "2 trăm", "2 nghìn"],
+    "answer": 3
+  },
+  {
+    "id": 282,
+    "question": "Chuyển tỉ số phần trăm 150% thành phân số tối giản.",
+    "options": ["$1/2$", "$3/2$", "$5/2$", "$1/150$"],
+    "answer": 1
+  },
+  {
+    "id": 283,
+    "question": "123,45 + 67,89 + 10,01 = ?",
+    "options": ["201,35", "201,30", "201,35", "201,35"],
+    "answer": 0
+  },
+  {
+    "id": 284,
+    "question": "1000 - 200,0 - 300,0 = ?",
+    "options": ["400,0", "500,0", "600,0", "700,0"],
+    "answer": 1
+  },
+  {
+    "id": 285,
+    "question": "0,03 x 0,02 = ?",
+    "options": ["0,0006", "0,006", "0,06", "0,6"],
+    "answer": 0
+  },
+  {
+    "id": 286,
+    "question": "6,3 : 0,09 = ?",
+    "options": ["60", "70", "80", "90"],
+    "answer": 1
+  },
+  {
+    "id": 287,
+    "question": "300% của 100 là bao nhiêu?",
+    "options": ["100", "200", "300", "400"],
+    "answer": 2
+  },
+  {
+    "id": 288,
+    "question": "Diện tích hình tam giác có đáy 120 cm và chiều cao 60 cm là bao nhiêu?",
+    "options": ["3000 cm$^2$", "3600 cm$^2$", "4000 cm$^2$", "4500 cm$^2$"],
+    "answer": 1
+  },
+  {
+    "id": 289,
+    "question": "Một người đi bộ 10 km hết 2 giờ. Vận tốc của người đó là bao nhiêu km/giờ?",
+    "options": ["4 km/giờ", "5 km/giờ", "6 km/giờ", "7 km/giờ"],
+    "answer": 1
+  },
+  {
+    "id": 290,
+    "question": "Thể tích hình lập phương có cạnh 15 cm là bao nhiêu?",
+    "options": ["225 cm$^3$", "3375 cm$^3$", "4000 cm$^3$", "5000 cm$^3$"],
+    "answer": 1
+  },
+  {
+    "id": 291,
+    "question": "Số 'Mười hai phẩy không không không một' viết là?",
+    "options": ["12,001", "12,0001", "12,01", "12,1"],
+    "answer": 1
+  },
+  {
+    "id": 292,
+    "question": "Chuyển phân số $1/50$ thành số thập phân.",
+    "options": ["0,01", "0,02", "0,1", "0,2"],
+    "answer": 1
+  },
+  {
+    "id": 293,
+    "question": "50,5 + 25,25 + 10,1 = ?",
+    "options": ["85,85", "85,85", "85,85", "85,85"],
+    "answer": 0
+  },
+  {
+    "id": 294,
+    "question": "200 - 10,1 - 20,2 - 30,3 = ?",
+    "options": ["139,4", "139,5", "139,6", "139,7"],
+    "answer": 3
+  },
+  {
+    "id": 295,
+    "question": "1,5 x 0,02 = ?",
+    "options": ["0,03", "0,003", "0,3", "3,0"],
+    "answer": 0
+  },
+  {
+    "id": 296,
+    "question": "0,42 : 0,06 = ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 1
+  },
+  {
+    "id": 297,
+    "question": "40% của 500 là bao nhiêu?",
+    "options": ["150", "200", "250", "300"],
+    "answer": 1
+  },
+  {
+    "id": 298,
+    "question": "Diện tích hình thang có đáy lớn 80 cm, đáy bé 50 cm và chiều cao 40 cm là bao nhiêu?",
+    "options": ["2000 cm$^2$", "2200 cm$^2$", "2400 cm$^2$", "2600 cm$^2$"],
+    "answer": 2
+  },
+  {
+    "id": 299,
+    "question": "Một thửa ruộng hình chữ nhật có chu vi 180 m, chiều dài hơn chiều rộng 30 m. Chiều dài của thửa ruộng là bao nhiêu?",
+    "options": ["40 m", "50 m", "60 m", "70 m"],
+    "answer": 2
+  },
+  {
+    "id": 300,
+    "question": "Thể tích hình hộp chữ nhật có chiều dài 2 cm, chiều rộng 1 cm, chiều cao 0,5 cm là bao nhiêu?",
+    "options": ["0,5 cm$^3$", "1 cm$^3$", "1,5 cm$^3$", "2 cm$^3$"],
+    "answer": 0
+  }
+]
