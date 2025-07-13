@@ -5,6 +5,7 @@ import 'third_screen.dart';
 import 'setting_screen.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
+import 'about_screen.dart';
 
 // Trong file second_screen.dart
 class SecondScreen extends StatefulWidget {
@@ -58,90 +59,108 @@ class _SecondScreenState extends State<SecondScreen> {
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(24.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const LogoWidget(size: 120),
-                const SizedBox(height: 40),
-                Text(
-                  'Siêu Toán Nhí',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    shadows: [
-                      Shadow(
-                        offset: const Offset(0, 2),
-                        blurRadius: 4,
-                        color: Colors.black26,
-                      ),
-                    ],
-                  ),
+            child: SingleChildScrollView(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                  minHeight: MediaQuery.of(context).size.height -
+                      MediaQuery.of(context).padding.top -
+                      MediaQuery.of(context).padding.bottom - 48, // 48 for padding
                 ),
-                const SizedBox(height: 60),
-                Text(
-                  'Chào ${storedName ?? widget.userName ?? 'bạn'}!',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.white,
-                    shadows: [
-                      Shadow(
-                        offset: const Offset(0, 1),
-                        blurRadius: 2,
-                        color: Colors.black26,
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 60),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40),
+                child: IntrinsicHeight(
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      _buildMenuButton(
-                        text: 'Bắt đầu',
-                        backgroundColor: Colors.white,
-                        textColor: Colors.black87,
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => ThirdScreen(userName: storedName ?? widget.userName),
+                      const Spacer(flex: 1),
+                      const LogoWidget(size: 120),
+                      const SizedBox(height: 30), // Reduced from 40
+                      Text(
+                        'Siêu Toán Nhí',
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              offset: const Offset(0, 2),
+                              blurRadius: 4,
+                              color: Colors.black26,
                             ),
-                          );
-                        },
+                          ],
+                        ),
                       ),
-                      const SizedBox(height: 20),
-                      _buildMenuButton(
-                        text: 'Cài đặt',
-                        backgroundColor: Colors.lightBlue.shade400,
-                        textColor: Colors.white,
-                        onPressed: () async {
-                          final newName = await Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => SettingsScreen(),
+                      const SizedBox(height: 40), // Reduced from 60
+                      Text(
+                        'Chào ${storedName ?? widget.userName ?? 'bạn'}!',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              offset: const Offset(0, 1),
+                              blurRadius: 2,
+                              color: Colors.black26,
                             ),
-                          );
-                          if (newName != null && newName is String && newName.isNotEmpty) {
-                            setState(() {
-                              storedName = newName;
-                            });
-                          }
-                        },
+                          ],
+                        ),
                       ),
-                      const SizedBox(height: 20),
-                      _buildMenuButton(
-                        text: 'Giới thiệu',
-                        backgroundColor: Colors.blue.shade600,
-                        textColor: Colors.white,
-                        onPressed: () {},
+                      const SizedBox(height: 40), // Reduced from 60
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 40),
+                        child: Column(
+                          children: [
+                            _buildMenuButton(
+                              text: 'Bắt đầu',
+                              backgroundColor: Colors.white,
+                              textColor: Colors.black87,
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ThirdScreen(userName: storedName ?? widget.userName),
+                                  ),
+                                );
+                              },
+                            ),
+                            const SizedBox(height: 20),
+                            _buildMenuButton(
+                              text: 'Cài đặt',
+                              backgroundColor: Colors.lightBlue.shade400,
+                              textColor: Colors.white,
+                              onPressed: () async {
+                                final newName = await Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => SettingsScreen(),
+                                  ),
+                                );
+                                if (newName != null && newName is String && newName.isNotEmpty) {
+                                  setState(() {
+                                    storedName = newName;
+                                  });
+                                }
+                              },
+                            ),
+                            const SizedBox(height: 20),
+                            _buildMenuButton(
+                              text: 'Giới thiệu',
+                              backgroundColor: Colors.blue.shade600,
+                              textColor: Colors.white,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const AboutScreen()),
+                                );
+                              },
+                            ),
+                          ],
+                        ),
                       ),
+                      const Spacer(flex: 1),
                     ],
                   ),
                 ),
-              ],
+              ),
             ),
           ),
         ),

@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'background_widget.dart';
 import 'logo_widget.dart';
 import 'rename_screen.dart';
+<<<<<<< HEAD
 import 'history_screen.dart';
 import 'helpers/history_helper.dart';
+=======
+import 'music_player.dart'; // Import music_player
+>>>>>>> 88644d9e99fb776759be30490b5c0bb63b3f903b
 
 class SettingsScreen extends StatefulWidget {
   final String? userName;
@@ -64,6 +68,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           ),
                         ],
                       ),
+<<<<<<< HEAD
                     ),
                     const SizedBox(height: 5),
                     const Text(
@@ -220,6 +225,110 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             },
                           ),
                         ],
+=======
+                      child: SingleChildScrollView(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            // Settings title
+                            const Text(
+                              'Settings',
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
+                            ),
+                            const SizedBox(height: 30),
+
+                            // Sound toggle
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade100,
+                                borderRadius: BorderRadius.circular(25),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text(
+                                    'Âm thanh On / Off',
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black87,
+                                    ),
+                                  ),
+                                  Switch(
+                                    value: isSoundEnabled,
+                                    onChanged: (value) {
+                                      setState(() {
+                                        isSoundEnabled = value;
+                                      });
+
+                                      // Bật/tắt nhạc nền
+                                      if (isSoundEnabled) {
+                                        startBackgroundMusic();
+                                        print('Background music started');
+                                      } else {
+                                        stopBackgroundMusic();
+                                        print('Background music stopped');
+                                      }
+                                    },
+                                    activeColor: Colors.cyan,
+                                    activeTrackColor: Colors.cyan.shade200,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 20),
+
+                            // Đổi tên hiển thị button
+                            _buildSettingButton(
+                              text: 'Đổi tên hiển thị',
+                              backgroundColor: Colors.blue.shade400,
+                              onPressed: () async {
+                                final newName = await Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => RenameScreen(currentName: widget.userName),
+                                  ),
+                                );
+                                if (newName != null && newName is String && newName.isNotEmpty) {
+                                  Navigator.pop(context, newName);
+                                }
+                              },
+                            ),
+                            const SizedBox(height: 15),
+
+                            _buildSettingButton(
+                              text: 'Lịch sử làm bài',
+                              backgroundColor: Colors.red.shade400,
+                              onPressed: () {
+                                // Handle history
+                              },
+                            ),
+                            const SizedBox(height: 15),
+
+                            _buildSettingButton(
+                              text: 'Xóa lịch sử',
+                              backgroundColor: Colors.purple.shade400,
+                              onPressed: () {
+                                // Handle clear history
+                              },
+                            ),
+                            const SizedBox(height: 15),
+
+                            _buildSettingButton(
+                              text: 'Quay lại',
+                              backgroundColor: Colors.purple.shade300,
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                            ),
+                          ],
+                        ),
+>>>>>>> 88644d9e99fb776759be30490b5c0bb63b3f903b
                       ),
                     ),
                   ),

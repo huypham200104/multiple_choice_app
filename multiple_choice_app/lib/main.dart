@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:multiple_choice_app/music_player.dart';
 import 'main_screen.dart';
+import 'package:multiple_choice_app/music_player.dart';
 
 void main() {
   runApp(const MyApp());
+  startBackgroundMusic();
 }
 
 class MyApp extends StatelessWidget {
