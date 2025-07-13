@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'logo_widget.dart';
 import 'background_widget.dart';
+import 'fouth_screen.dart';
 
 class ThirdScreen extends StatelessWidget {
-  const ThirdScreen({Key? key}) : super(key: key);
+  final String? userName;
+
+  const ThirdScreen({Key? key, this.userName}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +25,49 @@ class ThirdScreen extends StatelessWidget {
                       // Logo section - Fixed height
                       SizedBox(
                         height: constraints.maxHeight * 0.2,
-                        child: const Center(
-                          child: LogoWidget(size: 120),
+                        child: Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const LogoWidget(size: 80),
+                              const SizedBox(height: 10),
+                              Text(
+                                'Chào ${userName ?? 'bạn'}!',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white,
+                                  shadows: [
+                                    Shadow(
+                                      offset: const Offset(0, 1),
+                                      blurRadius: 2,
+                                      color: Colors.black26,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+
+                      // Title "Chọn lớp của bạn"
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 20),
+                        child: Text(
+                          'Chọn lớp của bạn',
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            shadows: [
+                              Shadow(
+                                offset: const Offset(0, 2),
+                                blurRadius: 4,
+                                color: Colors.black26,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
 
@@ -34,37 +78,62 @@ class ThirdScreen extends StatelessWidget {
                           children: [
                             _buildGradeButton(
                               text: 'Lớp 1',
-                              backgroundColor: Colors.pink.shade400,
+                              backgroundColor: Colors.blue.shade600,  // Màu xanh dương đậm
                               onPressed: () {
-                                // Handle grade 1
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => FiveScreen(userName: userName)
+                                  ),
+                                );
                               },
                             ),
                             _buildGradeButton(
                               text: 'Lớp 2',
-                              backgroundColor: Colors.green.shade400,
+                              backgroundColor: Colors.green.shade600,  // Màu xanh lá đậm
                               onPressed: () {
-                                // Handle grade 2
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => FiveScreen(userName: userName),
+                                  ),
+                                );
                               },
                             ),
                             _buildGradeButton(
                               text: 'Lớp 3',
-                              backgroundColor: Colors.orange.shade400,
+                              backgroundColor: Colors.orange.shade600,  // Màu cam đậm
                               onPressed: () {
-                                // Handle grade 3
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => FiveScreen(userName: userName),
+                                  ),
+                                );
                               },
                             ),
                             _buildGradeButton(
                               text: 'Lớp 4',
-                              backgroundColor: Colors.yellow.shade400,
+                              backgroundColor: Colors.purple.shade600,  // Màu tím đậm
                               onPressed: () {
-                                // Handle grade 4
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => FiveScreen(userName: userName),
+                                  ),
+                                );
                               },
                             ),
                             _buildGradeButton(
                               text: 'Lớp 5',
-                              backgroundColor: Colors.grey.shade300,
+                              backgroundColor: Colors.red.shade600,  // Màu đỏ đậm
                               onPressed: () {
-                                // Handle grade 5
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => FiveScreen(userName: userName),
+                                  ),
+                                );
                               },
                             ),
                           ],
