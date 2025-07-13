@@ -52,7 +52,7 @@ class _MainScreenState extends State<MainScreen> {
       final List<Map<String, dynamic>> maps = await _database!.query('users');
       if (maps.isNotEmpty) {
         setState(() {
-          _nameController.text = maps.last['name'] ?? ''; // Lấy bản ghi cuối cùng
+          _nameController.text = maps.last['name'] ?? '';
         });
         print('Loaded name successfully: ${maps.last['name']}');
       }
@@ -80,117 +80,137 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: AppBackground(
         child: SafeArea(
-          child: SingleChildScrollView( // Bọc bằng SingleChildScrollView
-            child: Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const LogoWidget(size: 120),
-                  const SizedBox(height: 40),
-                  Text(
-                    'Siêu Toán Nhí',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      shadows: [
-                        Shadow(
-                          offset: const Offset(0, 2),
-                          blurRadius: 4,
-                          color: Colors.black26,
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 60),
-                  Text(
-                    'Tên bạn là ?',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                      shadows: [
-                        Shadow(
-                          offset: const Offset(0, 1),
-                          blurRadius: 2,
-                          color: Colors.black26,
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  Container(
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(25),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black26,
-                          offset: const Offset(0, 2),
-                          blurRadius: 4,
-                        ),
-                      ],
-                    ),
-                    child: TextField(
-                      controller: _nameController,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              return SizedBox(
+                width: constraints.maxWidth,
+                height: constraints.maxHeight,
+                child: Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      // Logo và tiêu đề
+                      Column(
+                        children: [
+                          const LogoWidget(size: 120),
+                          const SizedBox(height: 40),
+                          Text(
+                            'Siêu Toán Nhí',
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              shadows: [
+                                Shadow(
+                                  offset: const Offset(0, 2),
+                                  blurRadius: 4,
+                                  color: Colors.black26,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                      decoration: const InputDecoration(
-                        hintText: 'Tên bạn',
-                        hintStyle: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 16,
-                        ),
-                        border: InputBorder.none,
-                        contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20,
-                          vertical: 15,
-                        ),
+
+                      // Form nhập tên
+                      Column(
+                        children: [
+                          Text(
+                            'Tên bạn là ?',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                              shadows: [
+                                Shadow(
+                                  offset: const Offset(0, 1),
+                                  blurRadius: 2,
+                                  color: Colors.black26,
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          Container(
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(25),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black26,
+                                  offset: const Offset(0, 2),
+                                  blurRadius: 4,
+                                ),
+                              ],
+                            ),
+                            child: TextField(
+                              controller: _nameController,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ),
+                              decoration: const InputDecoration(
+                                hintText: 'Tên bạn',
+                                hintStyle: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 16,
+                                ),
+                                border: InputBorder.none,
+                                contentPadding: EdgeInsets.symmetric(
+                                  horizontal: 20,
+                                  vertical: 15,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 30),
+                          SizedBox(
+                            width: double.infinity,
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                String name = _nameController.text.trim();
+                                if (name.isNotEmpty) {
+                                  await _saveName(name);
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => SecondScreen(userName: name)),
+                                  );
+                                }
+                              },
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.blue.shade600,
+                                foregroundColor: Colors.white,
+                                padding: const EdgeInsets.symmetric(vertical: 15),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(25),
+                                ),
+                                elevation: 3,
+                              ),
+                              child: const Text(
+                                'Lưu',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
+
+                      // Spacer để đẩy content lên
+                      const SizedBox(height: 20),
+                    ],
                   ),
-                  const SizedBox(height: 30),
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () async {
-                        String name = _nameController.text.trim();
-                        if (name.isNotEmpty) {
-                          await _saveName(name);
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => SecondScreen(userName: name)),
-                          );
-                        }
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue.shade600,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 15),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(25),
-                        ),
-                        elevation: 3,
-                      ),
-                      child: const Text(
-                        'Lưu',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+                ),
+              );
+            },
           ),
         ),
       ),
     );
-  }}
+  }
+}

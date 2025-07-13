@@ -10,80 +10,88 @@ class ThirdScreen extends StatelessWidget {
     return Scaffold(
       body: AppBackground(
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-              children: [
-                // Logo section
-                Container(
-                  margin: const EdgeInsets.only(top: 20, bottom: 40),
-                  child: const LogoWidget(size: 120),
-                ),
-
-                // Grade buttons
-                Expanded(
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              return SizedBox(
+                width: constraints.maxWidth,
+                height: constraints.maxHeight,
+                child: Padding(
+                  padding: const EdgeInsets.all(24.0),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      _buildGradeButton(
-                        text: 'Lớp 1',
-                        backgroundColor: Colors.pink.shade400,
-                        onPressed: () {
-                          // Handle grade 1
-                        },
+                      // Logo section - Fixed height
+                      SizedBox(
+                        height: constraints.maxHeight * 0.2,
+                        child: const Center(
+                          child: LogoWidget(size: 120),
+                        ),
                       ),
-                      const SizedBox(height: 25),
-                      _buildGradeButton(
-                        text: 'Lớp 2',
-                        backgroundColor: Colors.green.shade400,
-                        onPressed: () {
-                          // Handle grade 2
-                        },
+
+                      // Grade buttons - Expanded to fill remaining space
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            _buildGradeButton(
+                              text: 'Lớp 1',
+                              backgroundColor: Colors.pink.shade400,
+                              onPressed: () {
+                                // Handle grade 1
+                              },
+                            ),
+                            _buildGradeButton(
+                              text: 'Lớp 2',
+                              backgroundColor: Colors.green.shade400,
+                              onPressed: () {
+                                // Handle grade 2
+                              },
+                            ),
+                            _buildGradeButton(
+                              text: 'Lớp 3',
+                              backgroundColor: Colors.orange.shade400,
+                              onPressed: () {
+                                // Handle grade 3
+                              },
+                            ),
+                            _buildGradeButton(
+                              text: 'Lớp 4',
+                              backgroundColor: Colors.yellow.shade400,
+                              onPressed: () {
+                                // Handle grade 4
+                              },
+                            ),
+                            _buildGradeButton(
+                              text: 'Lớp 5',
+                              backgroundColor: Colors.grey.shade300,
+                              onPressed: () {
+                                // Handle grade 5
+                              },
+                            ),
+                          ],
+                        ),
                       ),
-                      const SizedBox(height: 25),
-                      _buildGradeButton(
-                        text: 'Lớp 3',
-                        backgroundColor: Colors.orange.shade400,
-                        onPressed: () {
-                          // Handle grade 3
-                        },
-                      ),
-                      const SizedBox(height: 25),
-                      _buildGradeButton(
-                        text: 'Lớp 4',
-                        backgroundColor: Colors.yellow.shade400,
-                        onPressed: () {
-                          // Handle grade 4
-                        },
-                      ),
-                      const SizedBox(height: 25),
-                      _buildGradeButton(
-                        text: 'Lớp 5',
-                        backgroundColor: Colors.grey.shade300,
-                        onPressed: () {
-                          // Handle grade 5
-                        },
+
+                      // Back button - Fixed height
+                      SizedBox(
+                        height: constraints.maxHeight * 0.15,
+                        child: Center(
+                          child: FloatingActionButton(
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            backgroundColor: Colors.white,
+                            child: Icon(
+                              Icons.arrow_back,
+                              color: Colors.blue.shade600,
+                            ),
+                          ),
+                        ),
                       ),
                     ],
                   ),
                 ),
-
-                // Back button
-                Container(
-                  margin: const EdgeInsets.only(top: 20, bottom: 20),
-                  child: FloatingActionButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    backgroundColor: Colors.white,
-                    child: Icon(
-                      Icons.arrow_back,
-                      color: Colors.blue.shade600,
-                    ),
-                  ),
-                ),
-              ],
-            ),
+              );
+            },
           ),
         ),
       ),

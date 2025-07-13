@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'logo_widget.dart';
 import 'background_widget.dart';
 import 'third_screen.dart';
+import 'setting_screen.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
@@ -120,7 +121,14 @@ class _SecondScreenState extends State<SecondScreen> {
                         text: 'Cài đặt',
                         backgroundColor: Colors.lightBlue.shade400,
                         textColor: Colors.white,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SettingsScreen(),
+                            ),
+                          );
+                        },
                       ),
                       const SizedBox(height: 20),
                       _buildMenuButton(
