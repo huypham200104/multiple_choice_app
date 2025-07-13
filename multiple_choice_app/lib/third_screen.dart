@@ -76,7 +76,6 @@ class ThirdScreen extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            // Trong file third_screen.dart, cập nhật phần _buildGradeButton
                             _buildGradeButton(
                               text: 'Lớp 1',
                               backgroundColor: Colors.blue.shade600,
@@ -84,12 +83,14 @@ class ThirdScreen extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => FiveScreen(userName: userName),
+                                    builder: (context) => FiveScreen(
+                                      userName: userName,
+                                      gradeLevel: 1,
+                                    ),
                                   ),
                                 );
                               },
                             ),
-// Tương tự cho các nút Lớp 2, Lớp 3, Lớp 4, Lớp 5
                             _buildGradeButton(
                               text: 'Lớp 2',
                               backgroundColor: Colors.blue.shade600,
@@ -97,7 +98,10 @@ class ThirdScreen extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => FiveScreen(userName: userName),
+                                    builder: (context) => FiveScreen(
+                                      userName: userName,
+                                      gradeLevel: 2,
+                                    ),
                                   ),
                                 );
                               },
@@ -109,7 +113,10 @@ class ThirdScreen extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => FiveScreen(userName: userName),
+                                    builder: (context) => FiveScreen(
+                                      userName: userName,
+                                      gradeLevel: 3,
+                                    ),
                                   ),
                                 );
                               },
@@ -121,7 +128,10 @@ class ThirdScreen extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => FiveScreen(userName: userName),
+                                    builder: (context) => FiveScreen(
+                                      userName: userName,
+                                      gradeLevel: 4,
+                                    ),
                                   ),
                                 );
                               },
@@ -133,7 +143,10 @@ class ThirdScreen extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => FiveScreen(userName: userName),
+                                    builder: (context) => FiveScreen(
+                                      userName: userName,
+                                      gradeLevel: 5,
+                                    ),
                                   ),
                                 );
                               },

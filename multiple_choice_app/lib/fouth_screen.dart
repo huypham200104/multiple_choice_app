@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'logo_widget.dart';
 import 'background_widget.dart';
+import 'quiz_screen.dart';
 
 class FiveScreen extends StatelessWidget {
   final String? userName;
+  final int gradeLevel;
 
-  const FiveScreen({Key? key, this.userName}) : super(key: key);
+  const FiveScreen({Key? key, this.userName, required this.gradeLevel}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,13 +25,13 @@ class FiveScreen extends StatelessWidget {
                     const SizedBox(height: 20),
                     Text(
                       'Chào ${userName ?? 'bạn'}!',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
                         color: Colors.white,
                         shadows: [
                           Shadow(
-                            offset: const Offset(0, 1),
+                            offset: Offset(0, 1),
                             blurRadius: 2,
                             color: Colors.black26,
                           ),
@@ -47,14 +49,14 @@ class FiveScreen extends StatelessWidget {
                       children: [
                         // Thêm dòng chữ "Chọn gói câu hỏi"
                         Text(
-                          'Chọn gói câu hỏi',
-                          style: TextStyle(
+                          'Chọn gói câu hỏi - Lớp $gradeLevel',
+                          style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                             shadows: [
                               Shadow(
-                                offset: const Offset(0, 1),
+                                offset: Offset(0, 1),
                                 blurRadius: 2,
                                 color: Colors.black26,
                               ),
@@ -64,11 +66,11 @@ class FiveScreen extends StatelessWidget {
                         const SizedBox(height: 30), // Khoảng cách giữa tiêu đề và các ô số
 
                         // Các ô số 10, 20, 30
-                        _buildNumberBox(number: '10'),
+                        _buildNumberBox(context: context, number: 10),
                         const SizedBox(height: 20),
-                        _buildNumberBox(number: '20'),
+                        _buildNumberBox(context: context, number: 20),
                         const SizedBox(height: 20),
-                        _buildNumberBox(number: '30'),
+                        _buildNumberBox(context: context, number: 30),
                       ],
                     ),
                   ),
@@ -98,28 +100,46 @@ class FiveScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildNumberBox({required String number}) {
-    return Container(
-      width: 100,
-      height: 100,
-      decoration: BoxDecoration(
-        color: Colors.white,
+  Widget _buildNumberBox({required BuildContext context, required int number}) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => QuizScreen(
+                userName: userName,
+                numQuestions: number,
+                gradeLevel: gradeLevel,
+              ),
+            ),
+          );
+        },
         borderRadius: BorderRadius.circular(15),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.2),
-            blurRadius: 5,
-            offset: const Offset(0, 3),
+        child: Container(
+          width: 100,
+          height: 100,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(15),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.2),
+                blurRadius: 5,
+                offset: const Offset(0, 3),
+              ),
+            ],
           ),
-        ],
-      ),
-      child: Center(
-        child: Text(
-          number,
-          style: const TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
-            color: Colors.blue,
+          child: Center(
+            child: Text(
+              '$number',
+              style: const TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+              ),
+            ),
           ),
         ),
       ),
