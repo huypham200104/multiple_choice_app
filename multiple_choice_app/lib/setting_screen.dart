@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'background_widget.dart';
+import 'package:flutter/material.dart';
+import 'logo_widget.dart';
+import 'rename_screen.dart';
 
+// In setting_screen.dart
 class SettingsScreen extends StatefulWidget {
-  const SettingsScreen({Key? key}) : super(key: key);
+  final String? userName;
+
+  const SettingsScreen({Key? key, this.userName}) : super(key: key);
 
   @override
   State<SettingsScreen> createState() => _SettingsScreenState();
@@ -84,12 +90,20 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           ),
                           const SizedBox(height: 25),
 
-                          // Setting buttons
+                            // In setting_screen.dart
                           _buildSettingButton(
                             text: 'Đổi tên hiển thị',
                             backgroundColor: Colors.blue.shade400,
-                            onPressed: () {
-                              // Handle change display name
+                            onPressed: () async {
+                              final newName = await Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => RenameScreen(currentName: isSoundEnabled ? widget.userName : null),
+                                ),
+                              );
+                              if (newName != null && newName is String && newName.isNotEmpty) {
+                                Navigator.pop(context, newName); // Pass the new name back to SecondScreen
+                              }
                             },
                           ),
                           const SizedBox(height: 20),

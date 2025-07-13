@@ -6,6 +6,7 @@ import 'setting_screen.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
+// Trong file second_screen.dart
 class SecondScreen extends StatefulWidget {
   final String? userName;
 
@@ -33,7 +34,7 @@ class _SecondScreenState extends State<SecondScreen> {
       final List<Map<String, dynamic>> maps = await database.query('users');
       if (maps.isNotEmpty) {
         setState(() {
-          storedName = maps.last['name'] ?? widget.userName; // Lấy bản ghi cuối cùng
+          storedName = maps.last['name'] ?? widget.userName;
         });
       } else {
         setState(() {
@@ -48,11 +49,6 @@ class _SecondScreenState extends State<SecondScreen> {
     } finally {
       await database.close();
     }
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
   }
 
   @override
@@ -111,7 +107,7 @@ class _SecondScreenState extends State<SecondScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const ThirdScreen(),
+                              builder: (context) => ThirdScreen(userName: storedName ?? widget.userName),
                             ),
                           );
                         },
@@ -121,13 +117,18 @@ class _SecondScreenState extends State<SecondScreen> {
                         text: 'Cài đặt',
                         backgroundColor: Colors.lightBlue.shade400,
                         textColor: Colors.white,
-                        onPressed: () {
-                          Navigator.push(
+                        onPressed: () async {
+                          final newName = await Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const SettingsScreen(),
+                              builder: (context) => SettingsScreen(),
                             ),
                           );
+                          if (newName != null && newName is String && newName.isNotEmpty) {
+                            setState(() {
+                              storedName = newName;
+                            });
+                          }
                         },
                       ),
                       const SizedBox(height: 20),

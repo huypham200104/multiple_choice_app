@@ -76,21 +76,23 @@ class ThirdScreen extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
+                            // Trong file third_screen.dart, cập nhật phần _buildGradeButton
                             _buildGradeButton(
                               text: 'Lớp 1',
-                              backgroundColor: Colors.blue.shade600,  // Màu xanh dương đậm
+                              backgroundColor: Colors.blue.shade600,
                               onPressed: () {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => FiveScreen(userName: userName)
+                                    builder: (context) => FiveScreen(userName: userName),
                                   ),
                                 );
                               },
                             ),
+// Tương tự cho các nút Lớp 2, Lớp 3, Lớp 4, Lớp 5
                             _buildGradeButton(
                               text: 'Lớp 2',
-                              backgroundColor: Colors.green.shade600,  // Màu xanh lá đậm
+                              backgroundColor: Colors.blue.shade600,
                               onPressed: () {
                                 Navigator.push(
                                   context,
@@ -102,7 +104,7 @@ class ThirdScreen extends StatelessWidget {
                             ),
                             _buildGradeButton(
                               text: 'Lớp 3',
-                              backgroundColor: Colors.orange.shade600,  // Màu cam đậm
+                              backgroundColor: Colors.blue.shade600,
                               onPressed: () {
                                 Navigator.push(
                                   context,
@@ -114,7 +116,7 @@ class ThirdScreen extends StatelessWidget {
                             ),
                             _buildGradeButton(
                               text: 'Lớp 4',
-                              backgroundColor: Colors.purple.shade600,  // Màu tím đậm
+                              backgroundColor: Colors.blue.shade600,
                               onPressed: () {
                                 Navigator.push(
                                   context,
@@ -126,7 +128,7 @@ class ThirdScreen extends StatelessWidget {
                             ),
                             _buildGradeButton(
                               text: 'Lớp 5',
-                              backgroundColor: Colors.red.shade600,  // Màu đỏ đậm
+                              backgroundColor: Colors.blue.shade600,
                               onPressed: () {
                                 Navigator.push(
                                   context,
