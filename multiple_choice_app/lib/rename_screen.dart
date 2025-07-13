@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sqflite/sqflite.dart';
-import 'package:path/path.dart';
+import 'helpers/database_helper.dart';
 import 'background_widget.dart';
 import 'logo_widget.dart';
 
@@ -15,45 +14,35 @@ class RenameScreen extends StatefulWidget {
 
 class _RenameScreenState extends State<RenameScreen> {
   final TextEditingController _nameController = TextEditingController();
-  Database? _database;
+  final DatabaseHelper _dbHelper = DatabaseHelper.instance;
 
   @override
   void initState() {
     super.initState();
     _nameController.text = widget.currentName ?? '';
-    _initDatabase();
   }
 
   @override
   void dispose() {
     _nameController.dispose();
-    _database?.close();
     super.dispose();
   }
 
-  Future<void> _initDatabase() async {
-    try {
-      _database = await openDatabase(
-        join(await getDatabasesPath(), 'user_data.db'),
-        version: 1,
-      );
-    } catch (e) {
-      print('Error initializing database: $e');
-    }
-  }
-
   Future<void> _saveName(String name, BuildContext context) async {
-    if (_database == null) await _initDatabase();
+    if (name.trim().isEmpty) return;
+
     try {
-      await _database!.insert(
-        'users',
-        {'name': name},
-        conflictAlgorithm: ConflictAlgorithm.replace,
-      );
+      await _dbHelper.insertUserName(name);
       print('Saved new name successfully: $name');
-      Navigator.pop(context, name); // Use the BuildContext passed to the method
+      Navigator.pop(context, name);
     } catch (e) {
       print('Error saving name: $e');
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Có lỗi xảy ra khi lưu tên'),
+          duration: Duration(seconds: 2),
+        ),
+      );
     }
   }
 
@@ -151,7 +140,14 @@ class _RenameScreenState extends State<RenameScreen> {
                         onPressed: () async {
                           String newName = _nameController.text.trim();
                           if (newName.isNotEmpty) {
-                            await _saveName(newName, context); // Pass context to _saveName
+                            await _saveName(newName, context);
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                content: Text('Vui lòng nhập tên mới'),
+                                duration: Duration(seconds: 2),
+                              ),
+                            );
                           }
                         },
                         style: ElevatedButton.styleFrom(

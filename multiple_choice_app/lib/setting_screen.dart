@@ -4,14 +4,13 @@ import 'logo_widget.dart';
 import 'rename_screen.dart';
 import 'history_screen.dart';
 import 'helpers/history_helper.dart';
+import 'helpers/database_helper.dart';
 
 class SettingsScreen extends StatefulWidget {
-  final String? userName;
   final Function(String)? onNameChanged;
 
   const SettingsScreen({
     Key? key,
-    this.userName,
     this.onNameChanged,
   }) : super(key: key);
 
@@ -22,18 +21,36 @@ class SettingsScreen extends StatefulWidget {
 class _SettingsScreenState extends State<SettingsScreen> {
   bool isSoundEnabled = true;
   bool _isHistoryEmpty = true;
+  String? _userName;
+  final DatabaseHelper _dbHelper = DatabaseHelper.instance;
 
   @override
   void initState() {
     super.initState();
-    _checkHistory();
+    _loadData();
+  }
+
+  Future<void> _loadData() async {
+    await _loadUserName();
+    await _checkHistory();
+  }
+
+  Future<void> _loadUserName() async {
+    final name = await _dbHelper.getUserName();
+    if (mounted) {
+      setState(() {
+        _userName = name;
+      });
+    }
   }
 
   Future<void> _checkHistory() async {
     final history = await HistoryHelper.getHistory();
-    setState(() {
-      _isHistoryEmpty = history.isEmpty;
-    });
+    if (mounted) {
+      setState(() {
+        _isHistoryEmpty = history.isEmpty;
+      });
+    }
   }
 
   @override
@@ -46,187 +63,199 @@ class _SettingsScreenState extends State<SettingsScreen> {
             child: Column(
               children: [
                 // Header with logo
-                Column(
-                  children: [
-                    const LogoWidget(size: 80),
-                    const SizedBox(height: 10),
-                    Text(
-                      'Xin chào ${widget.userName ?? 'bạn'}!',
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                        shadows: [
-                          Shadow(
-                            offset: Offset(0, 1),
-                            blurRadius: 2,
-                            color: Colors.black26,
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 5),
-                    const Text(
-                      'Cài đặt',
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        shadows: [
-                          Shadow(
-                            offset: Offset(0, 2),
-                            blurRadius: 4,
-                            color: Colors.black54,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+                _buildHeaderSection(),
                 const SizedBox(height: 20),
 
                 // Settings content
                 Expanded(
-                  child: Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.95),
-                      borderRadius: BorderRadius.circular(25),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
-                          blurRadius: 10,
-                          offset: const Offset(0, 5),
-                        ),
-                      ],
-                    ),
-                    child: SingleChildScrollView(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          // Sound setting
-                          _buildSettingCard(
-                            icon: Icons.volume_up,
-                            iconColor: Colors.blue,
-                            title: 'Âm thanh',
-                            trailing: Switch(
-                              value: isSoundEnabled,
-                              onChanged: (value) {
-                                setState(() {
-                                  isSoundEnabled = value;
-                                });
-                              },
-                              activeColor: Colors.blue,
-                              activeTrackColor: Colors.blue.shade200,
-                            ),
-                          ),
-                          const SizedBox(height: 20),
-
-                          // Change name button
-                          _buildSettingButton(
-                            icon: Icons.person,
-                            text: 'Đổi tên hiển thị',
-                            color: Colors.blue,
-                            onPressed: () async {
-                              final newName = await Navigator.push<String>(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => RenameScreen(
-                                    currentName: widget.userName,
-                                  ),
-                                ),
-                              );
-                              if (newName != null && widget.onNameChanged != null) {
-                                widget.onNameChanged!(newName);
-                              }
-                            },
-                          ),
-                          const SizedBox(height: 15),
-
-                          // History button
-                          _buildSettingButton(
-                            icon: Icons.history,
-                            text: 'Lịch sử làm bài',
-                            color: Colors.green,
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const HistoryScreen(),
-                                ),
-                              );
-                            },
-                          ),
-                          const SizedBox(height: 15),
-
-                          // Clear history button
-                          _buildSettingButton(
-                            icon: Icons.delete,
-                            text: 'Xóa lịch sử',
-                            color: Colors.orange,
-                            disabled: _isHistoryEmpty,
-                            onPressed: _isHistoryEmpty
-                                ? null
-                                : () async {
-                              final confirmed = await showDialog<bool>(
-                                context: context,
-                                builder: (context) => AlertDialog(
-                                  title: const Text('Xác nhận'),
-                                  content: const Text(
-                                      'Bạn có chắc chắn muốn xóa toàn bộ lịch sử làm bài?'),
-                                  actions: [
-                                    TextButton(
-                                      onPressed: () =>
-                                          Navigator.pop(context, false),
-                                      child: const Text('Hủy'),
-                                    ),
-                                    TextButton(
-                                      onPressed: () =>
-                                          Navigator.pop(context, true),
-                                      child: const Text(
-                                        'Xóa',
-                                        style: TextStyle(color: Colors.red),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              );
-
-                              if (confirmed == true) {
-                                await HistoryHelper.clearHistory();
-                                setState(() {
-                                  _isHistoryEmpty = true;
-                                });
-                                if (!mounted) return;
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  const SnackBar(
-                                    content: Text('Đã xóa lịch sử làm bài'),
-                                    duration: Duration(seconds: 2),
-                                  ),
-                                );
-                              }
-                            },
-                          ),
-                          const SizedBox(height: 15),
-
-                          // Back button
-                          _buildSettingButton(
-                            icon: Icons.arrow_back,
-                            text: 'Quay lại',
-                            color: Colors.purple,
-                            onPressed: () {
-                              Navigator.pop(context);
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  child: _buildSettingsContent(),
                 ),
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHeaderSection() {
+    return Column(
+      children: [
+        const LogoWidget(size: 80),
+        const SizedBox(height: 10),
+        Text(
+          'Xin chào ${_userName ?? 'bạn'}!',
+          style: const TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+            color: Colors.white,
+            shadows: [
+              Shadow(
+                offset: Offset(0, 1),
+                blurRadius: 2,
+                color: Colors.black26,
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 5),
+        const Text(
+          'Cài đặt',
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            shadows: [
+              Shadow(
+                offset: Offset(0, 2),
+                blurRadius: 4,
+                color: Colors.black54,
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildSettingsContent() {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.95),
+        borderRadius: BorderRadius.circular(25),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 10,
+            offset: const Offset(0, 5),
+          ),
+        ],
+      ),
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // Sound setting
+            _buildSettingCard(
+              icon: Icons.volume_up,
+              iconColor: Colors.blue,
+              title: 'Âm thanh',
+              trailing: Switch(
+                value: isSoundEnabled,
+                onChanged: (value) {
+                  setState(() {
+                    isSoundEnabled = value;
+                  });
+                },
+                activeColor: Colors.blue,
+                activeTrackColor: Colors.blue.shade200,
+              ),
+            ),
+            const SizedBox(height: 20),
+
+            // Change name button
+            _buildSettingButton(
+              icon: Icons.person,
+              text: 'Đổi tên hiển thị',
+              color: Colors.blue,
+              onPressed: () async {
+                final newName = await Navigator.push<String>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => RenameScreen(
+                      currentName: _userName,
+                    ),
+                  ),
+                );
+                if (newName != null) {
+                  setState(() {
+                    _userName = newName;
+                  });
+                  if (widget.onNameChanged != null) {
+                    widget.onNameChanged!(newName);
+                  }
+                }
+              },
+            ),
+            const SizedBox(height: 15),
+
+            // History button
+            _buildSettingButton(
+              icon: Icons.history,
+              text: 'Lịch sử làm bài',
+              color: Colors.green,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HistoryScreen(),
+                  ),
+                ).then((_) => _checkHistory());
+              },
+            ),
+            const SizedBox(height: 15),
+
+            // Clear history button
+            _buildSettingButton(
+              icon: Icons.delete,
+              text: 'Xóa lịch sử',
+              color: Colors.orange,
+              disabled: _isHistoryEmpty,
+              onPressed: _isHistoryEmpty
+                  ? null
+                  : () async {
+                final confirmed = await showDialog<bool>(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    title: const Text('Xác nhận'),
+                    content: const Text(
+                        'Bạn có chắc chắn muốn xóa toàn bộ lịch sử làm bài?'),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, false),
+                        child: const Text('Hủy'),
+                      ),
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, true),
+                        child: const Text(
+                          'Xóa',
+                          style: TextStyle(color: Colors.red),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+
+                if (confirmed == true) {
+                  await HistoryHelper.clearHistory();
+                  if (mounted) {
+                    setState(() {
+                      _isHistoryEmpty = true;
+                    });
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Đã xóa lịch sử làm bài'),
+                        duration: Duration(seconds: 2),
+                      ),
+                    );
+                  }
+                }
+              },
+            ),
+            const SizedBox(height: 15),
+
+            // Back button
+            _buildSettingButton(
+              icon: Icons.arrow_back,
+              text: 'Quay lại',
+              color: Colors.purple,
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
         ),
       ),
     );
