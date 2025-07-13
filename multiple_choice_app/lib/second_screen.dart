@@ -1,15 +1,54 @@
 import 'package:flutter/material.dart';
 import 'logo_widget.dart';
 import 'background_widget.dart';
+import 'third_screen.dart';
+import 'package:sqflite/sqflite.dart';
+import 'package:path/path.dart';
 
 class SecondScreen extends StatefulWidget {
-  const SecondScreen({Key? key}) : super(key: key);
+  final String? userName;
+
+  const SecondScreen({Key? key, this.userName}) : super(key: key);
 
   @override
   State<SecondScreen> createState() => _SecondScreenState();
 }
 
 class _SecondScreenState extends State<SecondScreen> {
+  String? storedName;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadUserName();
+  }
+
+  Future<void> _loadUserName() async {
+    final database = await openDatabase(
+      join(await getDatabasesPath(), 'user_data.db'),
+      version: 1,
+    );
+    try {
+      final List<Map<String, dynamic>> maps = await database.query('users');
+      if (maps.isNotEmpty) {
+        setState(() {
+          storedName = maps.last['name'] ?? widget.userName; // Lấy bản ghi cuối cùng
+        });
+      } else {
+        setState(() {
+          storedName = widget.userName;
+        });
+      }
+    } catch (e) {
+      print('Error loading name: $e');
+      setState(() {
+        storedName = widget.userName;
+      });
+    } finally {
+      await database.close();
+    }
+  }
+
   @override
   void dispose() {
     super.dispose();
@@ -25,12 +64,8 @@ class _SecondScreenState extends State<SecondScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo
                 const LogoWidget(size: 120),
-
                 const SizedBox(height: 40),
-
-                // App Title
                 Text(
                   'Siêu Toán Nhí',
                   style: TextStyle(
@@ -46,10 +81,23 @@ class _SecondScreenState extends State<SecondScreen> {
                     ],
                   ),
                 ),
-
                 const SizedBox(height: 60),
-
-                // Menu buttons
+                Text(
+                  'Chào ${storedName ?? widget.userName ?? 'bạn'}!',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
+                    shadows: [
+                      Shadow(
+                        offset: const Offset(0, 1),
+                        blurRadius: 2,
+                        color: Colors.black26,
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 60),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 40),
                   child: Column(
@@ -58,7 +106,14 @@ class _SecondScreenState extends State<SecondScreen> {
                         text: 'Bắt đầu',
                         backgroundColor: Colors.white,
                         textColor: Colors.black87,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const ThirdScreen(),
+                            ),
+                          );
+                        },
                       ),
                       const SizedBox(height: 20),
                       _buildMenuButton(
