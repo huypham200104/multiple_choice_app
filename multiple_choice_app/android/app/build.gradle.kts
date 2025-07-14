@@ -6,10 +6,9 @@ plugins {
 }
 
 android {
-    ndkVersion = "27.0.12077973"
     namespace = "com.example.multiple_choice_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"  // Override Flutter's default NDK version
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
