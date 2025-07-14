@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'logo_widget.dart';
 import 'background_widget.dart';
+import 'second_screen.dart';
 
 class ResultScreen extends StatelessWidget {
   final String? userName;
@@ -200,6 +201,7 @@ class ResultScreen extends StatelessWidget {
     );
   }
 
+  // Thay đổi phần _buildActionButtons
   Widget _buildActionButtons(BuildContext context) {
     return Column(
       children: [
@@ -227,11 +229,18 @@ class ResultScreen extends StatelessWidget {
         ),
         const SizedBox(height: 12),
 
-        // Home button
+        // Home button - Sửa lại phần này
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-            onPressed: () => Navigator.popUntil(context, (route) => route.isFirst),
+            onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SecondScreen(userName: userName),
+                ),
+              );
+            },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.green.shade400,
               padding: const EdgeInsets.symmetric(vertical: 14),
