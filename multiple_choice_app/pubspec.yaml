@@ -14,6 +14,8 @@ dependencies:
   path: ^1.8.0
   path_provider: ^2.1.1
   audioplayers: ^5.2.1
+  shared_preferences: ^2.2.2  # Added for persistent key-value storage
+
 
 dev_dependencies:
   flutter_test:

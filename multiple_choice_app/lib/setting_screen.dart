@@ -6,6 +6,8 @@ import 'rename_screen.dart';
 import 'history_screen.dart';
 import 'helpers/history_helper.dart';
 import 'helpers/database_helper.dart';
+import 'helpers/sound_settings_helper.dart';
+import 'music_player.dart';
 
 class SettingsScreen extends StatefulWidget {
   final Function(String)? onNameChanged;
@@ -24,6 +26,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _isHistoryEmpty = true;
   String? _userName;
   final DatabaseHelper _dbHelper = DatabaseHelper.instance;
+  final SoundSettingsHelper _soundSettings = SoundSettingsHelper.instance;
+  bool _isLoading = true;
 
   @override
   void initState() {
@@ -32,8 +36,32 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Future<void> _loadData() async {
-    await _loadUserName();
-    await _checkHistory();
+    setState(() {
+      _isLoading = true;
+    });
+
+    await Future.wait([
+      _loadUserName(),
+      _checkHistory(),
+      _loadSoundSettings(),
+    ]);
+
+    setState(() {
+      _isLoading = false;
+    });
+  }
+
+  Future<void> _loadSoundSettings() async {
+    try {
+      final soundEnabled = await _soundSettings.isSoundEnabled();
+      if (mounted) {
+        setState(() {
+          isSoundEnabled = soundEnabled;
+        });
+      }
+    } catch (e) {
+      print('Error loading sound settings: $e');
+    }
   }
 
   Future<void> _loadUserName() async {
@@ -67,8 +95,57 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
   }
 
+  Future<void> _toggleSound(bool value) async {
+    setState(() {
+      isSoundEnabled = value;
+    });
+
+    // Cập nhật cài đặt âm thanh thông qua helper
+    await _soundSettings.setSoundEnabled(value);
+
+    // Hiển thị thông báo
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Row(
+            children: [
+              Icon(
+                value ? Icons.volume_up : Icons.volume_off,
+                color: Colors.white,
+                size: 20,
+              ),
+              const SizedBox(width: 8),
+              Text(
+                value ? 'Đã bật âm thanh' : 'Đã tắt âm thanh',
+                style: const TextStyle(fontWeight: FontWeight.w500),
+              ),
+            ],
+          ),
+          backgroundColor: value ? Colors.green : Colors.orange,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          duration: const Duration(seconds: 2),
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    if (_isLoading) {
+      return Scaffold(
+        body: AppBackground(
+          child: const Center(
+            child: CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+            ),
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       body: AppBackground(
         child: SafeArea(
@@ -197,17 +274,32 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       widget.onNameChanged!(newName);
                     }
                     await _loadUserName(); // Làm mới tên từ cơ sở dữ liệu
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Đã đổi tên thành: $newName'),
-                        backgroundColor: Colors.green,
-                        behavior: SnackBarBehavior.floating,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                    if (mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Row(
+                            children: [
+                              const Icon(
+                                Icons.check_circle,
+                                color: Colors.white,
+                                size: 20,
+                              ),
+                              const SizedBox(width: 8),
+                              Text(
+                                'Đã đổi tên thành: $newName',
+                                style: const TextStyle(fontWeight: FontWeight.w500),
+                              ),
+                            ],
+                          ),
+                          backgroundColor: Colors.green,
+                          behavior: SnackBarBehavior.floating,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          duration: const Duration(seconds: 2),
                         ),
-                        duration: const Duration(seconds: 2),
-                      ),
-                    );
+                      );
+                    }
                   }
                 },
               ),
@@ -238,9 +330,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
-                      title: const Text('Xác nhận'),
+                      title: const Row(
+                        children: [
+                          Icon(Icons.warning, color: Colors.orange),
+                          SizedBox(width: 8),
+                          Text('Xác nhận'),
+                        ],
+                      ),
                       content: const Text(
-                          'Bạn có chắc chắn muốn xóa toàn bộ lịch sử làm bài?'),
+                          'Bạn có chắc chắn muốn xóa toàn bộ lịch sử làm bài?\n\nHành động này không thể hoàn tác!'),
                       actions: [
                         TextButton(
                           onPressed: () => Navigator.pop(context, false),
@@ -265,7 +363,20 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       });
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
-                          content: const Text('Đã xóa lịch sử làm bài'),
+                          content: const Row(
+                            children: [
+                              Icon(
+                                Icons.check_circle,
+                                color: Colors.white,
+                                size: 20,
+                              ),
+                              SizedBox(width: 8),
+                              Text(
+                                'Đã xóa lịch sử làm bài',
+                                style: TextStyle(fontWeight: FontWeight.w500),
+                              ),
+                            ],
+                          ),
                           backgroundColor: Colors.green,
                           behavior: SnackBarBehavior.floating,
                           shape: RoundedRectangleBorder(
@@ -290,9 +401,40 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
-                      title: const Text('Thông tin ứng dụng'),
-                      content: const Text(
-                        'Ứng dụng toán học dành cho trẻ em\nPhiên bản: 1.0.0\nPhát triển bởi: Đội ngũ phát triển',
+                      title: const Row(
+                        children: [
+                          Icon(Icons.info, color: Colors.purple),
+                          SizedBox(width: 8),
+                          Text('Thông tin ứng dụng'),
+                        ],
+                      ),
+                      content: const Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '🌟 Siêu Toán Nhí',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.purple,
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Text('📱 Ứng dụng toán học dành cho trẻ em'),
+                          SizedBox(height: 4),
+                          Text('🔢 Phiên bản: 1.0.0'),
+                          SizedBox(height: 4),
+                          Text('👨‍💻 Phát triển bởi: Đội ngũ phát triển'),
+                          SizedBox(height: 8),
+                          Text(
+                            'Ứng dụng giúp trẻ em học toán một cách vui vẻ và hiệu quả!',
+                            style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ],
                       ),
                       actions: [
                         TextButton(
@@ -328,19 +470,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
       child: Row(
         children: [
           Container(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.blue.shade100,
-              borderRadius: BorderRadius.circular(10),
+              color: isSoundEnabled ? Colors.blue.shade100 : Colors.grey.shade200,
+              borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(
               isSoundEnabled ? Icons.volume_up : Icons.volume_off,
-              color: Colors.blue.shade600,
-              size: 24,
+              color: isSoundEnabled ? Colors.blue.shade600 : Colors.grey.shade600,
+              size: 28,
             ),
           ),
           const SizedBox(width: 16),
-          const Expanded(
+          Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -349,13 +491,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
+                    color: isSoundEnabled ? Colors.black87 : Colors.grey.shade600,
                   ),
                 ),
+                const SizedBox(height: 2),
                 Text(
-                  'Bật/tắt âm thanh trong game',
+                  isSoundEnabled ? 'Bật âm thanh trong game' : 'Tắt âm thanh trong game',
                   style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.grey,
+                    fontSize: 13,
+                    color: isSoundEnabled ? Colors.grey.shade600 : Colors.grey.shade500,
                   ),
                 ),
               ],
@@ -363,13 +507,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
           Switch(
             value: isSoundEnabled,
-            onChanged: (value) {
-              setState(() {
-                isSoundEnabled = value;
-              });
-            },
+            onChanged: _toggleSound,
             activeColor: Colors.blue.shade600,
             activeTrackColor: Colors.blue.shade200,
+            inactiveThumbColor: Colors.grey.shade400,
+            inactiveTrackColor: Colors.grey.shade300,
           ),
         ],
       ),

@@ -253,10 +253,12 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
       return Colors.indigo.shade700;
     }
 
-    if (index == correctAnswerIndex || (index == selectedAnswerIndex && index != correctAnswerIndex)) {
-      return Colors.white;
+    if (index == correctAnswerIndex) {
+      return Colors.white; // Màu trắng cho đáp án đúng
+    } else if (index == selectedAnswerIndex && index != correctAnswerIndex) {
+      return Colors.white; // Màu trắng cho đáp án sai được chọn
     } else {
-      return Colors.grey.shade600;
+      return Colors.indigo.shade700; // Màu xanh đậm cho các đáp án không chọn
     }
   }
 
@@ -409,355 +411,361 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: AppBackground(
+        body: AppBackground(
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: isLoading
-                ? Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.yellow.shade400),
-                    strokeWidth: 6,
-                  ),
-                  const SizedBox(height: 20),
-                  Text(
-                    'Đang tải câu hỏi...',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-            )
-                : Column(
-              children: [
-                // Compact header
-                _buildCompactHeader(),
-                const SizedBox(height: 16),
+        child: Padding(
+        padding: const EdgeInsets.all(12.0),
+    child: isLoading
+    ? Center(
+    child: Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+    CircularProgressIndicator(
+    valueColor: AlwaysStoppedAnimation<Color>(Colors.yellow.shade400),
+    strokeWidth: 6,
+    ),
+    const SizedBox(height: 20),
+    Text(
+    'Đang tải câu hỏi...',
+    style: TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: Colors.white,
+    ),
+    ),
+    ],
+    ),
+    )
+        : Column(
+    children: [
+    // Compact header
+    _buildCompactHeader(),
+    const SizedBox(height: 16),
 
-                // Main content area - No scrolling needed
-                Expanded(
-                  child: selectedQuestions.isNotEmpty
-                      ? AnimatedBuilder(
-                    animation: _questionAnimation,
-                    builder: (context, child) {
-                      return Transform.scale(
-                        scale: _questionAnimation.value,
-                        child: Opacity(
-                          opacity: _questionAnimation.value,
-                          child: Column(
-                            children: [
-                              // Question card - More compact
-                              Container(
-                                padding: const EdgeInsets.all(16),
-                                decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                    colors: [
-                                      Colors.white,
-                                      Colors.blue.shade50,
-                                    ],
-                                    begin: Alignment.topLeft,
-                                    end: Alignment.bottomRight,
-                                  ),
-                                  borderRadius: BorderRadius.circular(16),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.blue.withOpacity(0.2),
-                                      blurRadius: 12,
-                                      offset: const Offset(0, 4),
-                                    ),
-                                  ],
-                                  border: Border.all(
-                                    color: Colors.blue.shade200,
-                                    width: 1.5,
-                                  ),
-                                ),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      padding: const EdgeInsets.all(6),
-                                      decoration: BoxDecoration(
-                                        color: Colors.blue.shade100,
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                      child: Icon(
-                                        Icons.help_outline,
-                                        color: Colors.blue.shade600,
-                                        size: 24,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 12),
-                                    Expanded(
-                                      child: Text(
-                                        selectedQuestions[currentQuestionIndex]['question'],
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.indigo.shade800,
-                                          height: 1.3,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(height: 16),
+    // Main content area - No scrolling needed
+    Expanded(
+    child: selectedQuestions.isNotEmpty
+    ? AnimatedBuilder(
+    animation: _questionAnimation,
+    builder: (context, child) {
+    return Transform.scale(
+    scale: _questionAnimation.value,
+    child: Opacity(
+    opacity: _questionAnimation.value,
+    child: Column(
+    children: [
+    // Question card - More compact
+    Container(
+    padding: const EdgeInsets.all(16),
+    decoration: BoxDecoration(
+    gradient: LinearGradient(
+    colors: [
+    Colors.white,
+    Colors.blue.shade50,
+    ],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    ),
+    borderRadius: BorderRadius.circular(16),
+    boxShadow: [
+    BoxShadow(
+    color: Colors.blue.withOpacity(0.2),
+    blurRadius: 12,
+    offset: const Offset(0, 4),
+    ),
+    ],
+    border: Border.all(
+    color: Colors.blue.shade200,
+    width: 1.5,
+    ),
+    ),
+    child: Row(
+    children: [
+    Container(
+    padding: const EdgeInsets.all(6),
+    decoration: BoxDecoration(
+    color: Colors.blue.shade100,
+    borderRadius: BorderRadius.circular(8),
+    ),
+    child: Icon(
+    Icons.help_outline,
+    color: Colors.blue.shade600,
+    size: 24,
+    ),
+    ),
+    const SizedBox(width: 12),
+    Expanded(
+    child: Text(
+    selectedQuestions[currentQuestionIndex]['question'],
+    style: TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: Colors.indigo.shade800,
+    height: 1.3,
+    ),
+    ),
+    ),
+    ],
+    ),
+    ),
+    const SizedBox(height: 16),
 
-                              // Answer options - More compact
-                              Expanded(
-                                child: ListView.builder(
-                                  itemCount: selectedQuestions[currentQuestionIndex]['options'].length,
-                                  itemBuilder: (context, index) {
-                                    return Padding(
-                                      padding: const EdgeInsets.only(bottom: 8),
-                                      child: GestureDetector(
-                                        onTap: () => _handleAnswer(index),
-                                        child: Container(
-                                          padding: const EdgeInsets.all(12),
-                                          decoration: BoxDecoration(
-                                            gradient: LinearGradient(
-                                              colors: selectedAnswerIndex == null
-                                                  ? [Colors.white, Colors.blue.shade50]
-                                                  : [_getAnswerColor(index), _getAnswerColor(index)],
-                                              begin: Alignment.topLeft,
-                                              end: Alignment.bottomRight,
-                                            ),
-                                            borderRadius: BorderRadius.circular(12),
-                                            border: Border.all(
-                                              color: selectedAnswerIndex == null
-                                                  ? Colors.blue.shade300
-                                                  : Colors.transparent,
-                                              width: 1.5,
-                                            ),
-                                            boxShadow: [
-                                              BoxShadow(
-                                                color: selectedAnswerIndex == null
-                                                    ? Colors.blue.withOpacity(0.1)
-                                                    : _getAnswerColor(index).withOpacity(0.3),
-                                                blurRadius: 6,
-                                                offset: const Offset(0, 3),
-                                              ),
-                                            ],
-                                          ),
-                                          child: Row(
-                                            children: [
-                                              Container(
-                                                width: 32,
-                                                height: 32,
-                                                decoration: BoxDecoration(
-                                                  gradient: LinearGradient(
-                                                    colors: selectedAnswerIndex == null
-                                                        ? [Colors.blue.shade400, Colors.blue.shade600]
-                                                        : [Colors.white.withOpacity(0.9), Colors.white],
-                                                    begin: Alignment.topLeft,
-                                                    end: Alignment.bottomRight,
-                                                  ),
-                                                  borderRadius: BorderRadius.circular(16),
-                                                  boxShadow: [
-                                                    BoxShadow(
-                                                      color: Colors.black.withOpacity(0.1),
-                                                      blurRadius: 3,
-                                                      offset: const Offset(0, 2),
-                                                    ),
-                                                  ],
-                                                ),
-                                                child: Center(
-                                                  child: Text(
-                                                    String.fromCharCode(65 + index),
-                                                    style: TextStyle(
-                                                      fontSize: 14,
-                                                      fontWeight: FontWeight.bold,
-                                                      color: selectedAnswerIndex == null
-                                                          ? Colors.white
-                                                          : _getAnswerTextColor(index),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              const SizedBox(width: 12),
-                                              Expanded(
-                                                child: Text(
-                                                  selectedQuestions[currentQuestionIndex]['options'][index],
-                                                  style: TextStyle(
-                                                    fontSize: 14,
-                                                    fontWeight: FontWeight.w600,
-                                                    color: _getAnswerTextColor(index),
-                                                    height: 1.2,
-                                                  ),
-                                                ),
-                                              ),
-                                              if (selectedAnswerIndex != null)
-                                                Icon(
-                                                  index == correctAnswerIndex
-                                                      ? Icons.check_circle
-                                                      : (index == selectedAnswerIndex ? Icons.cancel : Icons.radio_button_unchecked),
-                                                  color: _getAnswerTextColor(index),
-                                                  size: 20,
-                                                ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      );
-                    },
-                  )
-                      : const SizedBox(),
-                ),
+    // Answer options - More compact
+    Expanded(
+    child: ListView.builder(
+    itemCount: selectedQuestions[currentQuestionIndex]['options'].length,
+    itemBuilder: (context, index) {
+    return Padding(
+    padding: const EdgeInsets.only(bottom: 8),
+    child: GestureDetector(
+    onTap: () => _handleAnswer(index),
+    child: Container(
+    padding: const EdgeInsets.all(12),
+    decoration: BoxDecoration(
+    gradient: LinearGradient(
+    colors: selectedAnswerIndex == null
+    ? [Colors.white, Colors.blue.shade50]
+        : [_getAnswerColor(index), _getAnswerColor(index)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    ),
+    borderRadius: BorderRadius.circular(12),
+    border: Border.all(
+    color: selectedAnswerIndex == null
+    ? Colors.blue.shade300
+        : Colors.transparent,
+    width: 1.5,
+    ),
+    boxShadow: [
+    BoxShadow(
+    color: selectedAnswerIndex == null
+    ? Colors.blue.withOpacity(0.1)
+        : _getAnswerColor(index).withOpacity(0.3),
+    blurRadius: 6,
+    offset: const Offset(0, 3),
+    ),
+    ],
+    ),
+    child: Row(
+    children: [
+    Container(
+    width: 32,
+    height: 32,
+    decoration: BoxDecoration(
+    gradient: LinearGradient(
+    colors: selectedAnswerIndex == null
+    ? [Colors.blue.shade400, Colors.blue.shade600]
+        : (index == correctAnswerIndex
+    ? [Colors.green.shade600, Colors.green.shade800]
+        : (index == selectedAnswerIndex
+    ? [Colors.red.shade600, Colors.red.shade800]
+        : [Colors.grey.shade400, Colors.grey.shade600])),
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    ),
+    borderRadius: BorderRadius.circular(16),
+    boxShadow: [
+    BoxShadow(
+    color: Colors.black.withOpacity(0.1),
+    blurRadius: 3,
+    offset: const Offset(0, 2),
+    ),
+    ],
+    ),
+    child: Center(
+    child: Text(
+    String.fromCharCode(65 + index),
+    style: const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    color: Colors.white, // Màu trắng để tương phản
+    ),
+    ),
+    ),
+    ),
+    const SizedBox(width: 12),
+    Expanded(
+    child: Text(
+    selectedQuestions[currentQuestionIndex]['options'][index],
+    style: TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
+    color: _getAnswerTextColor(index),
+    height: 1.2,
+    ),
+    ),
+    ),
+    if (selectedAnswerIndex != null)
+    Icon(
+    index == correctAnswerIndex
+    ? Icons.check_circle
+        : (index == selectedAnswerIndex
+    ? Icons.cancel
+        : Icons.radio_button_unchecked),
+    color: _getAnswerTextColor(index),
+    size: 20,
+    ),
+    ],
+    ),
+    ),
+    ),
+    );
+    },
+    ),
+    ),
+    ],
+    ),
+    ),
+    );
+    },
+    )
+        : const SizedBox(),
+    ),
 
-                // Bottom section - Feedback and buttons
-                Container(
-                  padding: const EdgeInsets.symmetric(vertical: 12),
-                  child: Column(
-                    children: [
-                      // Feedback message
-                      if (selectedAnswerIndex != null)
-                        AnimatedBuilder(
-                          animation: _buttonAnimation,
-                          builder: (context, child) {
-                            return Transform.scale(
-                              scale: _buttonAnimation.value,
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                margin: const EdgeInsets.only(bottom: 12),
-                                decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                    colors: isCorrect == true
-                                        ? [Colors.green.shade400, Colors.green.shade600]
-                                        : [Colors.red.shade400, Colors.red.shade600],
-                                    begin: Alignment.topLeft,
-                                    end: Alignment.bottomRight,
-                                  ),
-                                  borderRadius: BorderRadius.circular(20),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: (isCorrect == true ? Colors.green : Colors.red).withOpacity(0.3),
-                                      blurRadius: 8,
-                                      offset: const Offset(0, 3),
-                                    ),
-                                  ],
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Icon(
-                                      isCorrect == true ? Icons.sentiment_very_satisfied : Icons.sentiment_dissatisfied,
-                                      color: Colors.white,
-                                      size: 20,
-                                    ),
-                                    const SizedBox(width: 8),
-                                    Text(
-                                      isCorrect == true ? 'Tuyệt vời! 🎉' : 'Cố gắng lần sau nhé! 💪',
-                                      style: const TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          },
-                        ),
+    // Bottom section - Feedback and buttons
+    Container(
+    padding: const EdgeInsets.symmetric(vertical: 12),
+    child: Column(
+    children: [
+    // Feedback message
+    if (selectedAnswerIndex != null)
+    AnimatedBuilder(
+    animation: _buttonAnimation,
+    builder: (context, child) {
+    return Transform.scale(
+    scale: _buttonAnimation.value,
+    child: Container(
+    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+    margin: const EdgeInsets.only(bottom: 12),
+    decoration: BoxDecoration(
+    gradient: LinearGradient(
+    colors: isCorrect == true
+    ? [Colors.green.shade400, Colors.green.shade600]
+        : [Colors.red.shade400, Colors.red.shade600],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    ),
+    borderRadius: BorderRadius.circular(20),
+    boxShadow: [
+    BoxShadow(
+    color: (isCorrect == true ? Colors.green : Colors.red).withOpacity(0.3),
+    blurRadius: 8,
+    offset: const Offset(0, 3),
+    ),
+    ],
+    ),
+    child: Row(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+    Icon(
+    isCorrect == true
+    ? Icons.sentiment_very_satisfied
+        : Icons.sentiment_dissatisfied,
+    color: Colors.white,
+    size: 20,
+    ),
+    const SizedBox(width: 8),
+    Text(
+    isCorrect == true ? 'Tuyệt vời! 🎉' : 'Cố gắng lần sau nhé! 💪',
+    style: const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+    ),
+    ),
+    ],
+    ),
+    ),
+    );
+    },
+    ),
 
-                      // Action buttons row
-                      Row(
-                        children: [
-                          // Home button
-                          Container(
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [Colors.orange.shade400, Colors.red.shade400],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.orange.withOpacity(0.3),
-                                  blurRadius: 6,
-                                  offset: const Offset(0, 3),
-                                ),
-                              ],
-                            ),
-                            child: IconButton(
-                              onPressed: () => Navigator.pop(context),
-                              icon: const Icon(
-                                Icons.home,
-                                color: Colors.white,
-                                size: 24,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 12),
+    // Action buttons row
+    Row(
+    children: [
+    // Home button
+    Container(
+    decoration: BoxDecoration(
+    gradient: LinearGradient(
+    colors: [Colors.orange.shade400, Colors.red.shade400],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    ),
+    borderRadius: BorderRadius.circular(20),
+    boxShadow: [
+    BoxShadow(
+    color: Colors.orange.withOpacity(0.3),
+    blurRadius: 6,
+    offset: const Offset(0, 3),
+    ),
+    ],
+    ),
+    child: IconButton(
+    onPressed: () => Navigator.pop(context),
+    icon: const Icon(
+    Icons.home,
+    color: Colors.white,
+    size: 24,
+    ),
+    ),
+    ),
+    const SizedBox(width: 12),
 
-                          // Next button
-                          Expanded(
-                            child: ElevatedButton(
-                              onPressed: selectedAnswerIndex != null ? _nextQuestion : null,
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: selectedAnswerIndex != null
-                                    ? Colors.yellow.shade400
-                                    : Colors.grey.shade300,
-                                foregroundColor: selectedAnswerIndex != null
-                                    ? Colors.indigo.shade700
-                                    : Colors.grey.shade600,
-                                padding: const EdgeInsets.symmetric(vertical: 12),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20),
-                                ),
-                                elevation: selectedAnswerIndex != null ? 4 : 0,
-                                shadowColor: Colors.yellow.withOpacity(0.5),
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    selectedAnswerIndex == null
-                                        ? 'Chọn đáp án trước nhé!'
-                                        : (currentQuestionIndex < selectedQuestions.length - 1
-                                        ? 'Câu tiếp theo'
-                                        : 'Xem kết quả'),
-                                    style: const TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  const SizedBox(width: 6),
-                                  Icon(
-                                    selectedAnswerIndex == null
-                                        ? Icons.touch_app
-                                        : (currentQuestionIndex < selectedQuestions.length - 1
-                                        ? Icons.arrow_forward_ios
-                                        : Icons.celebration),
-                                    size: 16,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
+    // Next button
+    Expanded(
+    child: ElevatedButton(
+    onPressed: selectedAnswerIndex != null ? _nextQuestion : null,
+    style: ElevatedButton.styleFrom(
+    backgroundColor: selectedAnswerIndex != null
+    ? Colors.yellow.shade400
+        : Colors.grey.shade300,
+    foregroundColor: selectedAnswerIndex != null
+    ? Colors.indigo.shade700
+        : Colors.grey.shade600,
+    padding: const EdgeInsets.symmetric(vertical: 12),
+    shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(20),
+    ),
+    elevation: selectedAnswerIndex != null ? 4 : 0,
+    shadowColor: Colors.yellow.withOpacity(0.5),
+    ),
+    child: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+    Text(
+    selectedAnswerIndex == null
+    ? 'Chọn đáp án trước nhé!'
+        : (currentQuestionIndex < selectedQuestions.length - 1
+    ? 'Câu tiếp theo'
+        : 'Xem kết quả'),
+    style: const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    const SizedBox(width: 6),
+    Icon(
+    selectedAnswerIndex == null
+    ? Icons.touch_app
+        : (currentQuestionIndex < selectedQuestions.length - 1
+    ? Icons.arrow_forward_ios
+        : Icons.celebration),
+    size: 16,
+    ),
+    ],
+    ),
+    ),
+    ),
+    ],
+    ),
+    ],
+    ),
+    ),
+    ],
+    ),
+    ),
+    ),
+    )
     );
   }
 }
