@@ -1,4 +1,4 @@
-package com.example.multiple_choice_app;
+package com.sieutoannhi.app;
 
 import io.flutter.embedding.android.FlutterActivity;
 
