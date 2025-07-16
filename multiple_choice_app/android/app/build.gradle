@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.sieutoannhi.app"
+    namespace = "com.sieutoannhifinal.app"
     compileSdk = flutter.compileSdkVersion
 
     compileOptions {
@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.sieutoannhi.app"
+        applicationId = "com.sieutoannhi.appfinal"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
