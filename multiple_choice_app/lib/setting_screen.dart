@@ -1,4 +1,4 @@
-// setting_screen.dart
+// setting_screen.dart - Fixed version
 import 'package:flutter/material.dart';
 import 'background_widget.dart';
 import 'logo_widget.dart';
@@ -130,78 +130,138 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
   }
 
+  // Enhanced responsive design logic
+  Map<String, dynamic> _getResponsiveValues(Size screenSize) {
+    final width = screenSize.width;
+    final height = screenSize.height;
+    final isTablet = width > 600;
+    final isLargeTablet = width > 900;
+    final isSmallPhone = width < 360;
+    final aspectRatio = height / width;
+
+    return {
+      'isTablet': isTablet,
+      'isLargeTablet': isLargeTablet,
+      'isSmallPhone': isSmallPhone,
+      'isShortScreen': aspectRatio < 1.5, // Detect short/wide screens
+      // Header sizes - reduced for better fit
+      'headerHeight': isTablet ? 85.0 : (isSmallPhone ? 70.0 : 75.0),
+      'headerPadding': isTablet ? 16.0 : (isSmallPhone ? 12.0 : 14.0),
+      'headerRadius': isTablet ? 18.0 : 12.0,
+      'logoSize': isTablet ? 40.0 : (isSmallPhone ? 28.0 : 32.0),
+      'headerFontSize': isTablet ? 20.0 : (isSmallPhone ? 16.0 : 18.0),
+      'headerSubtitleSize': isTablet ? 14.0 : (isSmallPhone ? 12.0 : 13.0),
+      'headerIconSize': isTablet ? 26.0 : (isSmallPhone ? 20.0 : 24.0),
+      // Sound card sizes - reduced
+      'soundCardHeight': isTablet ? 75.0 : (isSmallPhone ? 55.0 : 65.0),
+      'soundCardPadding': isTablet ? 16.0 : (isSmallPhone ? 8.0 : 12.0),
+      'soundCardRadius': isTablet ? 14.0 : 10.0,
+      'soundIconSize': isTablet ? 26.0 : (isSmallPhone ? 18.0 : 22.0),
+      'soundFontSize': isTablet ? 16.0 : (isSmallPhone ? 11.0 : 13.0),
+      'soundSubtitleSize': isTablet ? 12.0 : (isSmallPhone ? 9.0 : 10.0),
+      // Grid settings
+      'gridCrossAxisCount': isLargeTablet ? 4 : (isTablet ? 3 : 2),
+      'gridAspectRatio': isLargeTablet ? 1.1 : (isTablet ? 1.0 : 1.0),
+      'gridSpacing': isTablet ? 14.0 : (isSmallPhone ? 6.0 : 8.0),
+      'gridItemPadding': isTablet ? 14.0 : (isSmallPhone ? 8.0 : 10.0),
+      'gridItemRadius': isTablet ? 14.0 : 10.0,
+      'gridIconSize': isTablet ? 24.0 : (isSmallPhone ? 16.0 : 20.0),
+      'gridTitleSize': isTablet ? 14.0 : (isSmallPhone ? 10.0 : 12.0),
+      'gridSubtitleSize': isTablet ? 11.0 : (isSmallPhone ? 8.0 : 10.0),
+      // Button sizes
+      'buttonHeight': isTablet ? 60.0 : (isSmallPhone ? 40.0 : 45.0),
+      'buttonFontSize': isTablet ? 16.0 : (isSmallPhone ? 11.0 : 13.0),
+      'buttonIconSize': isTablet ? 22.0 : (isSmallPhone ? 14.0 : 18.0),
+      'buttonRadius': isTablet ? 14.0 : 10.0,
+      // Spacing - reduced for better fit
+      'sectionSpacing': isTablet ? 12.0 : (isSmallPhone ? 6.0 : 8.0),
+      'containerPadding': isTablet ? 16.0 : (isSmallPhone ? 8.0 : 12.0),
+    };
+  }
+
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
-    final isTablet = screenSize.width > 600;
-    final isLargeTablet = screenSize.width > 800;
+    final responsive = _getResponsiveValues(screenSize);
 
     if (_isLoading) {
       return Scaffold(
-          body: AppBackground(
-            child: const Center(
-              child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-              ),
+        body: AppBackground(
+          child: const Center(
+            child: CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
             ),
-          )
+          ),
+        ),
       );
     }
 
     return Scaffold(
       body: AppBackground(
         child: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: isTablet ? 16.0 : 8.0,
-              vertical: 8.0,
-            ),
-            child: Column(
-              children: [
-                // Header
-                SizedBox(
-                  height: isTablet ? 80 : 70,
-                  child: _buildHeader(isTablet, screenSize.width),
-                ),
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              return Column(
+                children: [
+                  // Main scrollable content
+                  Expanded(
+                    child: SingleChildScrollView(
+                      padding: EdgeInsets.all(responsive['containerPadding']),
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          minHeight: constraints.maxHeight -
+                              responsive['buttonHeight'] -
+                              (responsive['containerPadding'] * 2),
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            // Header
+                            Container(
+                              height: responsive['headerHeight'],
+                              child: _buildHeader(responsive),
+                            ),
 
-                SizedBox(height: isTablet ? 12 : 8),
+                            SizedBox(height: responsive['sectionSpacing']),
 
-                // Sound card
-                SizedBox(
-                  height: isTablet ? 80 : 70,
-                  child: _buildSoundCard(isTablet),
-                ),
+                            // Sound card
+                            Container(
+                              height: responsive['soundCardHeight'],
+                              child: _buildSoundCard(responsive),
+                            ),
 
-                SizedBox(height: isTablet ? 12 : 8),
+                            SizedBox(height: responsive['sectionSpacing']),
 
-                // Settings grid - Expanded to fill remaining space
-                Expanded(
-                  child: _buildSettingsGrid(isTablet, isLargeTablet, screenSize),
-                ),
+                            // Settings grid
+                            _buildSettingsGrid(responsive),
 
-                SizedBox(height: isTablet ? 12 : 8),
+                            SizedBox(height: responsive['sectionSpacing']),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
 
-                // Back button
-                SizedBox(
-                  height: isTablet ? 60 : 50,
-                  child: _buildBackButton(isTablet),
-                ),
-              ],
-            ),
+                  // Back button - Fixed at bottom
+                  Container(
+                    padding: EdgeInsets.all(responsive['containerPadding']),
+                    child: SizedBox(
+                      height: responsive['buttonHeight'],
+                      child: _buildBackButton(responsive),
+                    ),
+                  ),
+                ],
+              );
+            },
           ),
         ),
       ),
     );
   }
 
-  Widget _buildHeader(bool isTablet, double screenWidth) {
-    final fontSize = isTablet ? 20.0 : 16.0;
-    final subtitleSize = isTablet ? 14.0 : 12.0;
-    final logoSize = isTablet ? 40.0 : 30.0;
-    final iconSize = isTablet ? 28.0 : 22.0;
-
+  Widget _buildHeader(Map<String, dynamic> responsive) {
     return Container(
-      padding: EdgeInsets.all(isTablet ? 16 : 10),
+      padding: EdgeInsets.all(responsive['headerPadding']),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
@@ -211,7 +271,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        borderRadius: BorderRadius.circular(isTablet ? 20 : 14),
+        borderRadius: BorderRadius.circular(responsive['headerRadius']),
         boxShadow: [
           BoxShadow(
             color: Colors.purple.withOpacity(0.3),
@@ -223,14 +283,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
       child: Row(
         children: [
           Container(
-            padding: EdgeInsets.all(isTablet ? 8 : 5),
+            padding: EdgeInsets.all(responsive['isTablet'] ? 6.0 : 4.0),
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.2),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(8),
             ),
-            child: LogoWidget(size: logoSize),
+            child: LogoWidget(size: responsive['logoSize']),
           ),
-          SizedBox(width: isTablet ? 16 : 10),
+          SizedBox(width: responsive['isTablet'] ? 12.0 : 8.0),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -239,16 +299,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 Text(
                   'Xin chào ${_userName ?? 'bạn'}! 👋',
                   style: TextStyle(
-                    fontSize: fontSize,
+                    fontSize: responsive['headerFontSize'],
                     fontWeight: FontWeight.w700,
                     color: Colors.white,
                   ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
-                const SizedBox(height: 2),
+                const SizedBox(height: 1),
                 Text(
                   'Cài đặt ứng dụng',
                   style: TextStyle(
-                    fontSize: subtitleSize,
+                    fontSize: responsive['headerSubtitleSize'],
                     color: Colors.white70,
                   ),
                 ),
@@ -258,23 +320,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
           Icon(
             Icons.settings,
             color: Colors.white,
-            size: iconSize,
+            size: responsive['headerIconSize'],
           ),
         ],
       ),
     );
   }
 
-  Widget _buildSoundCard(bool isTablet) {
-    final fontSize = isTablet ? 16.0 : 14.0;
-    final subtitleSize = isTablet ? 12.0 : 10.0;
-    final iconSize = isTablet ? 28.0 : 22.0;
-
+  Widget _buildSoundCard(Map<String, dynamic> responsive) {
     return Container(
-      padding: EdgeInsets.all(isTablet ? 16 : 10),
+      padding: EdgeInsets.all(responsive['soundCardPadding']),
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.9),
-        borderRadius: BorderRadius.circular(isTablet ? 16 : 12),
+        borderRadius: BorderRadius.circular(responsive['soundCardRadius']),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
@@ -286,18 +344,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
       child: Row(
         children: [
           Container(
-            padding: EdgeInsets.all(isTablet ? 10 : 6),
+            padding: EdgeInsets.all(responsive['isTablet'] ? 8.0 : 5.0),
             decoration: BoxDecoration(
               color: isSoundEnabled ? Colors.blue.shade100 : Colors.grey.shade200,
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(
               isSoundEnabled ? Icons.volume_up : Icons.volume_off,
               color: isSoundEnabled ? Colors.blue.shade600 : Colors.grey.shade600,
-              size: iconSize,
+              size: responsive['soundIconSize'],
             ),
           ),
-          SizedBox(width: isTablet ? 16 : 10),
+          SizedBox(width: responsive['isTablet'] ? 12.0 : 8.0),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -306,7 +364,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 Text(
                   'Âm thanh',
                   style: TextStyle(
-                    fontSize: fontSize,
+                    fontSize: responsive['soundFontSize'],
                     fontWeight: FontWeight.w600,
                     color: isSoundEnabled ? Colors.black87 : Colors.grey.shade600,
                   ),
@@ -314,15 +372,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 Text(
                   isSoundEnabled ? 'Bật âm thanh trong game' : 'Tắt âm thanh trong game',
                   style: TextStyle(
-                    fontSize: subtitleSize,
+                    fontSize: responsive['soundSubtitleSize'],
                     color: isSoundEnabled ? Colors.grey.shade600 : Colors.grey.shade500,
                   ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
               ],
             ),
           ),
           Transform.scale(
-            scale: isTablet ? 1.1 : 1.0,
+            scale: responsive['isTablet'] ? 1.0 : 0.9,
             child: Switch(
               value: isSoundEnabled,
               onChanged: _toggleSound,
@@ -337,23 +397,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  Widget _buildSettingsGrid(bool isTablet, bool isLargeTablet, Size screenSize) {
-    final crossAxisCount = isLargeTablet ? 4 : (isTablet ? 2 : 2);
-    final childAspectRatio = isLargeTablet ? 1.0 : (isTablet ? 1.2 : 1.0);
-
+  Widget _buildSettingsGrid(Map<String, dynamic> responsive) {
     return GridView.count(
+      shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      crossAxisCount: crossAxisCount,
-      crossAxisSpacing: isTablet ? 12.0 : 8.0,
-      mainAxisSpacing: isTablet ? 12.0 : 8.0,
-      childAspectRatio: childAspectRatio,
+      crossAxisCount: responsive['gridCrossAxisCount'],
+      crossAxisSpacing: responsive['gridSpacing'],
+      mainAxisSpacing: responsive['gridSpacing'],
+      childAspectRatio: responsive['gridAspectRatio'],
       children: [
         _buildSettingCard(
           icon: Icons.person_outline,
           title: 'Đổi tên',
           subtitle: 'Thay đổi tên hiển thị',
           color: Colors.blue,
-          isTablet: isTablet,
+          responsive: responsive,
           onTap: () async {
             final newName = await Navigator.push<String>(
               context,
@@ -405,7 +463,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           title: 'Lịch sử',
           subtitle: 'Xem kết quả đã làm',
           color: Colors.green,
-          isTablet: isTablet,
+          responsive: responsive,
           onTap: () {
             Navigator.push(
               context,
@@ -421,7 +479,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           subtitle: 'Xóa toàn bộ dữ liệu',
           color: _isHistoryEmpty ? Colors.grey : Colors.orange,
           disabled: _isHistoryEmpty,
-          isTablet: isTablet,
+          responsive: responsive,
           onTap: _isHistoryEmpty ? null : () async {
             final confirmed = await showDialog<bool>(
               context: context,
@@ -493,7 +551,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           title: 'Thông tin',
           subtitle: 'Về ứng dụng',
           color: Colors.purple,
-          isTablet: isTablet,
+          responsive: responsive,
           onTap: () {
             showDialog(
               context: context,
@@ -503,12 +561,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ),
                 title: Row(
                   children: [
-                    Icon(Icons.info, color: Colors.purple),
-                    SizedBox(width: 8),
+                    const Icon(Icons.info, color: Colors.purple),
+                    const SizedBox(width: 8),
                     Text(
                       'Thông tin ứng dụng',
                       style: TextStyle(
-                        fontSize: isTablet ? 20 : 16,
+                        fontSize: responsive['isTablet'] ? 18 : 14,
                       ),
                     ),
                   ],
@@ -521,37 +579,37 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Text(
                         '🌟 Siêu Toán Nhí',
                         style: TextStyle(
-                          fontSize: isTablet ? 18 : 16,
+                          fontSize: responsive['isTablet'] ? 16 : 14,
                           fontWeight: FontWeight.bold,
                           color: Colors.purple,
                         ),
                       ),
-                      SizedBox(height: 8),
+                      const SizedBox(height: 8),
                       Text(
                         '📱 Ứng dụng toán học dành cho trẻ em',
                         style: TextStyle(
-                          fontSize: isTablet ? 14 : 12,
+                          fontSize: responsive['isTablet'] ? 12 : 10,
                         ),
                       ),
-                      SizedBox(height: 4),
+                      const SizedBox(height: 4),
                       Text(
                         '🔢 Phiên bản: 1.0.0',
                         style: TextStyle(
-                          fontSize: isTablet ? 14 : 12,
+                          fontSize: responsive['isTablet'] ? 12 : 10,
                         ),
                       ),
-                      SizedBox(height: 4),
+                      const SizedBox(height: 4),
                       Text(
                         '👨‍💻 Phát triển bởi: Đội ngũ phát triển',
                         style: TextStyle(
-                          fontSize: isTablet ? 14 : 12,
+                          fontSize: responsive['isTablet'] ? 12 : 10,
                         ),
                       ),
-                      SizedBox(height: 8),
+                      const SizedBox(height: 8),
                       Text(
                         'Ứng dụng giúp trẻ em học toán một cách vui vẻ và hiệu quả!',
                         style: TextStyle(
-                          fontSize: isTablet ? 14 : 12,
+                          fontSize: responsive['isTablet'] ? 12 : 10,
                           fontStyle: FontStyle.italic,
                           color: Colors.grey,
                         ),
@@ -565,7 +623,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     child: Text(
                       'Đóng',
                       style: TextStyle(
-                        fontSize: isTablet ? 16 : 14,
+                        fontSize: responsive['isTablet'] ? 14 : 12,
                       ),
                     ),
                   ),
@@ -583,24 +641,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
     required String title,
     required String subtitle,
     required Color color,
-    required bool isTablet,
+    required Map<String, dynamic> responsive,
     bool disabled = false,
     required VoidCallback? onTap,
   }) {
-    final titleSize = isTablet ? 14.0 : 12.0;
-    final subtitleSize = isTablet ? 11.0 : 9.0;
-    final iconSize = isTablet ? 26.0 : 20.0;
-    final padding = isTablet ? 12.0 : 8.0;
-
     return Material(
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(isTablet ? 16 : 12),
+        borderRadius: BorderRadius.circular(responsive['gridItemRadius']),
         child: Container(
           decoration: BoxDecoration(
             color: disabled ? Colors.grey.shade200 : Colors.white.withOpacity(0.9),
-            borderRadius: BorderRadius.circular(isTablet ? 16 : 12),
+            borderRadius: BorderRadius.circular(responsive['gridItemRadius']),
             boxShadow: disabled
                 ? []
                 : [
@@ -612,37 +665,39 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ],
           ),
           child: Padding(
-            padding: EdgeInsets.all(padding),
+            padding: EdgeInsets.all(responsive['gridItemPadding']),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: EdgeInsets.all(isTablet ? 10 : 6),
+                  padding: EdgeInsets.all(responsive['isTablet'] ? 10.0 : 6.0),
                   decoration: BoxDecoration(
                     color: disabled ? Colors.grey.shade300 : color.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(8),
                   ),
                   child: Icon(
                     icon,
                     color: disabled ? Colors.grey : color,
-                    size: iconSize,
+                    size: responsive['gridIconSize'],
                   ),
                 ),
-                SizedBox(height: isTablet ? 8 : 6),
+                SizedBox(height: responsive['isTablet'] ? 6.0 : 4.0),
                 Text(
                   title,
                   style: TextStyle(
-                    fontSize: titleSize,
+                    fontSize: responsive['gridTitleSize'],
                     fontWeight: FontWeight.w700,
                     color: disabled ? Colors.grey : Colors.black87,
                   ),
                   textAlign: TextAlign.center,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
-                SizedBox(height: isTablet ? 4 : 2),
+                SizedBox(height: responsive['isTablet'] ? 3.0 : 2.0),
                 Text(
                   subtitle,
                   style: TextStyle(
-                    fontSize: subtitleSize,
+                    fontSize: responsive['gridSubtitleSize'],
                     color: disabled ? Colors.grey : Colors.grey.shade600,
                   ),
                   textAlign: TextAlign.center,
@@ -657,10 +712,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  Widget _buildBackButton(bool isTablet) {
-    final fontSize = isTablet ? 16.0 : 14.0;
-    final iconSize = isTablet ? 22.0 : 18.0;
-
+  Widget _buildBackButton(Map<String, dynamic> responsive) {
     return SizedBox(
       width: double.infinity,
       child: ElevatedButton.icon(
@@ -671,15 +723,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
           elevation: 3,
           shadowColor: Colors.black.withOpacity(0.2),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(isTablet ? 16 : 12),
+            borderRadius: BorderRadius.circular(responsive['buttonRadius']),
           ),
-          padding: EdgeInsets.symmetric(vertical: isTablet ? 16 : 12),
+          padding: EdgeInsets.symmetric(
+            vertical: responsive['isTablet'] ? 14.0 : 10.0,
+          ),
         ),
-        icon: Icon(Icons.arrow_back, size: iconSize),
+        icon: Icon(Icons.arrow_back, size: responsive['buttonIconSize']),
         label: Text(
           'Quay lại',
           style: TextStyle(
-            fontSize: fontSize,
+            fontSize: responsive['buttonFontSize'],
             fontWeight: FontWeight.w600,
           ),
         ),
